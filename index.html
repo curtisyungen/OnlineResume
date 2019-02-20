@@ -6,10 +6,17 @@
 
     <title>Curtis Yungen</title>
 
-    <!-- CSS -->
+    <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
 
     <!-- jQuery -->
@@ -31,45 +38,58 @@
 
         <!-- Contact Info -->
         <div class="row" id="contactInfo">
-            <div class="col-lg-4">
+            <div class="col-lg-12">
                 <h4>Contact Me</h4>
                 <p>curtisyungen@gmail.com</p>
             </div>
         </div>
 
         <!-- Summary -->
-        <div class="row" id="summary">
-            <div class="col-lg-4">
-                <h4>Summary</h4>
+        <div class="row" id="aboutMe">
+            <div class="col-lg-12">
+                <h4>About Me</h4>
+                <p class="description">My name is Curtis. I grew up in the Pacific Northwest. I'm always trying something new and challenging whether it's engineering, public speaking, real estate, or computer programming.
+                    When I'm not studying, I'm either running, playing music, or studying Brazilian Jiu-Jitsu. I love to learn new things and chase new goals.
+                    Although I take great pride in being a Boeing engineer, I've recently discovered my true passions lie in web development.
+                    I'm excited to apply my technical aptitude and staunch work ethic to the tech industry...perhaps on your project!
+                </p>
             </div>
         </div>
 
         <!-- Work Experience -->
         <div class="row" id="workExperience">
+            <div class="col-lg-12">
+                <h4>Work Experience</h4>
 
-            <!-- Boeing -->
-            <div id="boeing">
-                <img class="logo" id="boeingLogo" src="https://pbs.twimg.com/profile_images/1064567396772401152/ex2Q59H8_400x400.jpg">
-                <h4>Structural Design Engineer II</h4>
-                <p>Description</p>
+                <!-- Boeing -->
+                <div class="item" id="boeing">
+                    <img class="logo" id="boeingLogo" src="https://pbs.twimg.com/profile_images/1064567396772401152/ex2Q59H8_400x400.jpg">
+                    <h5>Structural Design Engineer</h5>
+                    <p class="description">Worked to maintain, develop, and improve the structural integrity of Boeing 777, 777-X, and Air Force One aircraft.</p>
+                </div>
             </div>
-
         </div>
 
         <!-- Education -->
 
         <div class="row" id="education">
+            <div class="col-lg-12">
+                <h4>Education</h4>
 
-            <!-- University of Washington -->
-            <div class="school" id="uw">
-                <img class="logo" id="uwLogo" src="https://www.logolynx.com/images/logolynx/2d/2dd3dc322690606103d3da636c3514c7.png">
-            </div>
+                <!-- University of Washington -->
+                <div class="item" id="uw">
+                    <img class="logo" id="uwLogo" src="https://i0.wp.com/stateofreform.com/wp-content/uploads/2011/12/UW-Logo.gif?ssl=1">
+                    <h4>UW Coding Boot Camp</h4>
+                    <p class="description">A six-month intensive certificate program focused on full-stack Web Development.</p>
+                </div><br>
 
-            <!-- Oregon State University -->
-            <div class="school" id="osu">
-                <img class="logo" id="osuLogo" src="https://teenlife.s3.amazonaws.com/media/uploads/listings/Fp6LKKejHoag.png">
-            </div>
-
+                <!-- Oregon State University -->
+                <div class="item" id="osu">
+                    <img class="logo" id="osuLogo" src="https://teenlife.s3.amazonaws.com/media/uploads/listings/Fp6LKKejHoag.png">
+                    <h4>BS Civil Engineering</h4>
+                    <p class="description">A four-year program covering concepts in structural, geotechnical, hydrolic, mechanical, environmental, and transportation engineering.</p>
+                </div>
+            </div>    
         </div>
 
         <!-- Abilities -->
@@ -81,23 +101,73 @@
                 <ul>
                     <li>
                         <span class="abilityLabel">HTML5</span>
-                        <span class="abilityScore">5</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li>
                     <li>
                         <span class="abilityLabel">CSS3</span>
-                        <span class="abilityScore"></span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li>
                     <li>
                         <span class="abilityLabel">Javascript</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li>
                     <li>
                         <span class="abilityLabel">JQuery</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li>
                     <li>
                         <span class="abilityLabel">MongoDB</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                     <li>
                         <span class="abilityLabel">Bootstrap Framework</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
+                    </li> 
+                    <li>
+                        <span class="abilityLabel">Python</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                 </ul>
             </div>
@@ -107,27 +177,132 @@
                 <ul>
                     <li>
                         <span class="abilityLabel">Express.js</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                     <li>
                         <span class="abilityLabel">ReactJS</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                     <li>
                         <span class="abilityLabel">Node.js</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                     <li>
                         <span class="abilityLabel">JSON</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                     <li>
                         <span class="abilityLabel">APIs</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                     <li>
                         <span class="abilityLabel">Mocha/Chai</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
+                    </li> 
+                    <li>
+                        <span class="abilityLabel">Heroku</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
                     </li> 
                 </ul>
             </div>
 
         </div>
 
+        <!-- Portfolio -->
+
+        <div class="row" id="portfolio">
+            <div class="col-lg-12">
+
+                <!-- Mammoth -->
+                <div class="project" id="mammoth">
+                    <h4>Mammoth</h4>
+                    <img class="projImg" src="./assets/images/mammoth.png">
+                    <p class="description">Mammoth is a website that allows users to log their running workouts.
+                        It was a group project for the UW Coding Boot Camp. Users can log in, draw routes on a map,
+                        enter information about each run, and view runs from other users.
+                    </p>
+                    <p>
+                        <span class="technology">Google Authentication</span>
+                        <span class="technology">Google Maps API</span>
+                        <span class="technology">Handlebars</span>
+                        <span class="technology">Node.js</span>
+                        <span class="technology">Express.js</span>
+                        <span class="technology">MySQL</span>
+                        <span class="technology">Heroku</span>
+                        <span class="technology">Bulma Framework</span>
+                        <span class="technology">Mocha/Chai</span>
+                    </p>
+                </div>
+
+                <br>
+
+                <!-- Grocery List -->
+                <div class="project" id="groceryList">
+                    <h4>Grocery List</h4>
+                    <img class="projImg" src="">
+                    <p class="description"></p>
+                    <p>
+                        <span class="technology">Yummly API</span>
+                        <span class="technology">Onsen Framework</span>
+                        <span class="technology">Data Persistence</span>
+                    </p>
+                </div>
+
+                <br>
+
+                <!-- Rock Paper Scissors -->
+                <div class="project" id="rps">
+                    <h4>Multiplayer RPS</h4>
+                    <img class="projImg" src="">
+                    <p class="description"></p>
+                    <p>
+                        <span class="technology">Firebase</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>
