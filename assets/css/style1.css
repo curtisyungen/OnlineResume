@@ -1,3 +1,7 @@
+html {
+    padding: 0;
+}
+
 header {
     text-align: center;
 }
@@ -6,8 +10,49 @@ body {
     background: lightgray;
 }
 
+h4 {
+    display: inline;
+    font-size: 18px;
+}
+
+.row {
+    background: white;
+    border: 1px solid black;
+    margin-top: 5px;
+    min-height: 100px;
+    padding: 10px;
+}
+
 #mainContainer {
     background: lightgray;
-    margin-top: 50px;
     height: 100%;
+    padding: 0;
 }
+
+#mainJumbo {
+    background: lightblue;
+    margin-top: 0px;
+}
+
+#contactInfo {
+    background: white;
+}
+
+.abilityLabel {
+    display: inline-block;
+}
+
+.abilityScore {
+    float: right;
+}
+
+.logo {
+    float: left;
+    height: 100px;
+    margin: 5px;
+}
+
+.school {
+    clear: both;
+}
+
