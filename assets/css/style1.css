@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+}
+
+body {
+    background: lightgray;
+}
+
+#mainContainer {
+    background: lightgray;
+    margin-top: 50px;
+    height: 100%;
+}
