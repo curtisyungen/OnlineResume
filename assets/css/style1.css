@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background: lightgray;
+    background: rgb(236, 236, 236);
 }
 
 h4 {
@@ -17,14 +17,12 @@ h4 {
 
 .row {
     background: white;
-    border: 1px solid black;
     margin-top: 5px;
     min-height: 100px;
     padding: 10px;
 }
 
 #mainContainer {
-    background: lightgray;
     height: 100%;
     padding: 0;
 }
