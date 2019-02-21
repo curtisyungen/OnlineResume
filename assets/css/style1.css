@@ -47,6 +47,8 @@ li:hover {
 }
 
 #aboutMe {
+    padding-left: 5px;
+    margin-right: -65px;
     text-align: justify;
 }
 
@@ -80,14 +82,14 @@ li:hover {
 
 #profileImg {
     border: 1px solid darkgray;
-    border-radius: 200px;
-    height: 200px;
+    border-radius: 250px;
+    height: 255px;
     margin-bottom: -25px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     padding: 0px;
-    width: 200px;
+    width: 250px;
 }
 
 #workExpContainer {
