@@ -26,11 +26,13 @@
 <body>
     <!-- Main Jumbotron -->
     <header>
-        <div class="jumbotron jumbotron-fluid" id="mainJumbo">
+        
+        <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Curtis Yungen</h1>
+                <h1 class="display-3" id="mainName"><strong>Curtis Yungen</strong></h1>
                 <p class="lead">Boeing Engineer, Web Developer, Asian</p>
             </div>
+            <div id="overlay"></div>
         </div>
     </header>
 
@@ -39,8 +41,10 @@
         <!-- Contact Info -->
         <div class="row" id="contactInfo">
             <div class="col-lg-12">
-                <h4>Contact Me</h4>
-                <p>curtisyungen@gmail.com</p>
+                <a><i class="fab fa-github-square fa-3x icon"></i></a>
+                <a><i class="fab fa-linkedin fa-3x icon"></i></a>
+                <a><i class="fas fa-envelope fa-3x icon"></i></a>
+                <a><i class="fab fa-instagram fa-3x icon"></i></a>
             </div>
         </div>
 
@@ -57,30 +61,37 @@
         </div>
 
         <!-- Work Experience -->
+        <div class="row sectionTitle">
+            <h4>Work Experience</h4>
+        </div>
+
         <div class="row" id="workExperience">
             <div class="col-lg-12">
-                <h4>Work Experience</h4>
 
                 <!-- Boeing -->
                 <div class="item" id="boeing">
                     <img class="logo" id="boeingLogo" src="https://pbs.twimg.com/profile_images/1064567396772401152/ex2Q59H8_400x400.jpg">
                     <h5>Structural Design Engineer</h5>
                     <p class="description">Worked to maintain, develop, and improve the structural integrity of Boeing 777, 777-X, and Air Force One aircraft.</p>
+                    <a class="moreInfo" href="/boeing">More info</a>
                 </div>
             </div>
         </div>
 
         <!-- Education -->
+        <div class="row sectionTitle">
+            <h4>Education</h4>
+        </div>
 
         <div class="row" id="education">
             <div class="col-lg-12">
-                <h4>Education</h4>
 
                 <!-- University of Washington -->
                 <div class="item" id="uw">
                     <img class="logo" id="uwLogo" src="https://i0.wp.com/stateofreform.com/wp-content/uploads/2011/12/UW-Logo.gif?ssl=1">
                     <h4>UW Coding Boot Camp</h4>
                     <p class="description">A six-month intensive certificate program focused on full-stack Web Development.</p>
+                    <a class="moreInfo" href="/osu">More info</a>
                 </div><br>
 
                 <!-- Oregon State University -->
@@ -88,12 +99,16 @@
                     <img class="logo" id="osuLogo" src="https://teenlife.s3.amazonaws.com/media/uploads/listings/Fp6LKKejHoag.png">
                     <h4>BS Civil Engineering</h4>
                     <p class="description">A four-year program covering concepts in structural, geotechnical, hydrolic, mechanical, environmental, and transportation engineering.</p>
+                    <a class="moreInfo" href="/osu">More info</a>
                 </div>
             </div>    
         </div>
 
         <!-- Abilities -->
-
+        <div class="row sectionTitle">
+            <h4>Abilities</h4>
+        </div>
+        
         <div class="row" id="abilities">
 
             <!-- Ability Column Left -->
@@ -169,12 +184,32 @@
                             <span class="far fa-star"></span>
                         </span>
                     </li> 
+                    <li>
+                        <span class="abilityLabel">Github</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
+                    </li> 
                 </ul>
             </div>
 
             <!-- Ability Column Right -->
             <div class="col-lg-6">
                 <ul>
+                    <li>
+                        <span class="abilityLabel">MySQL/Sequelize</span>
+                        <span class="abilityScore">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                        </span>
+                    </li> 
                     <li>
                         <span class="abilityLabel">Express.js</span>
                         <span class="abilityScore">
@@ -247,10 +282,12 @@
                     </li> 
                 </ul>
             </div>
-
         </div>
 
         <!-- Portfolio -->
+        <div class="row sectionTitle">
+            <h4>Portfolio</h4>
+        </div>
 
         <div class="row" id="portfolio">
             <div class="col-lg-12">
@@ -263,7 +300,7 @@
                         It was a group project for the UW Coding Boot Camp. Users can log in, draw routes on a map,
                         enter information about each run, and view runs from other users.
                     </p>
-                    <p>
+                    <p class="techList">
                         <span class="technology">Google Authentication</span>
                         <span class="technology">Google Maps API</span>
                         <span class="technology">Handlebars</span>
@@ -281,9 +318,9 @@
                 <!-- Grocery List -->
                 <div class="project" id="groceryList">
                     <h4>Grocery List</h4>
-                    <img class="projImg" src="">
+                    <img class="projImg" src="./assets/images/recipe.png">
                     <p class="description"></p>
-                    <p>
+                    <p class="techList">
                         <span class="technology">Yummly API</span>
                         <span class="technology">Onsen Framework</span>
                         <span class="technology">Data Persistence</span>
@@ -295,9 +332,9 @@
                 <!-- Rock Paper Scissors -->
                 <div class="project" id="rps">
                     <h4>Multiplayer RPS</h4>
-                    <img class="projImg" src="">
+                    <img class="projImg" src="./assets/images/rps.png">
                     <p class="description"></p>
-                    <p>
+                    <p class="techList">
                         <span class="technology">Firebase</span>
                     </p>
                 </div>
