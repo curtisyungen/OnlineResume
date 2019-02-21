@@ -63,9 +63,24 @@ li:hover {
 #footer {
     background: rgb(77, 77, 77);
     bottom: 0;
-    height: 400px;
+    height: 200px;
     margin: 0px;
+    padding-top: 25px;
+    text-align: center;
     width: 100%;
+}
+
+#footer .icon {
+    color: darkgray;
+}
+
+#footer .icon:hover {
+    color: rgb(245, 243, 243);
+}
+
+#footerText {
+    color: white;
+    font-size: 42px;
 }
 
 #mainName {
