@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
@@ -26,7 +27,7 @@
 <body>
     <!-- Main Jumbotron -->
     <header>
-        
+
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-3" id="mainName"><strong>Curtis Yungen</strong></h1>
@@ -40,79 +41,107 @@
 
         <!-- Contact Info -->
         <div class="row" id="contactInfo">
-            <div class="col-lg-12">
-                <a><i class="fab fa-github-square fa-3x icon"></i></a>
-                <a><i class="fab fa-linkedin fa-3x icon"></i></a>
-                <a><i class="fas fa-envelope fa-3x icon"></i></a>
-                <a><i class="fab fa-instagram fa-3x icon"></i></a>
+            <div class="col-lg-10 offset-1">
+                <a href="https://github.com/curtisyungen/curtisyungen.github.io" target="_blank"><i
+                        class="fab fa-github-square fa-3x icon"></i></a>
+                <a href="https://www.linkedin.com/in/curtisyungen/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x icon"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=curtisyungen@gmail.com" target="_blank"><i
+                        class="fas fa-envelope fa-3x icon"></i></a>
+                <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
+                        class="fab fa-instagram fa-3x icon"></i></a>
             </div>
         </div>
 
-        <!-- Summary -->
+        <!-- About Me -->
+        <div class="row  offset-1 sectionTitle">
+            <h4>About Me</h4>
+        </div>
+
         <div class="row" id="aboutMe">
-            <div class="col-lg-12">
-                <h4>About Me</h4>
-                <p class="description">My name is Curtis. I grew up in the Pacific Northwest. I'm always trying something new and challenging whether it's engineering, public speaking, real estate, or computer programming.
-                    When I'm not studying, I'm either running, playing music, or studying Brazilian Jiu-Jitsu. I love to learn new things and chase new goals.
-                    Although I take great pride in being a Boeing engineer, I've recently discovered my true passions lie in web development.
-                    I'm excited to apply my technical aptitude and staunch work ethic to the tech industry...perhaps on your project!
+            <div class="col-lg-10 offset-1">
+                <p class="description">My name is Curtis. I grew up in the Pacific Northwest. I'm always trying
+                    something new and challenging whether it's engineering, public speaking, real estate, or computer
+                    programming.
+                    When I'm not studying, I'm either running, playing music, or studying Brazilian Jiu-Jitsu. I love to
+                    learn new things and chase new goals.
+                    Although I take great pride in being a Boeing engineer, I've recently discovered my true passions
+                    lie in web development.
+                    I'm excited to apply my technical aptitude and staunch work ethic to the tech industry...perhaps on
+                    your project!
                 </p>
             </div>
         </div>
+    </div>
 
-        <!-- Work Experience -->
-        <div class="row sectionTitle">
+    <!-- Work Experience -->
+
+    <div class="container" id="workExpContainer">
+        <div class="row  offset-1 sectionTitle">
             <h4>Work Experience</h4>
         </div>
 
         <div class="row" id="workExperience">
-            <div class="col-lg-12">
+            <div class="col-lg-10 offset-1">
 
                 <!-- Boeing -->
                 <div class="item" id="boeing">
                     <img class="logo" id="boeingLogo" src="./assets/images/boeing.png">
                     <h5>Structural Design Engineer</h5>
-                    <p class="description">Worked to maintain, develop, and improve the structural integrity of Boeing 777, 777-X, and Air Force One aircraft.</p>
+                    <p class="description">Worked to maintain, develop, and improve the structural integrity of Boeing
+                        777, 777-X, and Air Force One aircraft.</p>
                     <a class="moreInfo" href="/boeing">More info</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Education -->
-        <div class="row sectionTitle">
+    <!-- Education -->
+
+    <div class="container" id="educationContainer">
+
+        <div class="row  offset-1 sectionTitle">
             <h4>Education</h4>
         </div>
 
         <div class="row" id="education">
-            <div class="col-lg-12">
+            <div class="col-lg-10 offset-1">
 
                 <!-- University of Washington -->
                 <div class="item" id="uw">
-                    <img class="logo" id="uwLogo" src="https://i0.wp.com/stateofreform.com/wp-content/uploads/2011/12/UW-Logo.gif?ssl=1">
+                    <img class="logo" id="uwLogo"
+                        src="https://i0.wp.com/stateofreform.com/wp-content/uploads/2011/12/UW-Logo.gif?ssl=1">
                     <h4>UW Coding Boot Camp</h4>
-                    <p class="description">A six-month intensive certificate program focused on full-stack Web Development.</p>
+                    <p class="description">A six-month intensive certificate program focused on full-stack Web
+                        Development.</p>
                     <a class="moreInfo" href="/osu">More info</a>
                 </div><br>
 
                 <!-- Oregon State University -->
                 <div class="item" id="osu">
-                    <img class="logo" id="osuLogo" src="https://teenlife.s3.amazonaws.com/media/uploads/listings/Fp6LKKejHoag.png">
+                    <img class="logo" id="osuLogo"
+                        src="https://teenlife.s3.amazonaws.com/media/uploads/listings/Fp6LKKejHoag.png">
                     <h4>BS Civil Engineering</h4>
-                    <p class="description">A four-year program covering concepts in structural, geotechnical, hydrolic, mechanical, environmental, and transportation engineering.</p>
+                    <p class="description">A four-year program covering concepts in structural, geotechnical, hydrolic,
+                        mechanical, environmental, and transportation engineering.</p>
                     <a class="moreInfo" href="/osu">More info</a>
                 </div>
-            </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Programming Competencies -->
+
+    <div class="container" id="abilitiesContainer">
+
+        <div class="row  offset-1 sectionTitle">
+            <h4>Programming Competencies</h4>
         </div>
 
-        <!-- Abilities -->
-        <div class="row sectionTitle">
-            <h4>Abilities</h4>
-        </div>
-        
-        <div class="row" id="abilities">
+        <div class="row  offset-1" id="abilities">
 
             <!-- Ability Column Left -->
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <ul>
                     <li>
                         <span class="abilityLabel">HTML5</span>
@@ -163,7 +192,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Bootstrap Framework</span>
                         <span class="abilityScore">
@@ -173,7 +202,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Python</span>
                         <span class="abilityScore">
@@ -183,7 +212,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Github</span>
                         <span class="abilityScore">
@@ -193,12 +222,12 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                 </ul>
             </div>
 
             <!-- Ability Column Right -->
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <ul>
                     <li>
                         <span class="abilityLabel">MySQL/Sequelize</span>
@@ -209,7 +238,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Express.js</span>
                         <span class="abilityScore">
@@ -219,7 +248,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">ReactJS</span>
                         <span class="abilityScore">
@@ -229,7 +258,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Node.js</span>
                         <span class="abilityScore">
@@ -239,7 +268,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">JSON</span>
                         <span class="abilityScore">
@@ -249,7 +278,7 @@
                             <span class="fas fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">APIs</span>
                         <span class="abilityScore">
@@ -259,7 +288,7 @@
                             <span class="fas fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Mocha/Chai</span>
                         <span class="abilityScore">
@@ -269,7 +298,7 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                     <li>
                         <span class="abilityLabel">Heroku</span>
                         <span class="abilityScore">
@@ -279,18 +308,22 @@
                             <span class="far fa-star"></span>
                             <span class="far fa-star"></span>
                         </span>
-                    </li> 
+                    </li>
                 </ul>
             </div>
         </div>
+    </div>
 
-        <!-- Portfolio -->
-        <div class="row sectionTitle">
+    <!-- Portfolio -->
+
+    <div class="container" id="portfolioContainer">
+
+        <div class="row  offset-1 sectionTitle">
             <h4>Portfolio</h4>
         </div>
 
-        <div class="row" id="portfolio">
-            <div class="col-lg-12">
+        <div class="row offset-1" id="portfolio">
+            <div class="col-lg-10">
 
                 <!-- Mammoth -->
                 <div class="project" id="mammoth">
