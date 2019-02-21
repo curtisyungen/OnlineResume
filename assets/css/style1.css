@@ -42,7 +42,7 @@ li:hover {
 }
 
 #abilitiesContainer {
-    background: rgba(0, 0, 255, 0.178);
+    background: rgb(226, 229, 255);
     width: 100%;
 }
 
@@ -60,16 +60,25 @@ li:hover {
     z-index: 100;
 }
 
+#footer {
+    background: rgb(77, 77, 77);
+    bottom: 0;
+    height: 400px;
+    margin: 0px;
+    width: 100%;
+}
+
 #mainName {
     opacity: 0.9;
 }
 
 #overlay {
-    background-color: rgb(32, 32, 255);
+    /* background-color: rgb(32, 32, 255); */
+    background-image: linear-gradient(rgba(32, 32, 255, 0.651), rgba(47, 0, 255, 0.596));
     bottom: 0;
     height: 850px;
     left: 0;
-    opacity: 0.75;
+    opacity: 0.80;
     position: absolute;
     right: 0;
     top: 0;
@@ -84,10 +93,10 @@ li:hover {
     border: 1px solid darkgray;
     border-radius: 250px;
     height: 255px;
-    margin-bottom: -25px;
+    margin-bottom: -35px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 0px;
     width: 250px;
 }
@@ -97,6 +106,7 @@ li:hover {
 }
 
 #workExpContainer {
+    background: rgb(245, 245, 245);
     width: 100%;
 }
 
