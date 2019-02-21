@@ -67,7 +67,7 @@ li:hover {
 #overlay {
     background-color: rgb(32, 32, 255);
     bottom: 0;
-    height: 800px;
+    height: 850px;
     left: 0;
     opacity: 0.75;
     position: absolute;
@@ -90,6 +90,10 @@ li:hover {
     margin-top: 25px;
     padding: 0px;
     width: 250px;
+}
+
+#profileImg:hover {
+    border: 3px solid rgb(34, 104, 255);
 }
 
 #workExpContainer {
@@ -128,7 +132,7 @@ li:hover {
 
 .jumbotron {
     background: fixed url("../images/blueprint.jpg");
-    height: 800px;
+    height: 850px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 0px;
@@ -138,7 +142,7 @@ li:hover {
 .jumbotron .container {
     color: white;
     font-weight: 700;
-    margin-top: 300px;
+    margin-top: 350px;
     position: relative;
     z-index: 4;
 }
