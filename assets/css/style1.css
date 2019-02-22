@@ -160,6 +160,13 @@ p {
     width: 100%;
 }
 
+.jobDetails {
+    float: right;
+    font-size: 12px;
+    margin-top: -5px;
+    text-align: right;
+}
+
 .jumbotron {
     background: fixed url("../images/blueprint.jpg");
     height: 850px;
@@ -186,7 +193,7 @@ p {
 }
 
 .moreInfo {
-    background: rgb(225, 225, 225);
+    background: rgb(235, 235, 235);
     border: 1px dashed darkgray;
     display: none;
     font-size: 12px;
