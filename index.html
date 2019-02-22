@@ -58,8 +58,10 @@
             <img id="profileImg" src="./assets/images/curtis.png">
         </div>
 
+        <br>
+
         <!-- About Me -->
-        <div class="row  offset-2 sectionTitle">
+        <div class="row sectionTitle">
             <h4>About Me</h4>
         </div>
 
@@ -82,30 +84,123 @@
     <!-- Work Experience -->
 
     <div class="container col-lg-12" id="workExpContainer">
-        <div class="row  offset-2 sectionTitle">
+        <div class="row sectionTitle">
             <h4>Work Experience</h4>
         </div>
 
         <div class="row" id="workExperience">
-            <div class="col-lg-10 offset-2">
+            <div class="col-lg-8 offset-2">
 
                 <!-- Boeing Full -->
-                <div class="item" id="boeing">
+                <div class="item">
                     <img class="logo" id="boeingLogo" src="./assets/images/boeing2.jpg">
+                    <h4>The Boeing Company</h4>
                     <h5>Structural Design Engineer (6.5 years)</h5>
                     <p class="description">Worked to maintain, develop, and improve the structural integrity of Boeing
                         777, 777-X, and Air Force One aircraft.</p>
-                    <a class="moreInfo" href="/boeing">More info</a>
+                    <a class="showMore" data-status="more" data-label="boeing">Show more</a>
                 </div>
 
-                <!-- PBOT -->
-                <div class="item" id="pbot">
-                    <img class="logo" id="boeingLogo" src="./assets/images/portland.png">
-                    <h5>Traffic Design Engineering Intern (0.5 years)</h5>
-                    <p class="description">Supported Traffic Design team in improving transportation infrastructure in
-                        Portland area.
+                <div class="moreInfo" id="boeing">
+                    <p class="description">
+                        <h5>Presidential Aircraft Recapitalization Program</h5>
+                        <ul>
+                            <li>PROJECT DESCRIPTION
+                                <p>
+                                    Development of new Air Force One aircraft for US Air Force.
+                                </p>
+                            </li>
+
+                            <li>MY ROLE
+                                <p>
+                                    Served as primary design engineer for Fuselage OML Penetrations project.
+                                </p>
+                            </li>
+
+                            <li>MY WORK
+                                <p>
+                                    Designed penetrations through fuselage for wiring, plumbing, ducting, and flight
+                                    test
+                                    needs.<br>
+                                    Led projects from initial conceptual development through approval and engineering
+                                    drawing release.
+                                </p>
+                            </li>
+
+                            <li>ACCOMPLISHMENTS
+                                <p>
+                                    Team was recognized by management as one of the only teams to hit all project
+                                    milestones
+                                    on or ahead of schedule.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <h5>777X Program</h5>
+                        <ul>
+                            <li>PROJECT DESCRIPTION
+                                <p>
+                                    Development of 777X - a new and improved model of the popular B-777 airplane.
+                                </p>
+                            </li>
+
+                            <li>MY ROLE
+                                <p>
+                                    Support fuselage skin & frames design engineering teams in development of new models
+                                    and drawings.
+                                </p>
+                            </li>
+
+                            <li>MY WORK
+                                <p>
+                                    Produced 3D Model-Based Definitions for skin and frames teams.
+                                </p>
+                            </li>
+
+                            <li>ACCOMPLISHMENTS
+                                <p>
+                                    Team was recognized by management as one of the only teams to hit all project
+                                    milestones
+                                    on or ahead of schedule.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <h5>777 Sustaining Program</h5>
+                        <ul>
+                            <li>PROJECT DESCRIPTION
+                                <p>
+                                    Maintain and improve the structural integrity of the B-777 airplane.
+                                </p>
+                            </li>
+
+                            <li>MY ROLE
+                                <p>
+                                    Support fuselage skin & frames design engineering teams in development of new models
+                                    and drawings.
+                                </p>
+                            </li>
+
+                            <li>MY WORK
+                                <p>
+                                    Produced highly technical engineering drawings and 3D models using CATIA V5 CAD software.<br>
+                                    Acted as technical consultant to factory and resolved problems in production and in service. 
+                                </p>
+                            </li>
+
+                            <li>ACCOMPLISHMENTS
+                                <p>
+                                    Designed advanced spring assembly for B-777 landing gear door locking mechanism.
+                                    Presented to senior managers and major airline customers including Emirates, ANA,
+                                    Qatar Airways, and Air France. Design was approved and incorporated into production and fleet.
+                                </p>
+                            </li>
+                        </ul>
                     </p>
-                    <a class="moreInfo" href="/boeing">More info</a>
                 </div>
             </div>
         </div>
@@ -115,12 +210,12 @@
 
     <div class="container col-lg-12" id="educationContainer">
 
-        <div class="row  offset-2 sectionTitle">
+        <div class="row sectionTitle">
             <h4>Education</h4>
         </div>
 
         <div class="row" id="education">
-            <div class="col-lg-10 offset-2">
+            <div class="col-lg-8 offset-2">
 
                 <!-- University of Washington -->
                 <div class="item" id="uw">
@@ -128,7 +223,7 @@
                     <h4>UW Coding Boot Camp</h4>
                     <p class="description">A six-month intensive certificate program focused on full-stack Web
                         Development.</p>
-                    <a class="moreInfo" href="/osu">More info</a>
+                    <a class="showMore" data-status="more">Show more</a>
                 </div><br>
 
                 <!-- Oregon State University -->
@@ -138,7 +233,7 @@
                     <p class="description">A four-year program covering concepts in structural, geotechnical,
                         hydrological,
                         mechanical, environmental, and transportation engineering.</p>
-                    <a class="moreInfo" href="/osu">More info</a>
+                    <a class="showMore" data-status="more">Show more</a>
                 </div>
             </div>
         </div>
@@ -148,11 +243,11 @@
 
     <div class="container col-lg-12" id="abilitiesContainer">
 
-        <div class="row  offset-2 sectionTitle">
+        <div class="row sectionTitle">
             <h4>Programming Competencies</h4>
         </div>
 
-        <div class="row  offset-2" id="abilities">
+        <div class="row offset-2" id="abilities">
 
             <!-- Ability Column Left -->
             <div class="col-lg-5" id="abilityColLeft">
@@ -331,7 +426,7 @@
 
     <div class="container col-lg-12" id="portfolioContainer">
 
-        <div class="row  offset-2 sectionTitle">
+        <div class="row sectionTitle">
             <h4>Recent Projects</h4>
         </div>
 
