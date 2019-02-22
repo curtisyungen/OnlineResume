@@ -22,6 +22,10 @@ h5 {
     font-size: 14px;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
 /* IDENTIFIERS */
 
 #abilityColLeft {
@@ -185,7 +189,8 @@ h5 {
     display: none;
     font-size: 12px;
     margin-left: 115px;
-    padding-top: 15px;
+    margin-top: -5px;
+    padding-top: 5px;
 }
 
 .projImg {
@@ -214,6 +219,7 @@ h5 {
 }
 
 .showMore {
+    color: blue !important;
     cursor: pointer;
     font-size: 12px;
     margin-top: -5px;

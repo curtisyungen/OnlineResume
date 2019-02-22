@@ -8,10 +8,12 @@ function showMore() {
     // Get label name to which this link pertains
     var label = $(this).attr("data-label");
 
+    // Toggle show more/less info
     // Update status and text of link
     if (status == "more") {
 
-        $(`#${label}`).show();
+        // Show more
+        $(`#${label}`).slideDown("slow");
 
         $(this)
         .attr("data-status", "less")
@@ -19,7 +21,8 @@ function showMore() {
     }
     else {
 
-        $(`#${label}`).hide();
+        // Show less
+        $(`#${label}`).slideUp("slow");
 
         $(this)
         .attr("data-status", "more")
