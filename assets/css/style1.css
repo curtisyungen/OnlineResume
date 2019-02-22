@@ -186,11 +186,12 @@ p {
 }
 
 .moreInfo {
+    background: rgb(225, 225, 225);
+    border: 1px dashed darkgray;
     display: none;
     font-size: 12px;
-    margin-left: 115px;
-    margin-top: -5px;
-    padding-top: 5px;
+    margin-top: 5px;
+    padding: 15px 25px 10px 25px;
 }
 
 .projImg {
