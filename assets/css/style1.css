@@ -28,9 +28,12 @@ p {
 
 /* IDENTIFIERS */
 
-#abilityColLeft {
-    margin-left: 0px;
-    padding-left: 0px;
+#abilitiesColLeft {
+    padding-right: 10px;
+}
+
+#abilitiesColRight {
+    padding-left: 10px;
 }
 
 #abilitiesContainer {
@@ -192,7 +195,7 @@ p {
 
 .container {
     margin: 5px 0px 5px 0px;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px 0px 0px;
     max-width: 100%;
     width: 100%;
 }
@@ -343,5 +346,13 @@ p {
 
     .techList {
         display: none;
+    }
+
+    #abilitiesColLeft {
+        padding-right: 0px;
+    }
+    
+    #abilitiesColRight {
+        padding-left: 0px;
     }
 }
