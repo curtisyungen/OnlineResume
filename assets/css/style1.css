@@ -73,6 +73,10 @@ p {
     z-index: 100;
 }
 
+#educationContainer {
+    margin-bottom: -2px;
+}
+
 #footer {
     background-image: url("../images/gdt.png");
 
@@ -146,6 +150,10 @@ p {
 #profileImg:hover {
     border: 4px solid rgb(0, 57, 166);
     cursor: pointer;
+}
+
+#programmingProblems {
+    margin-bottom: -10px;
 }
 
 #prompt {
