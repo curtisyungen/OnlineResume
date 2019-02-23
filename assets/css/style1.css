@@ -37,7 +37,7 @@ p {
 }
 
 #abilitiesContainer {
-    background: rgb(226, 229, 255);
+    background: rgb(250, 251, 255);
     width: 100%;
 }
 
@@ -172,6 +172,11 @@ p {
     z-index: 99;
 }
 
+#rocketLaunch {
+    float: right;
+    margin-right: 25px;
+}
+
 #workExpContainer {
     /* background: rgb(245, 245, 245); */
     width: 100%;
@@ -228,6 +233,10 @@ p {
     display: inline-block;
     margin-right: 7px;
     transform: rotate(270deg);
+}
+
+.fa-rocket {
+    transform: rotate(315deg);
 }
 
 .icon {
