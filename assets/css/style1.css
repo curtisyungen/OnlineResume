@@ -194,8 +194,8 @@ p {
 }
 
 .container {
-    margin: 5px 0px 5px 0px;
-    padding: 5px 0px 0px 0px;
+    margin: 5px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
     max-width: 100%;
     width: 100%;
 }
@@ -271,6 +271,7 @@ p {
     border: 1px dashed darkgray;
     display: none;
     font-size: 14px;
+    margin-bottom: 15px;
     margin-top: 15px;
     padding: 12px 25px 10px 25px;
 }
