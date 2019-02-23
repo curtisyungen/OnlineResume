@@ -295,7 +295,10 @@ p {
 }
 
 .techList {
+    bottom: 0;
     line-height: 32px;
+    margin-left: 140px;
+    position: absolute;
 }
 
 /* MEDIA QUERIES */

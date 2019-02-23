@@ -90,7 +90,7 @@ function flyJets() {
 
         // Create V formation
         if ((j % 2 != 0)) {
-            jet.css("margin-left", "-20px");
+            jet.css("margin-left", "-15px");
         }
 
         blueAngels.append(jet);
