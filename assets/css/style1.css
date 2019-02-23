@@ -54,7 +54,6 @@ p {
 #aboutMe {
     font-size: 14px;
     padding-left: 5px;
-    margin-right: -65px;
     text-align: justify;
 }
 
@@ -64,10 +63,9 @@ p {
     position: absolute;
 }
 
-#contactInfo {
+#contactInfo, #programmingProblems {
     background: rgba(0, 0, 255, 0.178);
     min-height: 0px;
-    margin-top: -20px;
     text-align: center;
     z-index: 100;
 }
@@ -83,6 +81,7 @@ p {
     bottom: 0;
     height: 200px;
     margin: 0px;
+    margin-bottom: -10px;
     padding-top: 25px;
     text-align: center;
     width: 100%;
@@ -99,6 +98,11 @@ p {
 #footerText {
     color: white;
     font-size: 42px;
+    width: 100%;
+}
+
+#mainContainer {
+    margin-top: 10px;
 }
 
 #mainName {
@@ -117,8 +121,8 @@ p {
     z-index: 2;
 }
 
-#portfolio {
-    padding-left: 0px;
+#portfolioContainer {
+    padding-bottom: 15px;
 }
 
 #profileImg {
@@ -180,6 +184,18 @@ p {
 
 .codeLink::before {
     content: "| ";
+}
+
+.col-lg-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container {
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .description {
@@ -278,15 +294,14 @@ p {
 }
 
 .row {
-    margin-top: 5px;
+    margin: 0px;
     min-height: 100px;
-    padding: 15px;
+    padding: 5px 180px;
+    width: 100%;
 }
 
 .sectionTitle {
-    margin-bottom: -10px;
     min-height: 0px;
-    padding-bottom: 0px;
     text-align: center;
 }
 
@@ -323,4 +338,11 @@ p {
 
 @media screen and (max-width: 768px) {
 
+    .row {
+        padding: 5px 5px;
+    }
+
+    .techList {
+        display: none;
+    }
 }

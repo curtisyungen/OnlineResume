@@ -27,7 +27,6 @@
 <body>
     <!-- Main Jumbotron -->
     <header>
-
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-3" id="mainName"><strong>Curtis Yungen</strong></h1>
@@ -37,43 +36,40 @@
         </div>
     </header>
 
-    <div class="container col-lg-12">
-
-        <!-- Contact Info -->
-        <div class="row" id="contactInfo">
-            <div class="col-lg-10 offset-1">
-                <a href="https://github.com/curtisyungen/curtisyungen.github.io" target="_blank"><i
-                        class="fab fa-github-square fa-3x icon"></i></a>
-                <a href="https://www.linkedin.com/in/curtisyungen/" target="_blank"><i
-                        class="fab fa-linkedin fa-3x icon"></i></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=curtisyungen@gmail.com" target="_blank"><i
-                        class="fas fa-envelope fa-3x icon"></i></a>
-                <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
-                        class="fab fa-instagram fa-3x icon"></i></a>
-                <a href="https://www.hackerrank.com/submissions/all" target="_blank"><i 
-                        class="fab fa-hackerrank fa-3x icon"></i></a>
-            </div>
+    <!-- Contact Info -->
+    <div class="row" id="contactInfo">
+        <div class="col-lg-10 offset-1">
+            <a href="https://github.com/curtisyungen/curtisyungen.github.io" target="_blank"><i
+                    class="fab fa-github-square fa-3x icon"></i></a>
+            <a href="https://www.linkedin.com/in/curtisyungen/" target="_blank"><i
+                    class="fab fa-linkedin fa-3x icon"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=curtisyungen@gmail.com" target="_blank"><i
+                    class="fas fa-envelope fa-3x icon"></i></a>
+            <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
+                    class="fab fa-instagram fa-3x icon"></i></a>
         </div>
+    </div>
 
-        <!-- Profile Image -->
+    <!-- Profile Image -->
+    <div class="container" id="profileContainer">
         <div class="row" id="blueAngelRow">
             <div class="col-lg-12" id="prompt">
                 <span id="promptJets">Click Me</span>
             </div>
             <img id="profileImg" src="./assets/images/curtis.png">
-
-
         </div>
+    </div>
 
-        <br>
+    <br>
 
-        <!-- About Me -->
+    <!-- About Me -->
+    <div class="container" id="aboutMeContainer">
         <div class="row sectionTitle">
             <h4>About Me</h4>
         </div>
 
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col-lg-12">
                 <p class="description" id="aboutMe">My name is Curtis. I grew up in the Pacific Northwest. I'm always
                     trying
                     something new and challenging whether it's engineering, public speaking, real estate, or computer
@@ -98,7 +94,7 @@
         </div>
 
         <div class="row" id="workExperience">
-            <div class="col-lg-8 offset-2">
+            <div class="col-lg-12">
 
                 <!-- Boeing -->
                 <div class="item">
@@ -112,7 +108,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-8 offset-2">
+            <!-- Boeing More Info -->
+            <div class="col-lg-12">
                 <div class="moreInfo" id="boeing">
                     <p class="description">
                         <h5>Presidential Aircraft Recapitalization Program</h5>
@@ -173,7 +170,8 @@
                             <li>MY WORK
                                 <p>
                                     Produced 3D Model-Based Definitions for skin and frames teams.
-                                    Created complex skin lap assembly drawings, which are advanced schematics replete with technical requirements that must be
+                                    Created complex skin lap assembly drawings, which are advanced schematics replete
+                                    with technical requirements that must be
                                     communicated clearly and precisely.
                                 </p>
                             </li>
@@ -235,7 +233,7 @@
         <div class="row" id="education">
 
             <!-- University of Washington -->
-            <div class="col-lg-8 offset-2">
+            <div class="col-lg-12">
                 <div class="item" id="uw">
                     <img class="logo" id="uwLogo" src="./assets/images/uw.png">
                     <h4>UW Coding Boot Camp</h4>
@@ -246,7 +244,7 @@
             </div>
 
             <!-- Oregon State University -->
-            <div class="col-lg-8 offset-2 margin-top-10">
+            <div class="col-lg-12 margin-top-10">
                 <div class="item" id="osu">
                     <img class="logo" id="osuLogo" src="./assets/images/osu.png">
                     <h4>BS Civil Engineering</h4>
@@ -268,10 +266,10 @@
             <h4>Programming Competencies</h4>
         </div>
 
-        <div class="row offset-2" id="abilities">
+        <div class="row" id="abilities">
 
             <!-- Ability Column Left -->
-            <div class="col-lg-5" id="abilityColLeft">
+            <div class="col-lg-6" id="abilityColLeft">
                 <ul>
                     <li>
                         <span class="abilityLabel">HTML5</span>
@@ -357,7 +355,7 @@
             </div>
 
             <!-- Ability Column Right -->
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <ul>
                     <li>
                         <span class="abilityLabel">MySQL/Sequelize</span>
@@ -444,6 +442,16 @@
         </div>
     </div>
 
+    <!-- Programming Problems -->
+    <div class="container" id="programmingProblemsContainer">
+        <div class="row" id="programmingProblems">
+            <div class="col-lg-12">
+                <a href="https://www.hackerrank.com/submissions/all" target="_blank"><i
+                        class="fab fa-hackerrank fa-3x icon"></i></a>
+            </div>
+        </div>
+    </div>
+
     <!-- Portfolio -->
 
     <div class="container col-lg-12" id="portfolioContainer">
@@ -452,10 +460,10 @@
             <h4>Recent Projects</h4>
         </div>
 
-        <div class="row offset-2" id="portfolio">
+        <div class="row" id="portfolio">
 
             <!-- Mammoth -->
-            <div class="col-lg-10 project" id="mammoth">
+            <div class="col-lg-12 project" id="mammoth">
                 <h4>Mammoth</h4>
                 <img class="projImg" src="./assets/images/mammoth.png">
                 <p class="description">Mammoth is a website that allows users to log their running workouts.
@@ -478,14 +486,17 @@
             </div>
 
             <!-- Grocery List -->
-            <div class="col-lg-10 project" id="groceryList">
+            <div class="col-lg-12 project" id="groceryList">
                 <h4>Grocery List</h4>
                 <img class="projImg" src="./assets/images/recipe.png">
-                <p class="description">Grocery List allows user to search for recipes, find a quick summary of their ingredients,
+                <p class="description">Grocery List allows user to search for recipes, find a quick summary of their
+                    ingredients,
                     and add these ingredients to an easily-manageable grocery list.
                 </p>
                 <a href="#" target="_blank">Project</a>
-                <a class="codeLink" href="https://github.com/curtisyungen/curtisyungen.github.io/tree/master/project-one-master" target="_blank">Code</a>
+                <a class="codeLink"
+                    href="https://github.com/curtisyungen/curtisyungen.github.io/tree/master/project-one-master"
+                    target="_blank">Code</a>
                 <p class="techList">
                     <span class="technology">Yummly API</span>
                     <span class="technology">Onsen Framework</span>
@@ -497,22 +508,22 @@
 
     <!-- Footer -->
 
-    <div class="container col-lg-12" id="footer">
-        <div id="footerText">
-            <h1>Contact</h1>
-            <p class="lead">curtisyungen@gmail.com</p>
-        </div>
-        <div class="col-lg-10 offset-1">
-            <a href="https://github.com/curtisyungen/curtisyungen.github.io" target="_blank"><i
-                    class="fab fa-github-square fa-3x icon"></i></a>
-            <a href="https://www.linkedin.com/in/curtisyungen/" target="_blank"><i
-                    class="fab fa-linkedin fa-3x icon"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=curtisyungen@gmail.com" target="_blank"><i
-                    class="fas fa-envelope fa-3x icon"></i></a>
-            <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
-                    class="fab fa-instagram fa-3x icon"></i></a>
-            <a href="https://www.hackerrank.com/submissions/all" target="_blank"><i 
-                class="fab fa-hackerrank fa-3x icon"></i></a>
+    <div class="container" id="footerContainer">
+        <div class="row" id="footer">
+            <div id="footerText">
+                <h1>Contact</h1>
+                <p class="lead">curtisyungen@gmail.com</p>
+            </div>
+            <div class="col-lg-12">
+                <a href="https://github.com/curtisyungen/curtisyungen.github.io" target="_blank"><i
+                        class="fab fa-github-square fa-3x icon"></i></a>
+                <a href="https://www.linkedin.com/in/curtisyungen/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x icon"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=curtisyungen@gmail.com" target="_blank"><i
+                        class="fas fa-envelope fa-3x icon"></i></a>
+                <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
+                        class="fab fa-instagram fa-3x icon"></i></a>
+            </div>
         </div>
     </div>
 
