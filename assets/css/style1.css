@@ -165,7 +165,7 @@ p {
     display: none;
     font-size: 12px;
     margin-left: -95px;
-    margin-top: 75px;
+    margin-top: 55px;
     opacity: 0.5;
     padding: 5px;
     position: absolute;
@@ -278,7 +278,7 @@ p {
 }
 
 .moreInfo {
-    background: rgb(235, 235, 235);
+    background: rgb(245, 245, 245);
     border: 1px dashed darkgray;
     display: none;
     font-size: 14px;

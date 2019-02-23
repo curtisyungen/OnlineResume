@@ -6,9 +6,8 @@
 $(".showMore").on("click", showMore);
 
 // Show More Function
-// Called when "show more" or "show less" is clicked in Work Experience section
-// Displays more or less info about Boeing
-// Updates text and plane icon accordingly
+// Called when "show more" or "show less" is clicked
+// Displays more or less info about category
 
 function showMore() {
 
@@ -26,7 +25,7 @@ function showMore() {
         $(`#${label}`).slideDown("slow");
 
         // Rotate plane icon
-        $(`#${label}Icon`).css("transform", "rotate(90deg)");
+        // $(`#${label}Icon`).css("transform", "rotate(90deg)");
 
         $(this)
             .attr("data-status", "less")
@@ -38,7 +37,7 @@ function showMore() {
         $(`#${label}`).slideUp("slow");
 
         // Rotate plane icon
-        $(`#${label}Icon`).css("transform", "rotate(270deg)");
+        // $(`#${label}Icon`).css("transform", "rotate(270deg)");
 
         $(this)
             .attr("data-status", "more")
@@ -104,6 +103,9 @@ function flyJets() {
         }
     }
 
+    // Animate body background color
+    // $("body").animate({ backgroundColor: "black" }, 500).animate({ backgroundColor: "white" }, 2000);
+
     $("#blueAngelRow").append(blueAngels);
 
     var width = window.screen.width;
@@ -117,5 +119,7 @@ function flyJets() {
     setTimeout(function () {
         blueAngels.remove();
     }, width*0.95);
+
+    
 }
 
