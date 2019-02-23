@@ -58,7 +58,7 @@ p {
 }
 
 #blueAngels {
-    margin-left: -100px;
+    margin-left: -300px;
     margin-top: 100px;
     position: absolute;
 }
@@ -179,14 +179,13 @@ p {
 
 .blueAngel {
     color: rgb(0, 57, 166);
-    margin-right: 1px;
 }
 
 .codeLink::before {
     content: "| ";
 }
 
-.col-lg-12 {
+.col-lg-6, .col-lg-12 {
     padding-left: 0px;
     padding-right: 0px;
 }
