@@ -86,11 +86,11 @@ function flyJets() {
     // Create jets and populate div
     for (var j = 0; j < numJets; j++) {
 
-        var jet = $("<p>").addClass("fas fa-fighter-jet blueAngel");
+        var jet = $("<p>").addClass("fas fa-fighter-jet fa-3x blueAngel");
 
         // Create V formation
-        if ((j % 2 != 0)) {
-            jet.css("margin-left", "-15px");
+        if ((j % 2 == 0)) {
+            jet.css("margin-left", "-45px");
         }
 
         blueAngels.append(jet);
@@ -103,7 +103,7 @@ function flyJets() {
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width}`,
+        marginLeft: `+=${width+100}`,
     }, width)
 
     // Delete jet div after animation
