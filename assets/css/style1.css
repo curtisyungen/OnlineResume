@@ -93,8 +93,7 @@ p {
 }
 
 #overlay {
-    /* background-color: rgb(32, 32, 255); */
-    background-image: linear-gradient(rgba(32, 32, 255, 0.651), rgba(47, 0, 255, 0.596));
+    background-color: rgb(32, 32, 255);
     bottom: 0;
     height: 850px;
     left: 0;
@@ -188,8 +187,12 @@ p {
     border: 1px solid gray;
     float: left;
     height: 100px;
-    margin: 0px 15px 5px 0px;
+    margin: 0px 15px 0px 0px;
     width: 100px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
 }
 
 .moreInfo {
@@ -197,7 +200,7 @@ p {
     border: 1px dashed darkgray;
     display: none;
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 15px 25px 10px 25px;
 }
 
@@ -227,10 +230,11 @@ p {
 }
 
 .showMore {
+    bottom: 0;
     color: blue !important;
     cursor: pointer;
     font-size: 12px;
-    margin-top: -5px;
+    position: absolute;
 }
 
 .technology {
