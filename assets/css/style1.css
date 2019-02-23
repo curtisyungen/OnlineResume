@@ -59,6 +59,7 @@ p {
 }
 
 #blueAngels {
+    margin-top: 100px;
     position: absolute;
 }
 
@@ -152,7 +153,7 @@ p {
 .blueAngel {
     color: rgb(0, 57, 166);
     margin-left: -50px;
-    margin-right: 2px;
+    margin-right: 1px;
 }
 
 .description {

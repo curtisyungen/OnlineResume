@@ -59,10 +59,14 @@ $("#profileImg").on("click", flyJets);
 
 function flyJets() {
 
+    // Create div that will house blue angel icons
     var blueAngels = $("<div>").attr("id", "blueAngels");
 
+    // Generate random number of jets between 3 and 6
+    var numJets = Math.floor((Math.random() * 3) + 3);
+
     // Create jets and populate div
-    for (var j = 0; j < 3; j++) {
+    for (var j = 0; j < numJets; j++) {
 
         var jet = $("<p>").addClass("fas fa-fighter-jet blueAngel");
 
@@ -82,11 +86,11 @@ function flyJets() {
     // Animate the div
     blueAngels.animate({
         marginLeft: `+=${width}`,
-    }, 2000)
+    }, width)
 
     // Delete jet div after animation
     setTimeout(function () {
         blueAngels.remove();
-    }, 1900);
+    }, width*0.95);
 }
 
