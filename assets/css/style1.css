@@ -148,6 +148,13 @@ p {
     font-size: 14px;
 }
 
+.fa-plane {
+    color: blue;
+    display: inline-block;
+    margin-left: 65px;
+    transform: rotate(270deg);
+}
+
 .icon {
     margin-left: 5px;
     margin-right: 5px;
@@ -233,6 +240,7 @@ p {
     bottom: 0;
     color: blue !important;
     cursor: pointer;
+    float: left;
     font-size: 12px;
     position: absolute;
 }

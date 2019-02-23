@@ -15,6 +15,9 @@ function showMore() {
         // Show more
         $(`#${label}`).slideDown("slow");
 
+        // Rotate plane icon
+        $(`#${label}Icon`).css("transform", "rotate(90deg)");
+
         $(this)
         .attr("data-status", "less")
         .text("Show less");
@@ -23,6 +26,9 @@ function showMore() {
 
         // Show less
         $(`#${label}`).slideUp("slow");
+
+        // Rotate plane icon
+        $(`#${label}Icon`).css("transform", "rotate(270deg)");
 
         $(this)
         .attr("data-status", "more")
