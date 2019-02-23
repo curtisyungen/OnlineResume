@@ -84,10 +84,13 @@ p {
     bottom: 0;
     height: 200px;
     margin: 0px;
-    margin-bottom: -10px;
     padding-top: 25px;
     text-align: center;
     width: 100%;
+}
+
+#footerContainer {
+    margin-bottom: 0px;
 }
 
 #footer .icon {
