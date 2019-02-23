@@ -111,6 +111,10 @@ p {
     width: 100%;
 }
 
+#launchButton {
+    cursor: pointer;
+}
+
 #mainContainer {
     margin-top: 10px;
 }
@@ -172,9 +176,19 @@ p {
     z-index: 99;
 }
 
+#rocket {
+    padding: 0;
+}
+
 #rocketLaunch {
-    float: right;
-    margin-right: 25px;
+    display: block;
+    height: auto;
+    margin-top: -75px;
+    min-height: 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
 }
 
 #workExpContainer {

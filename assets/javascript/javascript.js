@@ -103,9 +103,6 @@ function flyJets() {
         }
     }
 
-    // Animate body background color
-    // $("body").animate({ backgroundColor: "black" }, 500).animate({ backgroundColor: "white" }, 2000);
-
     $("#blueAngelRow").append(blueAngels);
 
     var width = window.screen.width;
@@ -119,7 +116,27 @@ function flyJets() {
     setTimeout(function () {
         blueAngels.remove();
     }, width*0.95);
+}
 
+// ROCKET LAUNCH
+// =============================================
+
+// Event handler profile image hover
+$("#launchButton").on("click", launchRocket);
+
+function launchRocket() {
+
+    // Hide launch button
+    $("#launchButton").hide();
+
+    // Get height of window
+    var height = window.screen.height;
     
+    // Countdown
+
+    // Launch Rocket
+    $("#rocketLaunch").animate({
+        marginTop: `-=${height*4.5}`,
+    }, 8000);
 }
 
