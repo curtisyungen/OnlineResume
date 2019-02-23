@@ -83,18 +83,26 @@ function flyJets() {
     // Generate random number of jets between 3 and 6
     var numJets = Math.floor((Math.random() * 3) + 3);
 
+    var formation = Math.floor((Math.random() * 4) + 1);
     // Create jets and populate div
     for (var j = 0; j < numJets; j++) {
 
         var jet = $("<p>").addClass("fas fa-fighter-jet fa-3x blueAngel");
 
-        // Create V formation
-        if ((j % 2 == 0)) {
-            jet.css("margin-left", "-45px");
+        // Create formation
+        switch (formation) {
+            case 1: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); } break; // V formation
+            case 2: jet.css("margin-left", "-5px"); break;                        // Vertical Line formation
+            case 3: if ((j % 2 != 0)) { jet.css("margin-left", "-45px"); } break; // inverse V formation
+            case 4: jet.css("margin-left", `${"-25"-(j*50)}px`); break;           // Diagonal formation
+            default: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); }       
         }
-
+        
         blueAngels.append(jet);
-        blueAngels.append("<br>");
+        if (formation != 5) {
+            blueAngels.append("<br>");
+        }
+        
     }
 
     $("#blueAngelRow").append(blueAngels);
