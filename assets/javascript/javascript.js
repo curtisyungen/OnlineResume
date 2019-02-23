@@ -1,4 +1,14 @@
+// SHOW MORE / SHOW LESS
+// =============================================
+
+// Event Handler
+
 $(".showMore").on("click", showMore);
+
+// Show More Function
+// Called when "show more" or "show less" is clicked in Work Experience section
+// Displays more or less info about Boeing
+// Updates text and plane icon accordingly
 
 function showMore() {
 
@@ -19,8 +29,8 @@ function showMore() {
         $(`#${label}Icon`).css("transform", "rotate(90deg)");
 
         $(this)
-        .attr("data-status", "less")
-        .text("Show less");
+            .attr("data-status", "less")
+            .text("Show less");
     }
     else {
 
@@ -31,43 +41,52 @@ function showMore() {
         $(`#${label}Icon`).css("transform", "rotate(270deg)");
 
         $(this)
-        .attr("data-status", "more")
-        .text("Show more");
+            .attr("data-status", "more")
+            .text("Show more");
     }
 }
 
+// BLUE ANGELS
+// =============================================
+
+// Event Handler
+
 $("#profileImg").on("click", flyJets);
+
+// Fly Jets Function
+// Called when profile image is clicked
+// Creates blue angel icons and moves them across screen
 
 function flyJets() {
 
     var blueAngels = $("<div>").attr("id", "blueAngels");
 
-        // Create jets and populate div
-        for (var j=0; j<3; j++) {
+    // Create jets and populate div
+    for (var j = 0; j < 3; j++) {
 
-            var jet = $("<p>").addClass("fas fa-fighter-jet blueAngel");
+        var jet = $("<p>").addClass("fas fa-fighter-jet blueAngel");
 
-            // Create V formation
-            if ((j % 2 != 0)) {
-                jet.css("margin-left", "-20px");
-            }
-
-            blueAngels.append(jet);
-            blueAngels.append("<br>");
+        // Create V formation
+        if ((j % 2 != 0)) {
+            jet.css("margin-left", "-20px");
         }
 
-        $("#blueAngelRow").append(blueAngels);
+        blueAngels.append(jet);
+        blueAngels.append("<br>");
+    }
 
-        // Animate the div
-        blueAngels.animate({ 
-            marginLeft: "+=1800px",
-        }, 2000)
-        
-        // Reset jets after certain time
-        setTimeout(function() {
-            blueAngels.remove();
-        }, 1950);
-    
-    
+    $("#blueAngelRow").append(blueAngels);
+
+    var width = window.screen.width;
+
+    // Animate the div
+    blueAngels.animate({
+        marginLeft: `+=${width}`,
+    }, 2000)
+
+    // Delete jet div after animation
+    setTimeout(function () {
+        blueAngels.remove();
+    }, 1900);
 }
 
