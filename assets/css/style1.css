@@ -52,6 +52,7 @@ p {
 }
 
 #aboutMe {
+    font-size: 14px;
     padding-left: 5px;
     margin-right: -65px;
     text-align: justify;
@@ -144,8 +145,7 @@ p {
 }
 
 .description {
-    font-size: 12px;
-    text-align: justify;
+    font-size: 14px;
 }
 
 .icon {
@@ -199,7 +199,7 @@ p {
     background: rgb(235, 235, 235);
     border: 1px dashed darkgray;
     display: none;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 15px;
     padding: 15px 25px 10px 25px;
 }
