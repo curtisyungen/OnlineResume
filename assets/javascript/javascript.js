@@ -40,17 +40,34 @@ $("#profileImg").on("click", flyJets);
 
 function flyJets() {
 
-    for (var j=0; j<6; j++) {
-        var jet = $("<p>").addClass("fas fa-fighter-jet blueAngel");
-        $("#blueAngels").append(jet);
-        $("#blueAngels").append("<br>");
-    }
+    var blueAngels = $("<div>").attr("id", "blueAngels");
 
-    $("#blueAngels").animate({ 
-        marginLeft: "+=1600px",
-    }, 4000)
+        // Create jets and populate div
+        for (var j=0; j<3; j++) {
+
+            var jet = $("<p>").addClass("fas fa-fighter-jet blueAngel");
+
+            // Create V formation
+            if ((j % 2 != 0)) {
+                jet.css("margin-left", "-20px");
+            }
+
+            blueAngels.append(jet);
+            blueAngels.append("<br>");
+        }
+
+        $("#blueAngelRow").append(blueAngels);
+
+        // Animate the div
+        blueAngels.animate({ 
+            marginLeft: "+=1800px",
+        }, 2000)
         
-    setTimeout(function() { $("#blueAngels").empty(); }, 4000);
+        // Reset jets after certain time
+        setTimeout(function() {
+            blueAngels.remove();
+        }, 1950);
+    
     
 }
 
