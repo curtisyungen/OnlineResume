@@ -49,7 +49,25 @@ function showMore() {
 // BLUE ANGELS
 // =============================================
 
-// Event Handler
+// Event handler profile image hover
+
+$("#profileImg").on("mouseenter", promptJets);
+$("#profileImg").on("mouseout", hidePromptJets);
+
+function promptJets() {
+    $("#promptJets").show();
+}
+
+function hidePromptJets() {
+    $("#promptJets").hide();
+}
+
+// Back up handlers
+
+$("#promptJets").on("mouseenter", promptJets);
+$("#promptJets").on("click", flyJets);
+
+// Event Handler profile image click
 
 $("#profileImg").on("click", flyJets);
 

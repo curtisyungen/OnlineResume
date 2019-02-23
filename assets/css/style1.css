@@ -131,6 +131,22 @@ p {
     cursor: pointer;
 }
 
+#prompt {
+    text-align: center;
+    width: 100%;
+}
+
+#promptJets {
+    display: none;
+    font-size: 12px;
+    margin-left: -95px;
+    margin-top: 75px;
+    opacity: 0.5;
+    padding: 5px;
+    position: absolute;
+    z-index: 99;
+}
+
 #workExpContainer {
     background: rgb(245, 245, 245);
     width: 100%;
