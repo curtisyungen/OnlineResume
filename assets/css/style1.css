@@ -73,6 +73,12 @@ p {
 }
 
 #footer {
+    background-image: url("../images/gdt.png");
+
+    z-index: 99;
+}
+
+#footer {
     background: rgb(41, 41, 41);
     bottom: 0;
     height: 200px;

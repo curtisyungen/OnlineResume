@@ -110,7 +110,7 @@ function flyJets() {
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width+150}`,
+        marginLeft: `+=${width+125}`,
     }, width)
 
     // Delete jet div after animation
