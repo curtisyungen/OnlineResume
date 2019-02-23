@@ -58,6 +58,10 @@ p {
     text-align: justify;
 }
 
+#blueAngels {
+    position: absolute;
+}
+
 #contactInfo {
     background: rgba(0, 0, 255, 0.178);
     min-height: 0px;
@@ -122,7 +126,8 @@ p {
 }
 
 #profileImg:hover {
-    border: 3px solid rgb(0, 57, 166);;
+    border: 3px solid rgb(0, 57, 166);
+    cursor: pointer;
 }
 
 #workExpContainer {
@@ -142,6 +147,12 @@ p {
 
 .abilityScore:hover {
     color: rgb(0, 57, 166);
+}
+
+.blueAngel {
+    color: rgb(0, 57, 166);
+    margin-left: -50px;
+    margin-right: 2px;
 }
 
 .description {
