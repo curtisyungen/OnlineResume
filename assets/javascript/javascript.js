@@ -139,14 +139,13 @@ function launchRocket() {
     // Launch Rocket
     $("#rocketLaunch").animate({
         marginTop: `-=${height * 4.5}`,
-    }, 6000);
+    }, 8000);
 
     // Show stars
     $("#stars").animate({
         opacity: 1,
     }, 3000);
 
-    
     // Unhide overlay
     setTimeout(function() {
         // Hide stars
@@ -157,6 +156,6 @@ function launchRocket() {
         $("#overlay").animate({
             opacity: 0.75,
         }, 2000)
-    }, 6000);
+    }, 7000);
 }
 
