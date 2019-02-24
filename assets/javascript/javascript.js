@@ -93,10 +93,10 @@ function flyJets() {
             case 1: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); } break; // V formation
             case 2: jet.css("margin-left", "-5px"); break;                        // Vertical Line formation
             case 3: if ((j % 2 != 0)) { jet.css("margin-left", "-45px"); } break; // inverse V formation
-            case 4: jet.css("margin-left", `${"-25"-(j*25)}px`); break;           // Diagonal formation
-            default: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); }       
+            case 4: jet.css("margin-left", `${"-25" - (j * 25)}px`); break;           // Diagonal formation
+            default: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); }
         }
-        
+
         blueAngels.append(jet);
         if (formation != 5) {
             blueAngels.append("<br>");
@@ -109,13 +109,13 @@ function flyJets() {
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width+125}`,
+        marginLeft: `+=${width + 125}`,
     }, width)
 
     // Delete jet div after animation
     setTimeout(function () {
         blueAngels.remove();
-    }, width*0.95);
+    }, width * 0.95);
 }
 
 // ROCKET LAUNCH
@@ -129,14 +129,34 @@ function launchRocket() {
     // Hide launch button
     $("#launchButton").hide();
 
+    $("#overlay").css("opacity", 0);
+
     // Get height of window
     var height = window.screen.height;
-    
+
     // Countdown
 
     // Launch Rocket
     $("#rocketLaunch").animate({
-        marginTop: `-=${height*4.5}`,
-    }, 8000);
+        marginTop: `-=${height * 4.5}`,
+    }, 6000);
+
+    // Show stars
+    $("#stars").animate({
+        opacity: 1,
+    }, 3000);
+
+    
+    // Unhide overlay
+    setTimeout(function() {
+        // Hide stars
+        $("#stars").animate({
+            opacity: 0,
+        },2000);
+
+        $("#overlay").animate({
+            opacity: 0.75,
+        }, 2000)
+    }, 6000);
 }
 

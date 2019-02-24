@@ -77,8 +77,6 @@ p {
 }
 
 #footer {
-    background-image: url("../images/gdt.png");
-
     z-index: 99;
 }
 
@@ -189,6 +187,17 @@ p {
     text-align: center;
     width: 100%;
     z-index: 99;
+}
+
+#stars {
+    background-image: url("../images/stars.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 850px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 #workExpContainer {
