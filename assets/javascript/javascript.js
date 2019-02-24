@@ -136,45 +136,51 @@ function launchRocket() {
     // Hide launch button
     $("#launchButton").hide();
 
-    // Show rocket
-    $("#rocket").css("opacity", 1);
-
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
 
     // Get height of window
     var height = window.screen.height;
 
-    // Launch Rocket
-    $("#rocketLaunch").animate({
-        marginTop: `-=${height * 4.5}`,
-    }, rocketTime);
+    // Show rocket
+    $("#rocket").css("opacity", 1);
 
-    // Make window scroll to top    
-    $("html, body").animate({ scrollTop: 0 }, scrollTime);
+    setTimeout(function () {
 
-    // Hide main header text
-    $("#mainHeader").css("opacity", 0);
 
-    // Show stars
-    $("#stars").animate({
-        opacity: 1,
-    }, showStarsTime);
 
-    // Return display to normal 
-    setTimeout(function() {
+        // Launch Rocket
+        $("#rocketLaunch").animate({
+            marginTop: `-=${height * 4.5}`,
+        }, rocketTime);
+
+        // Make window scroll to top    
+        $("html, body").animate({ scrollTop: 0 }, scrollTime);
+
+        // Hide main header text
+        $("#mainHeader").css("opacity", 0);
+
+        // Show stars
         $("#stars").animate({
-            opacity: 0,
-        }, hideStarsTime);
-
-        $("#overlay").animate({
-            opacity: 0.75,
-        }, showOverlayTime)
-
-        $("#mainHeader").animate({
             opacity: 1,
-        }, showOverlayTime)
+        }, showStarsTime);
 
-    }, starDisplayTime);
+        // Return display to normal 
+        setTimeout(function () {
+            $("#stars").animate({
+                opacity: 0,
+            }, hideStarsTime);
+
+            $("#overlay").animate({
+                opacity: 0.75,
+            }, showOverlayTime)
+
+            $("#mainHeader").animate({
+                opacity: 1,
+            }, showOverlayTime)
+
+        }, starDisplayTime);
+
+    }, 200);
 }
 

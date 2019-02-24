@@ -111,8 +111,8 @@ p {
 }
 
 #launchButton {
-    background: rgb(216, 9, 9);
-    border: 3px solid black;
+    background: rgb(190, 15, 15);
+    border: 5px double black;
     border-radius: 75px;
     color: white;
     cursor: pointer;
@@ -124,6 +124,10 @@ p {
     padding-top: 20px;
     text-align: center;
     width: 75px;
+}
+
+#launchButton:hover {
+    background: red;
 }
 
 #mainContainer {
