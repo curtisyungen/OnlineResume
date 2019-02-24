@@ -126,39 +126,44 @@ $("#launchButton").on("click", launchRocket);
 
 function launchRocket() {
 
+    var scrollTime = 3000;
+    var rocketTime = 5000;
+    var starTime = 2000;
+    var overlayTime = 3000;
+    var starDisplayTime = 5000;
+
     // Hide launch button
     $("#launchButton").hide();
 
+    // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
 
     // Get height of window
     var height = window.screen.height;
 
-    // Countdown
-
     // Launch Rocket
     $("#rocketLaunch").animate({
         marginTop: `-=${height * 4.5}`,
-    }, 8000);
+    }, rocketTime);
 
-    
-    $("html, body").animate({ scrollTop: 0 }, 5000);
+    // Make window scroll to top    
+    $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
     // Show stars
     $("#stars").animate({
         opacity: 1,
-    }, 3000);
+    }, starTime);
 
-    // Unhide overlay
+    // Return display to normal 
     setTimeout(function() {
-        // Hide stars
         $("#stars").animate({
             opacity: 0,
-        },2000);
+        }, overlayTime);
 
         $("#overlay").animate({
             opacity: 0.75,
-        }, 2000)
-    }, 7000);
+        }, overlayTime)
+
+    }, starDisplayTime);
 }
 
