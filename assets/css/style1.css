@@ -139,6 +139,15 @@ p {
     opacity: 0.9;
 }
 
+#moreAboutMe {
+    padding-bottom: 10px;
+}
+
+#moreQuestions {
+    text-align: center;
+    width: 100%;    
+}
+
 #overlay {
     background-color: rgb(0, 57, 166);
     bottom: 0;
