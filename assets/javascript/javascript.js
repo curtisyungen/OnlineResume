@@ -131,7 +131,8 @@ function launchRocket() {
     var showStarsTime = 500;
     var hideStarsTime = 2000;
     var showOverlayTime = 2000;
-    var starDisplayTime = 6000;
+    var starDisplayTime = 5200;
+    var hideQuoteTime = 500;
 
     // Hide launch button
     $("#launchButton").hide();
@@ -184,7 +185,7 @@ function launchRocket() {
 
         $("#quote").animate({
             opacity: 0,
-        }, showOverlayTime);
+        }, hideQuoteTime);
 
     }, starDisplayTime);
 }
