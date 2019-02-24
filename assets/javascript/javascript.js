@@ -82,7 +82,9 @@ function flyJets() {
     // Generate random number of jets between 2 and 5
     var numJets = Math.floor((Math.random() * 2) + 1 + Math.floor(Math.random() * 3) + 1);
 
+    // Generate formation ID
     var formation = Math.floor((Math.random() * 4) + 1);
+
     // Create jets and populate div
     for (var j = 0; j < numJets; j++) {
 
@@ -98,9 +100,7 @@ function flyJets() {
         }
 
         blueAngels.append(jet);
-        if (formation != 5) {
-            blueAngels.append("<br>");
-        }
+        blueAngels.append("<br>");
     }
 
     $("#blueAngelRow").append(blueAngels);
@@ -109,13 +109,13 @@ function flyJets() {
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width + 125}`,
+        marginLeft: `+=${width * 1.25}`,
     }, width)
 
     // Delete jet div after animation
     setTimeout(function () {
         blueAngels.remove();
-    }, width * 0.95);
+    }, width * 0.70);
 }
 
 // ROCKET LAUNCH
@@ -126,18 +126,23 @@ $("#launchButton").on("click", launchRocket);
 
 function launchRocket() {
 
-    var scrollTime = 3000;
-    var rocketTime = 5000;
+    var rocketTime = 4000;
+    var scrollTime = rocketTime - 1500;
     var showStarsTime = 500;
     var hideStarsTime = 2000;
     var showOverlayTime = 2000;
-    var starDisplayTime = 4500;
+    var starDisplayTime = 6000;
 
     // Hide launch button
     $("#launchButton").hide();
 
+    $("#portfolioContainer").css("margin-bottom", "-50px");
+
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
+
+    // Hide main header
+    $("#mainHeader").css("opacity", 0);
 
     // Get height of window
     var height = window.screen.height;
@@ -145,42 +150,42 @@ function launchRocket() {
     // Show rocket
     $("#rocket").css("opacity", 1);
 
+    // Launch Rocket
+    $("#rocketLaunch").animate({
+        marginTop: `-=${height * 4.5}`,
+    }, rocketTime);
+
+    // Make window scroll to top    
+    $("html, body").animate({ scrollTop: 0 }, scrollTime);
+
+    // Show quote
+    $("#quote").animate({
+        opacity: 1,
+    }, showStarsTime);
+
+    // Show stars
+    $("#stars").animate({
+        opacity: 1,
+    }, showStarsTime);
+
+    // Return display to normal 
     setTimeout(function () {
-
-
-
-        // Launch Rocket
-        $("#rocketLaunch").animate({
-            marginTop: `-=${height * 4.5}`,
-        }, rocketTime);
-
-        // Make window scroll to top    
-        $("html, body").animate({ scrollTop: 0 }, scrollTime);
-
-        // Hide main header text
-        $("#mainHeader").css("opacity", 0);
-
-        // Show stars
         $("#stars").animate({
+            opacity: 0,
+        }, hideStarsTime);
+
+        $("#overlay").animate({
+            opacity: 0.75,
+        }, showOverlayTime);
+
+        $("#mainHeader").animate({
             opacity: 1,
-        }, showStarsTime);
+        }, showOverlayTime);
 
-        // Return display to normal 
-        setTimeout(function () {
-            $("#stars").animate({
-                opacity: 0,
-            }, hideStarsTime);
+        $("#quote").animate({
+            opacity: 0,
+        }, showOverlayTime);
 
-            $("#overlay").animate({
-                opacity: 0.75,
-            }, showOverlayTime)
-
-            $("#mainHeader").animate({
-                opacity: 1,
-            }, showOverlayTime)
-
-        }, starDisplayTime);
-
-    }, 200);
+    }, starDisplayTime);
 }
 
