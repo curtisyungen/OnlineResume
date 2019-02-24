@@ -56,6 +56,7 @@ p {
 
 #aboutMe {
     font-size: 14px;
+    margin-bottom: 25px;
     text-align: justify;
 }
 
@@ -110,7 +111,19 @@ p {
 }
 
 #launchButton {
+    background: rgb(216, 9, 9);
+    border: 3px solid black;
+    border-radius: 75px;
+    color: white;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    height: 75px;
+    margin: -10px auto 0px auto;
+    padding: 2px;
+    padding-top: 20px;
+    text-align: center;
+    width: 75px;
 }
 
 #mainContainer {
@@ -175,6 +188,7 @@ p {
 }
 
 #rocket {
+    opacity: 0;
     padding: 0;
 }
 

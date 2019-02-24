@@ -61,7 +61,7 @@ function hidePromptJets() {
     $("#promptJets").hide();
 }
 
-// Back up handlers
+// Secondary handlers
 
 $("#promptJets").on("mouseenter", promptJets);
 $("#promptJets").on("click", flyJets);
@@ -128,12 +128,16 @@ function launchRocket() {
 
     var scrollTime = 3000;
     var rocketTime = 5000;
-    var starTime = 2000;
-    var overlayTime = 3000;
-    var starDisplayTime = 5000;
+    var showStarsTime = 500;
+    var hideStarsTime = 2000;
+    var showOverlayTime = 2000;
+    var starDisplayTime = 4500;
 
     // Hide launch button
     $("#launchButton").hide();
+
+    // Show rocket
+    $("#rocket").css("opacity", 1);
 
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
@@ -149,20 +153,27 @@ function launchRocket() {
     // Make window scroll to top    
     $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
+    // Hide main header text
+    $("#mainHeader").css("opacity", 0);
+
     // Show stars
     $("#stars").animate({
         opacity: 1,
-    }, starTime);
+    }, showStarsTime);
 
     // Return display to normal 
     setTimeout(function() {
         $("#stars").animate({
             opacity: 0,
-        }, overlayTime);
+        }, hideStarsTime);
 
         $("#overlay").animate({
             opacity: 0.75,
-        }, overlayTime)
+        }, showOverlayTime)
+
+        $("#mainHeader").animate({
+            opacity: 1,
+        }, showOverlayTime)
 
     }, starDisplayTime);
 }
