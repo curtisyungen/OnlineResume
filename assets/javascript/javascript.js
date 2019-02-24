@@ -141,6 +141,9 @@ function launchRocket() {
         marginTop: `-=${height * 4.5}`,
     }, 8000);
 
+    
+    $("html, body").animate({ scrollTop: 0 }, 5000);
+
     // Show stars
     $("#stars").animate({
         opacity: 1,
