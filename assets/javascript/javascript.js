@@ -136,7 +136,7 @@ function countDown() {
     $("#launchText")
         .text(count);
 
-    setInterval(function() {
+    setInterval(function () {
         count -= 1;
 
         switch (count) {
@@ -144,7 +144,7 @@ function countDown() {
             case -1: launchRocket(); break;
             default: $("#launchText").text(count);
         }
-        
+
     }, 900);
 }
 
@@ -161,6 +161,12 @@ function launchRocket() {
     var hideQuoteTime = 500;            // Time to fade out quote
     var showGradientTime = 500;         // Time to fade in background gradient
     var hideGradientTime = 500;         // Time to fade out background gradient
+
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
 
     // Hide launch button and pad
     $("#launchButton").hide();
@@ -180,7 +186,10 @@ function launchRocket() {
         opacity: 1
     }, 500);
 
-    setTimeout(function() {
+    // Show and size gradient
+    $("#gradient").show().css("height", height*3);
+
+    setTimeout(function () {
 
         // Launch Rocket
         $("#rocketLaunch").animate({
@@ -199,9 +208,9 @@ function launchRocket() {
         $("#stars").animate({
             opacity: 1,
         }, showStarsTime);
-        
+
         // Show quote
-        setTimeout(function() {
+        setTimeout(function () {
             $("#quote").animate({
                 opacity: 1,
             }, 500);
@@ -245,11 +254,11 @@ function showSatellite() {
 
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
 
-$("#definition").hover(function(){
+$("#definition").hover(function () {
     $("#officialClub").animate({
         opacity: 1
     }, 500);
-}, function() {
+}, function () {
     $("#officialClub").animate({
         opacity: 0
     }, 500)
