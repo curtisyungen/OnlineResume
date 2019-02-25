@@ -441,8 +441,10 @@ p {
 }
 
 #launchButton {
-    background: rgb(206, 0, 0);
-    border: 3px dotted black;
+    background-image: url("../images/border.png");
+    /* background: rgb(206, 0, 0); */
+    /* border: 3px dotted black; */
+    border-image: url("../images/border.png");
     border-radius: 70px;
     height: 70px;
     position: relative;
@@ -468,7 +470,7 @@ p {
     color: white;
     font-size: 13px;
     margin-left: 0px;
-    margin-top: -46px;
+    margin-top: -50px;
     padding: 0;
     position: relative;
     text-align: center;
