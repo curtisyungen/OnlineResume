@@ -208,9 +208,9 @@ p {
 #quote {
     color: white;
     font-family: 'Charm', cursive;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 330;
-    margin-top: -50px;
+    margin-top: -80px;
     opacity: 0;
     position: relative;
     text-align: center;

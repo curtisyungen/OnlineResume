@@ -152,6 +152,7 @@ function launchRocket() {
     var hideStarsTime = 2000;
     var showOverlayTime = 2000;
     var starDisplayTime = 5200;
+    var showQuoteTime = 2500;
     var hideQuoteTime = 500;
 
     // Hide launch button
@@ -178,15 +179,17 @@ function launchRocket() {
     // Make window scroll to top    
     $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
-    // Show quote
-    $("#quote").animate({
-        opacity: 1,
-    }, showStarsTime);
-
     // Show stars
     $("#stars").animate({
         opacity: 1,
     }, showStarsTime);
+    
+    // Show quote
+    setTimeout(function() {
+        $("#quote").animate({
+            opacity: 1,
+        }, 500);
+    }, showQuoteTime);
 
     // Return display to normal 
     setTimeout(function () {
