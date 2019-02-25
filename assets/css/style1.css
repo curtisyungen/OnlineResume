@@ -260,6 +260,12 @@ p {
     z-index: 99;
 }
 
+.bullet {
+    margin-left: 5px;
+    margin-right: 7px;
+    width: 10px;
+}
+
 .codeLink::before {
     content: "| ";
 }
