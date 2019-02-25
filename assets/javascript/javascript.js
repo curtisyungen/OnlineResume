@@ -122,7 +122,25 @@ function flyJets() {
 // =============================================
 
 // Event handler profile image hover
-$("#launchButton").on("click", launchRocket);
+$("#launchButton").on("click", countDown);
+
+function countDown() {
+
+    var count = 3;
+
+    $("#launchButton").text(count);
+
+    setInterval(function() {
+        count -= 1;
+
+        switch (count) {
+            case 0: $("#launchButton").text("Blast off!"); break;
+            case -1: launchRocket(); break;
+            default: $("#launchButton").text(count);
+        }
+        
+    }, 900);
+}
 
 function launchRocket() {
 
@@ -136,6 +154,7 @@ function launchRocket() {
 
     // Hide launch button
     $("#launchButton").hide();
+    $("#launchBorder").hide();
 
     $("#portfolioContainer").css("margin-bottom", "-50px");
 
@@ -149,7 +168,9 @@ function launchRocket() {
     var height = window.screen.height;
 
     // Show rocket
-    $("#rocket").css("opacity", 1);
+    $("#rocket").animate({
+        opacity: 1
+    }, 250);
 
     // Launch Rocket
     $("#rocketLaunch").animate({
