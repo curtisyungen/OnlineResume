@@ -219,7 +219,7 @@ function launchRocket() {
                 opacity: 0,
             }, hideQuoteTime);
 
-            $("#contact").text("Contact").css("margin-bottom", "-50px");
+            $("#contact").text("Contact").css("margin-bottom", "-50px").css("margin-top", "-15px");
 
         }, starDisplayTime);
 
