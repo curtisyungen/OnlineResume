@@ -157,7 +157,6 @@ function launchRocket() {
 
     // Hide launch button
     $("#launchButton").hide();
-    $("#portfolioContainer").css("margin-bottom", "-50px");
 
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
@@ -178,6 +177,8 @@ function launchRocket() {
     }, 500);
 
     setTimeout(function() {
+
+        $("#portfolioContainer").css("margin-bottom", "-50px");
 
         // Launch Rocket
         $("#rocketLaunch").animate({
