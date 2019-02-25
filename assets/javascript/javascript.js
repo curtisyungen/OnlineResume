@@ -167,45 +167,45 @@ function launchRocket() {
     // Get height of window
     var height = window.screen.height;
 
-        // Show rocket
-        $("#rocket").css("opacity", 1);
+    // Show rocket
+    $("#rocket").css("opacity", 1);
 
-        // Launch Rocket
-        $("#rocketLaunch").animate({
-            marginTop: `-=${height * 4.5}`,
-        }, rocketTime);
+    // Launch Rocket
+    $("#rocketLaunch").animate({
+        marginTop: `-=${height * 4.5}`,
+    }, rocketTime);
 
-        // Make window scroll to top    
-        $("html, body").animate({ scrollTop: 0 }, scrollTime);
+    // Make window scroll to top    
+    $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
-        // Show quote
-        $("#quote").animate({
-            opacity: 1,
-        }, showStarsTime);
+    // Show quote
+    $("#quote").animate({
+        opacity: 1,
+    }, showStarsTime);
 
-        // Show stars
+    // Show stars
+    $("#stars").animate({
+        opacity: 1,
+    }, showStarsTime);
+
+    // Return display to normal 
+    setTimeout(function () {
         $("#stars").animate({
+            opacity: 0,
+        }, hideStarsTime);
+
+        $("#overlay").animate({
+            opacity: 0.75,
+        }, showOverlayTime);
+
+        $("#mainHeader").animate({
             opacity: 1,
-        }, showStarsTime);
+        }, showOverlayTime);
 
-        // Return display to normal 
-        setTimeout(function () {
-            $("#stars").animate({
-                opacity: 0,
-            }, hideStarsTime);
+        $("#quote").animate({
+            opacity: 0,
+        }, hideQuoteTime);
 
-            $("#overlay").animate({
-                opacity: 0.75,
-            }, showOverlayTime);
-
-            $("#mainHeader").animate({
-                opacity: 1,
-            }, showOverlayTime);
-
-            $("#quote").animate({
-                opacity: 0,
-            }, hideQuoteTime);
-
-        }, starDisplayTime);
+    }, starDisplayTime);
 }
 

@@ -234,7 +234,7 @@ p {
 }
 
 #stars {
-    background-image: url("../images/stars.jpg");
+    background-image: url("../images/space4.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 850px;
@@ -244,8 +244,12 @@ p {
     width: 100%;
 }
 
+#workExperience {
+    margin-bottom: 50px;
+}
+
 #workExpContainer {
-    /* background: rgb(245, 245, 245); */
+    background: rgb(245, 245, 245);
     width: 100%;
 }
 
