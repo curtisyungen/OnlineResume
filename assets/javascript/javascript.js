@@ -180,8 +180,6 @@ function launchRocket() {
 
     setTimeout(function() {
 
-        $("#pastContainer").css("margin-bottom", "-50px");
-
         // Launch Rocket
         $("#rocketLaunch").animate({
             marginTop: `-=${height * 4.5}`,
