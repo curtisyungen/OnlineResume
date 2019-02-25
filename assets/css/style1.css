@@ -73,8 +73,8 @@ p {
     z-index: 100;
 }
 
-#educationContainer {
-    margin-bottom: -2px;
+#education {
+    margin-bottom: 50px;
 }
 
 #footer {
@@ -187,7 +187,6 @@ p {
 
 #programmingProblems {
     background: rgba(142, 142, 255, 0.178);
-    margin-bottom: -50px;
     margin-top: -50px;
     min-height: 0px;
     text-align: center;
