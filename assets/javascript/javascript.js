@@ -129,6 +129,8 @@ function countDown() {
 
     // Hide expanded sections
     $(".moreInfo").slideUp();
+    $(".showMore").text("Show more");
+    $(".showMore").attr("data-status", "more");
 
     var count = 3;
 
@@ -217,6 +219,8 @@ function launchRocket() {
             $("#quote").animate({
                 opacity: 0,
             }, hideQuoteTime);
+
+            $("#contact").text("Contact").css("margin-bottom", "-50px");
 
         }, starDisplayTime);
 
