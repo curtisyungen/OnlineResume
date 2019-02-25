@@ -111,29 +111,6 @@ p {
     width: 100%;
 }
 
-#launchButton {
-    background: rgb(206, 0, 0);
-    border-radius: 70px;
-    color: white;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 400;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5px;
-    padding: 2px;
-    padding-top: 22px;
-    position: relative;
-    text-align: center;
-    width: 70px;
-    z-index: 99;
-}
-
-#launchButton:hover {
-    background: rgb(243, 0, 0);
-}
-
 #mainContainer {
     margin-top: 10px;
 }
@@ -231,18 +208,6 @@ p {
     transform: rotate(315deg);
 }
 
-#rocketLaunch {
-    display: block;
-    height: auto;
-    margin-bottom: -15px;
-    margin-top: 10px;
-    min-height: 0px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 99;
-}
-
 #satellite {
     color: white;
     float: right;
@@ -261,7 +226,7 @@ p {
     background-image: url("../images/space4.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 850px;
+    height: 100%;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -470,13 +435,26 @@ p {
 
 /* LAUNCH BUTTON ROTATING BORDER */
 
-#rotatingBorder {
-    border: 3px dashed black;
-    border-radius: 72px;
-    margin-top: -42px;
-    margin-left: -2.5px;
-    height: 72px;
-    width: 72px;
+#launchPad {
+    border-radius: 70px;
+    cursor: pointer;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 70px;
+    z-index: 100;
+}
+
+#launchButton {
+    background: rgb(206, 0, 0);
+    border: 3px dotted black;
+    border-radius: 70px;
+    height: 70px;
+    position: relative;
+    text-align: center;
+    width: 70px;
+
     -webkit-animation-name: Rotate;
     -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
@@ -489,7 +467,25 @@ p {
     -ms-animation-duration: 5s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-  }
+}
+
+#launchText {
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: -46px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 50px;
+    z-index: 99;
+}
+
+#rocketLaunch {
+    display: block;
+    position: absolute;
+    width: 100%;
+}
 
 @-webkit-keyframes Rotate {
     from {

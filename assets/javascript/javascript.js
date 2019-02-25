@@ -122,7 +122,9 @@ function flyJets() {
 // =============================================
 
 // Event handler profile image hover
-$("#launchButton").on("click", countDown);
+
+
+$("#launchPad").on("click", countDown);
 
 // Count down to blast off
 function countDown() {
@@ -134,15 +136,16 @@ function countDown() {
 
     var count = 3;
 
-    $("#launchButton").text(count);
+    $("#launchText")
+        .text(count);
 
     setInterval(function() {
         count -= 1;
 
         switch (count) {
-            case 0: $("#launchButton").text("Blast off!"); break;
+            case 0: $("#launchText").text("Blast off!"); break;
             case -1: launchRocket(); break;
-            default: $("#launchButton").text(count);
+            default: $("#launchText").text(count);
         }
         
     }, 900);
@@ -162,7 +165,7 @@ function launchRocket() {
 
     // Hide launch button
     $("#launchButton").hide();
-    $("#rotatingBorder").hide();
+    $("#launchText").hide();
 
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
