@@ -159,6 +159,8 @@ function launchRocket() {
     var starDisplayTime = 5200;         // Time to keep stars displayed
     var showQuoteTime = 2500;           // Time to fade in quote
     var hideQuoteTime = 500;            // Time to fade out quote
+    var showGradientTime = 500;         // Time to fade in background gradient
+    var hideGradientTime = 500;         // Time to fade out background gradient
 
     // Hide launch button and pad
     $("#launchButton").hide();
@@ -188,6 +190,11 @@ function launchRocket() {
         // Make window scroll to top    
         $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
+        // Show background gradient
+        $("#gradient").animate({
+            opacity: 0.4
+        }, showGradientTime);
+
         // Show stars
         $("#stars").animate({
             opacity: 1,
@@ -206,6 +213,10 @@ function launchRocket() {
             $("#stars").animate({
                 opacity: 0,
             }, hideStarsTime);
+
+            $("#gradient").animate({
+                opacity: 0,
+            }, hideGradientTime);
 
             $("#overlay").animate({
                 opacity: 0.75,
