@@ -173,46 +173,58 @@ function launchRocket() {
     var height = window.screen.height;
 
     // Show rocket
-    $("#rocket").css("opacity", 1);
+    $("#rocket").animate({
+        opacity: 1
+    }, 500);
 
-    // Launch Rocket
-    $("#rocketLaunch").animate({
-        marginTop: `-=${height * 4.5}`,
-    }, rocketTime);
-
-    // Make window scroll to top    
-    $("html, body").animate({ scrollTop: 0 }, scrollTime);
-
-    // Show stars
-    $("#stars").animate({
-        opacity: 1,
-    }, showStarsTime);
-    
-    // Show quote
     setTimeout(function() {
-        $("#quote").animate({
-            opacity: 1,
-        }, 500);
-    }, showQuoteTime);
 
-    // Return display to normal 
-    setTimeout(function () {
+        // Launch Rocket
+        $("#rocketLaunch").animate({
+            marginTop: `-=${height * 4.5}`,
+        }, rocketTime);
+
+        // Make window scroll to top    
+        $("html, body").animate({ scrollTop: 0 }, scrollTime);
+
+        // Show stars
         $("#stars").animate({
-            opacity: 0,
-        }, hideStarsTime);
-
-        $("#overlay").animate({
-            opacity: 0.75,
-        }, showOverlayTime);
-
-        $("#mainHeader").animate({
             opacity: 1,
-        }, showOverlayTime);
+        }, showStarsTime);
+        
+        // Show quote
+        setTimeout(function() {
+            $("#quote").animate({
+                opacity: 1,
+            }, 500);
 
-        $("#quote").animate({
-            opacity: 0,
-        }, hideQuoteTime);
+        }, showQuoteTime);
 
-    }, starDisplayTime);
+        // Return display to normal 
+        setTimeout(function () {
+            $("#stars").animate({
+                opacity: 0,
+            }, hideStarsTime);
+
+            $("#overlay").animate({
+                opacity: 0.75,
+            }, showOverlayTime);
+
+            $("#mainHeader").animate({
+                opacity: 1,
+            }, showOverlayTime);
+
+            $("#quote").animate({
+                opacity: 0,
+            }, hideQuoteTime);
+
+        }, starDisplayTime);
+
+    }, 500);
 }
 
+function showSatellite() {
+    $("#satellite").animate({
+        opacity: 1
+    }, 1000);
+}

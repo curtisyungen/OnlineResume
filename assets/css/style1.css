@@ -112,7 +112,7 @@ p {
 
 #launchButton {
     background: rgb(206, 0, 0);
-    border: 5px double rgba(0, 0, 0, 0.705);
+    border: 2px solid black;
     border-radius: 70px;
     color: white;
     cursor: pointer;
@@ -123,7 +123,7 @@ p {
     margin-right: auto;
     margin-top: -5px;
     padding: 2px;
-    padding-top: 19px;
+    padding-top: 22px;
     position: relative;
     text-align: center;
     width: 70px;
@@ -224,6 +224,7 @@ p {
 #rocket {
     opacity: 0;
     padding: 0;
+    transform: rotate(315deg);
 }
 
 #rocketLaunch {
@@ -235,6 +236,14 @@ p {
     text-align: center;
     width: 100%;
     z-index: 99;
+}
+
+#satellite {
+    color: white;
+    float: right;
+    opacity: 0;
+    position: relative;
+    z-index: 199;
 }
 
 #stars {
@@ -308,10 +317,6 @@ p {
     display: inline-block;
     margin-right: 7px;
     transform: rotate(270deg);
-}
-
-.fa-rocket {
-    transform: rotate(315deg);
 }
 
 .icon {
