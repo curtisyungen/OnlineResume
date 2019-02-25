@@ -146,14 +146,14 @@ function countDown() {
 // Handles rocket launching and display changes
 function launchRocket() {
 
-    var rocketTime = 4000;
-    var scrollTime = rocketTime - 1500;
-    var showStarsTime = 500;
-    var hideStarsTime = 2000;
-    var showOverlayTime = 2000;
-    var starDisplayTime = 5200;
-    var showQuoteTime = 2500;
-    var hideQuoteTime = 500;
+    var rocketTime = 4000;              // Time for rocket to fly across screen
+    var scrollTime = rocketTime - 1500; // Time to scroll to top of page
+    var showStarsTime = 500;            // Time to fade in stars
+    var hideStarsTime = 2000;           // Time to fade out stars
+    var showOverlayTime = 2000;         // Time to fade in overlay
+    var starDisplayTime = 5200;         // Time to keep stars displayed
+    var showQuoteTime = 2500;           // Time to fade in quote
+    var hideQuoteTime = 500;            // Time to fade out quote
 
     // Hide launch button
     $("#launchButton").hide();
@@ -161,6 +161,10 @@ function launchRocket() {
 
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
+
+    // Hide expanded sections
+    $("#moreAboutMe").hide();
+    $("#boeing").hide();
 
     // Hide main header
     $("#mainHeader").css("opacity", 0);
