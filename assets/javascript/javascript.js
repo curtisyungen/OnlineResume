@@ -231,3 +231,15 @@ function showSatellite() {
         opacity: 1
     }, 1000);
 }
+
+// TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
+
+$("#definition").hover(function(){
+    $("#officialClub").animate({
+        opacity: 1
+    }, 500);
+}, function() {
+    $("#officialClub").animate({
+        opacity: 0
+    }, 500)
+});

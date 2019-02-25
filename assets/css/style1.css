@@ -212,8 +212,9 @@ p {
 
 #spaceneedle {
     height: 240px;
+    margin-top: -15px;
     position: absolute;
-    right: 60px;
+    right: 70px;
 }
 
 #stars {
@@ -424,6 +425,23 @@ p {
     line-height: 32px;
     margin-left: 140px;
     position: absolute;
+}
+
+/* TOASTMASTERS: DEFINE 'OFFICIAL CLUB' */
+
+#definition {
+    color: blue;
+}
+
+#officialClub {
+    background: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 12px;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
 }
 
 /* ROCKET LAUNCH */
