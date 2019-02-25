@@ -113,7 +113,6 @@ p {
 
 #launchButton {
     background: rgb(206, 0, 0);
-    border: 2px solid black;
     border-radius: 70px;
     color: white;
     cursor: pointer;
@@ -468,6 +467,54 @@ p {
     margin-left: 140px;
     position: absolute;
 }
+
+/* LAUNCH BUTTON ROTATING BORDER */
+
+#rotatingBorder {
+    border: 3px dashed black;
+    border-radius: 72px;
+    margin-top: -42px;
+    margin-left: -2.5px;
+    height: 72px;
+    width: 72px;
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: Rotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: Rotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  }
+
+@-webkit-keyframes Rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes Rotate {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes Rotate {
+    from {
+      -ms-transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
 
 /* MEDIA QUERIES */
 

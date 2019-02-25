@@ -162,6 +162,7 @@ function launchRocket() {
 
     // Hide launch button
     $("#launchButton").hide();
+    $("#rotatingBorder").hide();
 
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
