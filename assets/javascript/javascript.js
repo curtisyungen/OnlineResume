@@ -121,9 +121,6 @@ function flyJets() {
 // ROCKET LAUNCH
 // =============================================
 
-// Event handler profile image hover
-
-
 $("#launchPad").on("click", countDown);
 
 // Count down to blast off
@@ -163,7 +160,7 @@ function launchRocket() {
     var showQuoteTime = 2500;           // Time to fade in quote
     var hideQuoteTime = 500;            // Time to fade out quote
 
-    // Hide launch button
+    // Hide launch button and pad
     $("#launchButton").hide();
     $("#launchText").hide();
 
