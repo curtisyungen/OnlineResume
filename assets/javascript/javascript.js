@@ -127,6 +127,9 @@ $("#launchButton").on("click", countDown);
 // Count down to blast off
 function countDown() {
 
+    // Hide expanded sections
+    $(".moreInfo").hide();
+
     var count = 3;
 
     $("#launchButton").text(count);
@@ -147,7 +150,7 @@ function countDown() {
 function launchRocket() {
 
     var rocketTime = 4000;              // Time for rocket to fly across screen
-    var scrollTime = rocketTime - 1500; // Time to scroll to top of page
+    var scrollTime = rocketTime - 1200; // Time to scroll to top of page
     var showStarsTime = 500;            // Time to fade in stars
     var hideStarsTime = 2000;           // Time to fade out stars
     var showOverlayTime = 2000;         // Time to fade in overlay
@@ -160,10 +163,6 @@ function launchRocket() {
 
     // Hide the jumbotron overlay
     $("#overlay").css("opacity", 0);
-
-    // Hide expanded sections
-    $("#moreAboutMe").hide();
-    $("#boeing").hide();
 
     // Hide main header
     $("#mainHeader").css("opacity", 0);
@@ -178,7 +177,7 @@ function launchRocket() {
 
     setTimeout(function() {
 
-        $("#otherContainer").css("margin-bottom", "-50px");
+        $("#pastContainer").css("margin-bottom", "-50px");
 
         // Launch Rocket
         $("#rocketLaunch").animate({
