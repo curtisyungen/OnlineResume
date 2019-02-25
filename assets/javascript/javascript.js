@@ -128,7 +128,7 @@ $("#launchButton").on("click", countDown);
 function countDown() {
 
     // Hide expanded sections
-    $(".moreInfo").hide();
+    $(".moreInfo").slideUp();
 
     var count = 3;
 
