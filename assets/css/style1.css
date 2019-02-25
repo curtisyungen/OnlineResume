@@ -66,7 +66,7 @@ p {
     position: absolute;
 }
 
-#contactInfo, #programmingProblems {
+#contactInfo {
     background: rgba(0, 0, 255, 0.178);
     min-height: 0px;
     text-align: center;
@@ -186,7 +186,12 @@ p {
 }
 
 #programmingProblems {
-    margin-bottom: -10px;
+    background: rgba(142, 142, 255, 0.178);
+    margin-bottom: -50px;
+    margin-top: -50px;
+    min-height: 0px;
+    text-align: center;
+    z-index: 100;
 }
 
 #prompt {
