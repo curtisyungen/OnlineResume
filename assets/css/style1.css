@@ -64,6 +64,7 @@ p {
     margin-left: -300px;
     margin-top: 100px;
     position: absolute;
+    z-index: 99;
 }
 
 #contactInfo {
@@ -246,6 +247,12 @@ p {
     z-index: 199;
 }
 
+#spaceneedle {
+    height: 180px;
+    position: absolute;
+    right: 0px;
+}
+
 #stars {
     background-image: url("../images/space4.jpg");
     background-repeat: no-repeat;
@@ -282,6 +289,7 @@ p {
 
 .blueAngel {
     color: rgb(0, 57, 166);
+    z-index: 99;
 }
 
 .codeLink::before {

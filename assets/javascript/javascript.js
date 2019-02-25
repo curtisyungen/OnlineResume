@@ -178,7 +178,7 @@ function launchRocket() {
 
     setTimeout(function() {
 
-        $("#portfolioContainer").css("margin-bottom", "-50px");
+        $("#otherContainer").css("margin-bottom", "-50px");
 
         // Launch Rocket
         $("#rocketLaunch").animate({
