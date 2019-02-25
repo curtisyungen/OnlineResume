@@ -211,9 +211,9 @@ p {
 }
 
 #spaceneedle {
-    height: 180px;
+    height: 240px;
     position: absolute;
-    right: 0px;
+    right: 60px;
 }
 
 #stars {
