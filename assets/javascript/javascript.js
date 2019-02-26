@@ -45,6 +45,8 @@ function showMore() {
     }
 }
 
+
+
 // BLUE ANGELS
 // =============================================
 
@@ -120,22 +122,22 @@ function flyJets() {
         html.offsetWidth
     );
 
-    console.log(width);
-
     // Animate the div
     blueAngels.animate({
         marginLeft: `+=${width*1.25}`,
-    }, width*1.5)
+    }, width*1.25)
 
     // Delete jet div after animation
     setTimeout(function () {
         blueAngels.animate({
             opacity: 0
-        }, 250);
+        }, 500);
 
         blueAngels.remove();
     }, width*1.25);
 }
+
+
 
 // ROCKET LAUNCH
 // =============================================
