@@ -561,12 +561,12 @@ p {
 
 @media screen and (max-width: 960px) {
 
-    #abilitiesColRight .abilityScore {
-        margin-right: -10px;
-    }
-
     .row {
         padding: 5px 5px;
+    }
+
+    .showMore {
+        position: relative;
     }
 
     .techList {
@@ -580,16 +580,24 @@ p {
     #abilitiesColRight {
         margin-left: -10px;
     }
-}
-
-@media screen and (max-width: 768px) {
 
     #abilitiesColRight .abilityScore {
         margin-right: -10px;
     }
 
+    .educationInfo {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
     .row {
         padding: 5px 5px;
+    }
+
+    .showMore {
+        position: relative;
     }
 
     .techList {
@@ -602,17 +610,25 @@ p {
     
     #abilitiesColRight {
         padding-left: -10px;
+    }
+
+    #abilitiesColRight .abilityScore {
+        margin-right: -10px;
+    }
+
+    .educationInfo {
+        position: relative;
     }
 }
 
 @media screen and (max-width: 640px) {
 
-    #abilitiesColRight .abilityScore {
-        margin-right: -10px;
-    }
-
     .row {
         padding: 5px 5px;
+    }
+
+    .showMore {
+        position: relative;
     }
 
     .techList {
@@ -625,5 +641,13 @@ p {
     
     #abilitiesColRight {
         padding-left: -10px;
+    }
+
+    #abilitiesColRight .abilityScore {
+        margin-right: -10px;
+    }
+
+    .educationInfo {
+        position: relative;
     }
 }
