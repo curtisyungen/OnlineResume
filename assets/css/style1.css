@@ -1,7 +1,6 @@
 /* ELEMENTS */
 
 html {
-    overflow: hidden;
     padding: 0;
 }
 
@@ -11,7 +10,6 @@ header {
 
 body {
     background: rgb(255, 255, 255);
-    overflow: hidden;
 }
 
 h4 {

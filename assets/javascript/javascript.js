@@ -210,7 +210,7 @@ function launchRocket() {
     }, 500);
 
     // Show and size gradient
-    $("#gradient").show().css("height", height*3);
+    $("#gradient").show().css("height", height - 800);
 
     setTimeout(function () {
 
