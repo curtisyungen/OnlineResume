@@ -201,7 +201,7 @@ function launchRocket() {
 
         // Show background gradient
         $("#gradient").animate({
-            opacity: 0.4
+            opacity: 0.8
         }, showGradientTime);
 
         // Show stars
@@ -223,9 +223,9 @@ function launchRocket() {
                 opacity: 0,
             }, hideStarsTime);
 
-            $("#gradient").animate({
-                opacity: 0,
-            }, hideGradientTime);
+            // $("#gradient").animate({
+            //     opacity: 0,
+            // }, hideGradientTime);
 
             $("#overlay").animate({
                 opacity: 0.75,

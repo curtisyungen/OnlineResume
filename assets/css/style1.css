@@ -451,9 +451,8 @@ p {
 #gradient {
     background-image: 
         linear-gradient(
-            rgb(0, 0, 59),
-            darkblue, 
-            purple, 
+            rgb(0, 0, 37),
+            rgb(88, 0, 88), 
             red, 
             orange, 
             yellow, 
