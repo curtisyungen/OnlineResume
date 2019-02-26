@@ -561,6 +561,10 @@ p {
 
 @media screen and (max-width: 960px) {
 
+    .educationInfo {
+        position: relative;
+    }
+
     .row {
         padding: 5px 5px;
     }
@@ -585,13 +589,17 @@ p {
         margin-right: -10px;
     }
 
-    .educationInfo {
-        position: relative;
+    #spaceneedle {
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
 
+    .educationInfo {
+        position: relative;
+    }
+
     .row {
         padding: 5px 5px;
     }
@@ -616,13 +624,17 @@ p {
         margin-right: -10px;
     }
 
-    .educationInfo {
-        position: relative;
+    #spaceneedle {
+        display: none;
     }
 }
 
 @media screen and (max-width: 640px) {
 
+    .educationInfo {
+        position: relative;
+    }
+
     .row {
         padding: 5px 5px;
     }
@@ -647,7 +659,7 @@ p {
         margin-right: -10px;
     }
 
-    .educationInfo {
-        position: relative;
+    #spaceneedle {
+        display: none;
     }
 }
