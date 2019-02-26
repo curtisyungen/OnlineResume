@@ -140,31 +140,39 @@ function flyJets() {
 // ROCKET LAUNCH
 // =============================================
 
+var rocketsLaunched = 0;
+
 $("#launchPad").on("click", countDown);
 
 // Count down to blast off
 function countDown() {
 
-    // Hide expanded sections
-    $(".moreInfo").slideUp();
-    $(".showMore").text("Show more");
-    $(".showMore").attr("data-status", "more");
+    // Prevents user from spamming Launch button
+    if (rocketsLaunched == 0) {
 
-    var count = 3;
+        rocketsLaunched += 1;
 
-    $("#launchText")
-        .text(count);
+        // Hide expanded sections
+        $(".moreInfo").slideUp();
+        $(".showMore").text("Show more");
+        $(".showMore").attr("data-status", "more");
 
-    setInterval(function () {
-        count -= 1;
+        var count = 3;
 
-        switch (count) {
-            case 0: $("#launchText").text("Blast off!"); break;
-            case -1: launchRocket(); break;
-            default: $("#launchText").text(count);
-        }
+        $("#launchText")
+            .text(count);
 
-    }, 900);
+        setInterval(function () {
+            count -= 1;
+
+            switch (count) {
+                case 0: $("#launchText").text("Blast off!"); break;
+                case -1: launchRocket(); break;
+                default: $("#launchText").text(count);
+            }
+
+        }, 900);
+    }
 }
 
 // Handles rocket launching and display changes
