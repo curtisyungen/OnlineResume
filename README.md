@@ -14,4 +14,4 @@ There are a couple "easter eggs" in there...see if you can find them!
 
 #### Image 1
 
-![Download Instructions](http://github.com/curtisyungen/Portfolio/download-instructions.png)
+![Download Instructions](http://github.com/curtisyungen/Portfolio/download-instructions)
