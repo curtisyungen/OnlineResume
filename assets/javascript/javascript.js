@@ -105,17 +105,36 @@ function flyJets() {
 
     $("#blueAngelRow").append(blueAngels);
 
-    var width = window.screen.width;
+    // Get width to use
+    var body = document.body,
+        html = document.documentElement;
+
+    var width = Math.max(
+        window.screen.width,
+        body.scrollWidth, 
+        body.offsetWidth,
+        html.clientWidth, 
+        html.scrollWidth, 
+        html.offsetWidth
+    );
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width * 1.25}`,
-    }, width)
+        marginLeft: `+=${width*1.25}`,
+    }, 1000)
 
     // Delete jet div after animation
     setTimeout(function () {
+        blueAngels.animate({
+            opacity: 0
+        }, 200);
+
         blueAngels.remove();
-    }, width * 0.70);
+    }, 1000);
+
+    // setTimeout(function() {
+    //     blueAngels.remove();
+    // }, 1000);
 }
 
 // ROCKET LAUNCH
