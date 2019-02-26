@@ -96,8 +96,8 @@ function flyJets() {
         switch (formation) {
             case 1: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); } break; // V formation
             case 2: jet.css("margin-left", "-5px"); break;                        // Vertical Line formation
-            case 3: if ((j % 2 != 0)) { jet.css("margin-left", "-45px"); } break; // inverse V formation
-            case 4: jet.css("margin-left", `${"-25" - (j * 25)}px`); break;           // Diagonal formation
+            case 3: if ((j % 2 != 0)) { jet.css("margin-left", "-45px"); } break; // Inverse V formation
+            case 4: jet.css("margin-left", `${"-25" - (j * 25)}px`); break;       // Diagonal formation
             default: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); }
         }
 
