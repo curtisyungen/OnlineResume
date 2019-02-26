@@ -151,8 +151,8 @@ function countDown() {
 // Handles rocket launching and display changes
 function launchRocket() {
 
-    var rocketTime = 4000;              // Time for rocket to fly across screen
-    var scrollTime = rocketTime - 1200; // Time to scroll to top of page
+    var rocketTime = 3000;              // Time for rocket to fly to top of screen
+    var scrollTime = 2800;              // Time to scroll to top of page
     var showStarsTime = 500;            // Time to fade in stars
     var hideStarsTime = 2000;           // Time to fade out stars
     var showOverlayTime = 2000;         // Time to fade in overlay
@@ -161,12 +161,6 @@ function launchRocket() {
     var hideQuoteTime = 500;            // Time to fade out quote
     var showGradientTime = 500;         // Time to fade in background gradient
     var hideGradientTime = 500;         // Time to fade out background gradient
-
-    var body = document.body,
-        html = document.documentElement;
-
-    var height = Math.max(body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight);
 
     // Hide launch button and pad
     $("#launchButton").hide();
@@ -178,8 +172,18 @@ function launchRocket() {
     // Hide main header
     $("#mainHeader").css("opacity", 0);
 
-    // Get height of window
-    var height = window.screen.height;
+    // Get height to use
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max(
+        window.screen.height,
+        body.scrollHeight, 
+        body.offsetHeight,
+        html.clientHeight, 
+        html.scrollHeight, 
+        html.offsetHeight
+    );
 
     // Show rocket
     $("#rocket").animate({
@@ -193,7 +197,7 @@ function launchRocket() {
 
         // Launch Rocket
         $("#rocketLaunch").animate({
-            marginTop: `-=${height * 4.5}`,
+            marginTop: `-=${height}`,
         }, rocketTime);
 
         // Make window scroll to top    
@@ -219,26 +223,39 @@ function launchRocket() {
 
         // Return display to normal 
         setTimeout(function () {
+
+            // Hide rocket
+            $("#rocket").hide();
+
+            // Fade out stars
             $("#stars").animate({
                 opacity: 0,
             }, hideStarsTime);
 
-            // $("#gradient").animate({
-            //     opacity: 0,
-            // }, hideGradientTime);
+            // Fade out gradient
+            $("#gradient").animate({
+                opacity: 0,
+            }, hideGradientTime);
 
-            $("#overlay").animate({
-                opacity: 0.75,
-            }, showOverlayTime);
-
-            $("#mainHeader").animate({
-                opacity: 1,
-            }, showOverlayTime);
-
+            // Fade out quote
             $("#quote").animate({
                 opacity: 0,
             }, hideQuoteTime);
 
+            // Hide gradient (so it doesn't affect display height)
+            $("#gradient").hide();
+
+            // Fade in overlay
+            $("#overlay").animate({
+                opacity: 0.75,
+            }, showOverlayTime);
+
+            // Fade in name and tagline
+            $("#mainHeader").animate({
+                opacity: 1,
+            }, showOverlayTime);
+
+            // Replace launch button w/ Contact label in footer
             $("#contact").text("Contact").css("margin-bottom", "-50px").css("margin-top", "-15px");
 
         }, starDisplayTime);
