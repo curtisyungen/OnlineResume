@@ -78,6 +78,8 @@ function flyJets() {
 
     // Create div that will house blue angel icons
     var blueAngels = $("<div>").attr("id", "blueAngels");
+    
+    blueAngels.css("margin-left", "-5%");
 
     // Generate random number of jets between 2 and 5
     var numJets = Math.floor((Math.random() * 2) + 1 + Math.floor(Math.random() * 3) + 1);
@@ -118,6 +120,8 @@ function flyJets() {
         html.offsetWidth
     );
 
+    console.log(width);
+
     // Animate the div
     blueAngels.animate({
         marginLeft: `+=${width*1.25}`,
@@ -131,10 +135,6 @@ function flyJets() {
 
         blueAngels.remove();
     }, 1000);
-
-    // setTimeout(function() {
-    //     blueAngels.remove();
-    // }, 1000);
 }
 
 // ROCKET LAUNCH
