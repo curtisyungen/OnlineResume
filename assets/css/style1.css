@@ -79,10 +79,6 @@ p {
 }
 
 #footer {
-    z-index: 99;
-}
-
-#footer {
     background: rgb(41, 41, 41);
     bottom: 0;
     height: 200px;
@@ -457,13 +453,10 @@ p {
         linear-gradient(
             rgb(0, 0, 59),
             darkblue, 
-            rgb(78, 0, 78), 
             purple, 
-            rgb(158, 0, 0), 
             red, 
             orange, 
             yellow, 
-            white,
             white
         );
     display: none;
@@ -474,20 +467,9 @@ p {
     z-index: 25;
 }
 
-#launchPad {
-    border-radius: 70px;
-    cursor: pointer;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    padding: 0;
-    width: 70px;
-    z-index: 100;
-}
-
 #launchButton {
     background-image: url("../images/border.png");
+    background-repeat: no-repeat;
     /* background: rgb(206, 0, 0); */
     /* border: 3px dotted black; */
     border-radius: 70px;
@@ -509,6 +491,18 @@ p {
     -ms-animation-duration: 5s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
+}
+
+#launchPad {
+    border-radius: 70px;
+    cursor: pointer;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 0;
+    width: 70px;
+    z-index: 100;
 }
 
 #launchText {
