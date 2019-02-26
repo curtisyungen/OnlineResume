@@ -269,10 +269,12 @@ function launchRocket() {
                 opacity: 0,
             }, hideQuoteTime);
 
-            // Hide gradient (so it doesn't affect display height)
+            // Fade out gradient
             $("#gradient").animate({
                 opacity: 0
-            }, 500);
+            }, 700);
+
+            setTimeout(function() { $("#gradient").hide() }, 500);
 
             // Fade in overlay
             $("#overlay").animate({
