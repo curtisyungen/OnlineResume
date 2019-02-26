@@ -294,12 +294,6 @@ function launchRocket() {
     }, 500);
 }
 
-function showSatellite() {
-    $("#satellite").animate({
-        opacity: 1
-    }, 1000);
-}
-
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
 
 $("#definition").hover(function () {
