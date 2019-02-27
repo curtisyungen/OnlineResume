@@ -301,7 +301,7 @@ function launchRocket() {
 
     setTimeout(function() {
         showMeteor();
-    }, rocketTime-500);
+    }, rocketTime-450);
     
 }
 
@@ -327,7 +327,7 @@ function showMeteor() {
 
     $("#meteor").animate({
         marginLeft: `+=${width * 1.25}`
-    }, 2000);
+    }, 2100);
 }
 
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
