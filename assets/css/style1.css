@@ -526,20 +526,6 @@ p {
     z-index: 99;
 }
 
-.meteor {
-    color: white;
-    transform: rotate(220deg);
-    z-index: 99;
-}
-
-#meteor {
-    left: 0;
-    margin-top: 330px;
-    position: absolute;
-    top: 0;
-    z-index: 99;
-}
-
 @-webkit-keyframes Rotate {
     from {
       -webkit-transform: rotate(0deg);

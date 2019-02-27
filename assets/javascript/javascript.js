@@ -297,41 +297,7 @@ function launchRocket() {
 
         }, starDisplayTime);
 
-    }, 500);
-
-    setTimeout(function() {
-        showMeteor();
-    }, rocketTime-450);
-    
-}
-
-function showMeteor() {
-
-    var meteor = $("<div>")
-        .addClass("fas fa-meteor meteor fa-3x");
-
-    $("#meteor").append(meteor);
-    
-    // Get width to use
-    var body = document.body,
-        html = document.documentElement;
-
-    var width = Math.max(
-        window.screen.width,
-        body.scrollWidth,
-        body.offsetWidth,
-        html.clientWidth,
-        html.scrollWidth,
-        html.offsetWidth
-    );
-
-    $("#meteor").animate({
-        marginLeft: `+=${width * 1.25}`
-    }, 2100);
-
-    setTimeout(function() {
-        $("#meteor").remove();
-    }, 2000);
+    }, 500);   
 }
 
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
