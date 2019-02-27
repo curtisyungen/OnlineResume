@@ -80,7 +80,7 @@ function flyJets() {
 
     // Create div that will house blue angel icons
     var blueAngels = $("<div>").attr("id", "blueAngels");
-    
+
     blueAngels.css("left", "-5%");
 
     // Generate random number of jets between 2 and 5
@@ -115,17 +115,17 @@ function flyJets() {
 
     var width = Math.max(
         window.screen.width,
-        body.scrollWidth, 
+        body.scrollWidth,
         body.offsetWidth,
-        html.clientWidth, 
-        html.scrollWidth, 
+        html.clientWidth,
+        html.scrollWidth,
         html.offsetWidth
     );
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width*1.25}`,
-    }, width*1.25)
+        marginLeft: `+=${width * 1.25}`,
+    }, width * 1.25)
 
     // Delete jet div after animation
     setTimeout(function () {
@@ -134,7 +134,7 @@ function flyJets() {
         }, 500);
 
         blueAngels.remove();
-    }, width*1.25);
+    }, width * 1.25);
 }
 
 
@@ -196,10 +196,14 @@ function launchRocket() {
     $("#launchText").hide();
 
     // Hide the jumbotron overlay
-    $("#overlay").css("opacity", 0);
+    $("#overlay").animate({
+        opacity: 0
+    }, 500);
 
     // Hide main header
-    $("#mainHeader").css("opacity", 0);
+    $("#mainHeader").animate({
+        opacity: 0
+    }, 500);
 
     // Get height to use
     var body = document.body,
@@ -207,10 +211,10 @@ function launchRocket() {
 
     var height = Math.max(
         window.screen.height,
-        body.scrollHeight, 
+        body.scrollHeight,
         body.offsetHeight,
-        html.clientHeight, 
-        html.scrollHeight, 
+        html.clientHeight,
+        html.scrollHeight,
         html.offsetHeight
     );
 
@@ -276,7 +280,7 @@ function launchRocket() {
                 opacity: 0
             }, 700);
 
-            setTimeout(function() { $("#gradient").hide() }, 500);
+            setTimeout(function () { $("#gradient").hide() }, 500);
 
             // Fade in overlay
             $("#overlay").animate({
@@ -294,6 +298,36 @@ function launchRocket() {
         }, starDisplayTime);
 
     }, 500);
+
+    setTimeout(function() {
+        showMeteor();
+    }, rocketTime-500);
+    
+}
+
+function showMeteor() {
+
+    var meteor = $("<div>")
+        .addClass("fas fa-meteor meteor fa-3x");
+
+    $("#meteor").append(meteor);
+    
+    // Get width to use
+    var body = document.body,
+        html = document.documentElement;
+
+    var width = Math.max(
+        window.screen.width,
+        body.scrollWidth,
+        body.offsetWidth,
+        html.clientWidth,
+        html.scrollWidth,
+        html.offsetWidth
+    );
+
+    $("#meteor").animate({
+        marginLeft: `+=${width * 1.25}`
+    }, 2000);
 }
 
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
