@@ -328,6 +328,10 @@ function showMeteor() {
     $("#meteor").animate({
         marginLeft: `+=${width * 1.25}`
     }, 2100);
+
+    setTimeout(function() {
+        $("#meteor").remove();
+    }, 2000);
 }
 
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
