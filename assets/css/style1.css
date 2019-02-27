@@ -1,7 +1,13 @@
 /* ELEMENTS */
 
 html {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
     padding: 0;
+}
+
+html::-webkit-scrollbar { 
+    width: 0 !important; 
 }
 
 header {
