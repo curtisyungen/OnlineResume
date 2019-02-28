@@ -1,313 +1,144 @@
-// SHOW MORE / SHOW LESS
-// =============================================
+// Create 9 x 9 table filled with zeroes
 
-// Event Handler
+var sudoku;
+var row;
 
-$(".showMore").on("click", showMore);
+function getSudoku() {
 
-// Show More Function
-// Called when "show more" or "show less" is clicked
-// Displays more or less info about category
+    sudoku = [];
 
-function showMore() {
+    for (var i = 0; i < 9; i++) {
+        row = [];
 
-    // Get status attribute from clicked link
-    var status = $(this).attr("data-status");
-
-    // Get label name to which this link pertains
-    var label = $(this).attr("data-label");
-
-    // Toggle show more/less info
-    // Update status and text of link
-    if (status == "more") {
-
-        // Show more
-        $(`#${label}`).slideDown("slow");
-
-        // Rotate plane icon
-        // $(`#${label}Icon`).css("transform", "rotate(90deg)");
-
-        $(this)
-            .attr("data-status", "less")
-            .text("Show less");
-    }
-    else {
-
-        // Show less
-        $(`#${label}`).slideUp("slow");
-
-        // Rotate plane icon
-        // $(`#${label}Icon`).css("transform", "rotate(270deg)");
-
-        $(this)
-            .attr("data-status", "more")
-            .text("Show more");
-    }
-}
-
-
-
-// BLUE ANGELS
-// =============================================
-
-// Event handler profile image hover
-
-$("#profileImg").on("mouseenter", promptJets);
-$("#profileImg").on("mouseout", hidePromptJets);
-
-function promptJets() {
-    $("#promptJets").show();
-}
-
-function hidePromptJets() {
-    $("#promptJets").hide();
-}
-
-// Secondary handlers
-
-$("#promptJets").on("mouseenter", promptJets);
-$("#promptJets").on("click", flyJets);
-
-// Event Handler profile image click
-
-$("#profileImg").on("click", flyJets);
-
-// Fly Jets Function
-// Called when profile image is clicked
-// Creates blue angel icons and moves them across screen
-
-function flyJets() {
-
-    // Create div that will house blue angel icons
-    var blueAngels = $("<div>").attr("id", "blueAngels");
-
-    blueAngels.css("left", "-5%");
-
-    // Generate random number of jets between 2 and 5
-    var numJets = Math.floor((Math.random() * 2) + 1 + Math.floor(Math.random() * 3) + 1);
-
-    // Generate formation ID
-    var formation = Math.floor((Math.random() * 4) + 1);
-
-    // Create jets and populate div
-    for (var j = 0; j < numJets; j++) {
-
-        var jet = $("<p>").addClass("fas fa-fighter-jet fa-3x blueAngel");
-
-        // Create formation
-        switch (formation) {
-            case 1: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); } break; // V formation
-            case 2: jet.css("margin-left", "-5px"); break;                        // Vertical Line formation
-            case 3: if ((j % 2 != 0)) { jet.css("margin-left", "-45px"); } break; // Inverse V formation
-            case 4: jet.css("margin-left", `${"-25" - (j * 25)}px`); break;       // Diagonal formation
-            default: if ((j % 2 == 0)) { jet.css("margin-left", "-45px"); }
+        for (var j = 0; j < 9; j++) {
+            row.push(0);
         }
 
-        blueAngels.append(jet);
-        blueAngels.append("<br>");
+        sudoku.push(row);
     }
 
-    $("#blueAngelRow").append(blueAngels);
-
-    // Get width to use
-    var body = document.body,
-        html = document.documentElement;
-
-    var width = Math.max(
-        window.screen.width,
-        body.scrollWidth,
-        body.offsetWidth,
-        html.clientWidth,
-        html.scrollWidth,
-        html.offsetWidth
-    );
-
-    // Animate the div
-    blueAngels.animate({
-        marginLeft: `+=${width * 1.25}`,
-    }, width * 1.25)
-
-    // Delete jet div after animation
-    setTimeout(function () {
-        blueAngels.animate({
-            opacity: 0
-        }, 500);
-
-        blueAngels.remove();
-    }, width * 1.25);
+    return sudoku;
 }
 
+var cell;
+var boardVals = getSudoku();
 
+function buildTable() {
 
-// ROCKET LAUNCH
-// =============================================
+    for (var row = 0; row < 9; row++) {
+        for (var col = 0; col < 9; col++) {
 
-var rocketsLaunched = 0;
+            cell = $("<div>")
+                .addClass("cell")
+                .attr("data-row", row)
+                .attr("data-col", col)
+                .attr("data-rowSect", Math.floor(row / 3))
+                .attr("data-colSect", Math.floor(col / 3))
+                .attr("id", `${row}${col}`)
+                .text(boardVals[row][col]);
 
-$("#launchPad").on("click", countDown);
+            $("#sudoku").append(cell);
+        }
 
-// Count down to blast off
-function countDown() {
+        $("#sudoku").append("<br>");
+    }
+}
 
-    // Prevents user from spamming Launch button
-    if (rocketsLaunched == 0) {
+// Generate value for particular cell
 
-        rocketsLaunched += 1;
+var allowedVals;
+var cellVal;
+var val;
+var idx;
+var random;
+var rowSect;
+var colSect;
+var getRowSect;
+var getColSect;
 
-        // Hide expanded sections
-        $(".moreInfo").slideUp();
-        $(".showMore").text("Show more");
-        $(".showMore").attr("data-status", "more");
+function getCellVal(col, row) {
 
-        var count = 3;
+    allowedVals = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-        $("#launchText")
-            .text(count);
+    // Check row
+    for (var x = 0; x < 9; x++) {
+        val = boardVals[row][x];
+        idx = allowedVals.indexOf(val);
 
-        setInterval(function () {
-            count -= 1;
+        if (idx > -1) {
+            allowedVals.splice(idx, 1);
+        }
+    }
 
-            switch (count) {
-                case 0: $("#launchText").text("Blast off!"); break;
-                case -1: launchRocket(); break;
-                default: $("#launchText").text(count);
+    // Check column
+    for (var y = 0; y < 9; y++) {
+        val = boardVals[y][col];
+        idx = allowedVals.indexOf(val);
+
+        if (idx > -1) {
+            allowedVals.splice(idx, 1);
+        }
+    }
+
+    // Check section
+    rowSect = Math.floor(row / 3);
+    colSect = Math.floor(col / 3);
+
+    for (var r = 0; r < 9; r++) {
+        for (var c = 0; c < 9; c++) {
+            getRowSect = $(`#${r}${c}`)[0].dataset.rowsect;
+            getColSect = $(`#${r}${c}`)[0].dataset.colsect;
+
+            if (getRowSect == rowSect && getColSect == colSect) {
+                val = boardVals[r][c];
+                idx = allowedVals.indexOf(val);
+
+                if (idx > -1) {
+                    allowedVals.splice(idx, 1);
+                }
             }
-
-        }, 900);
+        }
     }
+
+    // Backtrack
+    if (allowedVals.length == 0) {
+        
+    }
+    else {
+        // Assign random value to cell
+        random = Math.floor(Math.random() * allowedVals.length);
+
+        cellVal = allowedVals[random];
+
+        boardVals[row][col] = cellVal;
+    }
+
+    
 }
 
-// Handles rocket launching and display changes
-function launchRocket() {
+function newGame() {
+    
+    for (var i = 0; i < 9; i++) {
+        for (var j = 0; j < 9; j++) {
+            getCellVal(j, i);
+        }
+    }
 
-    var rocketTime = 3000;              // Time for rocket to fly to top of screen
-    var scrollTime = 2800;              // Time to scroll to top of page
-    var showStarsTime = 500;            // Time to fade in stars
-    var hideStarsTime = 2000;           // Time to fade out stars
-    var showOverlayTime = 2000;         // Time to fade in overlay
-    var starDisplayTime = 5200;         // Time to keep stars displayed
-    var showQuoteTime = 2500;           // Time to fade in quote
-    var hideQuoteTime = 500;            // Time to fade out quote
-    var showGradientTime = 500;         // Time to fade in background gradient
-    var hideGradientTime = 500;         // Time to fade out background gradient
+    for (var i=0; i<9; i++) {
+        for (var j=0; j<9; j++) {
+            $(`#${i}${j}`).text(boardVals[i][j]);
+        }
+    }
 
-    // Hide launch button and pad
-    $("#launchButton").hide();
-    $("#launchText").hide();
-
-    // Hide the jumbotron overlay
-    $("#overlay").animate({
-        opacity: 0
-    }, 500);
-
-    // Hide main header
-    $("#mainHeader").animate({
-        opacity: 0
-    }, 500);
-
-    // Get height to use
-    var body = document.body,
-        html = document.documentElement;
-
-    var height = Math.max(
-        window.screen.height,
-        body.scrollHeight,
-        body.offsetHeight,
-        html.clientHeight,
-        html.scrollHeight,
-        html.offsetHeight
-    );
-
-    // Show rocket
-    $("#rocket").animate({
-        opacity: 1
-    }, 500);
-
-    // Show and size gradient
-    $("#gradient").show().css("height", height - 900);
-
-    setTimeout(function () {
-
-        // Launch Rocket
-        $("#rocketLaunch").animate({
-            marginTop: `-=${height}`,
-        }, rocketTime);
-
-        // Make window scroll to top    
-        $("html, body").animate({ scrollTop: 0 }, scrollTime);
-
-        // Show background gradient
-        $("#gradient").animate({
-            opacity: 0.8
-        }, showGradientTime);
-
-        // Show stars
-        $("#stars").animate({
-            opacity: 1,
-        }, showStarsTime);
-
-        // Show quote
-        setTimeout(function () {
-            $("#quote").animate({
-                opacity: 1,
-            }, 500);
-
-        }, showQuoteTime);
-
-        // Return display to normal 
-        setTimeout(function () {
-
-            // Hide rocket
-            $("#rocket").hide();
-
-            // Fade out stars
-            $("#stars").animate({
-                opacity: 0,
-            }, hideStarsTime);
-
-            // Fade out gradient
-            $("#gradient").animate({
-                opacity: 0,
-            }, hideGradientTime);
-
-            // Fade out quote
-            $("#quote").animate({
-                opacity: 0,
-            }, hideQuoteTime);
-
-            // Fade out gradient
-            $("#gradient").animate({
-                opacity: 0
-            }, 700);
-
-            setTimeout(function () { $("#gradient").hide() }, 500);
-
-            // Fade in overlay
-            $("#overlay").animate({
-                opacity: 0.75,
-            }, showOverlayTime);
-
-            // Fade in name and tagline
-            $("#mainHeader").animate({
-                opacity: 1,
-            }, showOverlayTime);
-
-            // Replace launch button w/ Contact label in footer
-            $("#contact").text("Contact").css("margin-bottom", "-50px").css("margin-top", "-15px");
-
-        }, starDisplayTime);
-
-    }, 500);   
+    console.log(boardVals);
 }
 
-// TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
+getSudoku();
+buildTable();
+newGame();
 
-$("#definition").hover(function () {
-    $("#officialClub").animate({
-        opacity: 1
-    }, 500);
-}, function () {
-    $("#officialClub").animate({
-        opacity: 0
-    }, 500)
-});
+
+
+
+
+
