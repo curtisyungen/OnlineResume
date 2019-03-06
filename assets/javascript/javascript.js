@@ -141,25 +141,44 @@ function flyJets() {
 // PORTFOLIO SECTION: INFO BOXES
 // =============================================
 
+var openBox = "";
+
 $(".projInfo").on("click", toggleInfoBox);
 
 function toggleInfoBox() {
 
     // Identify box that was clicked
-    var boxId = $(this).attr("data-id");
+    var $this = $(this);
 
-    // Determine whether to open or close info box
-    var status = $(this).attr("data-status");
+    // Identify ID data attribute of box that was clicked
+    var boxId = $this.attr("data-id");
+
+    // Determine whether to open or close clicked info box
+    var status = $this.attr("data-status");
+
+    // Close open box
+    if (openBox != "" && openBox != $this) {
+        
+        $(openBox).animate({
+            opacity: 0.125,
+            width: 80
+        }, 750);
+
+        $(openBox).children(".arrow")
+            .removeClass("fa-arrow-circle-right")
+            .addClass("fa-arrow-circle-left");
+        
+        $(openBox).attr("data-status", "closed");
+
+        openBox = "";
+    }    
 
     if (status == "closed") {
 
         // Update status
-        $(this).attr("data-status", "open");
+        $this.attr("data-status", "open");
 
-        // Flip arrow
-        $(this).children(".arrow")
-            .removeClass("fa-arrow-circle-left")
-            .addClass("fa-arrow-circle-right");
+        openBox = $this;
 
         // Get width to use
         var body = document.body,
@@ -175,7 +194,7 @@ function toggleInfoBox() {
         );
 
         // Expand info box
-        $(this).animate({
+        $this.animate({
             opacity: 1,
             width: width - 360
         }, 750);
@@ -187,12 +206,17 @@ function toggleInfoBox() {
             }, 250);
         }, 650);
 
+        // Flip arrow
+        $this.children(".arrow")
+            .removeClass("fa-arrow-circle-left")
+            .addClass("fa-arrow-circle-right");
+
     }
 
     else if (status == "open") {
 
         // Update status
-        $(this).attr("data-status", "closed");
+        $this.attr("data-status", "closed");
 
         // Hide info box text
         $(`#${boxId}`).animate({
@@ -200,17 +224,16 @@ function toggleInfoBox() {
         }, 100);
 
         // Shrink info box
-        $(this).animate({
+        $this.animate({
             opacity: 0.125,
             width: 80
         }, 750);
 
         // Flip arrow
-        $(this).children(".arrow")
+        $this.children(".arrow")
             .removeClass("fa-arrow-circle-right")
             .addClass("fa-arrow-circle-left");
     }
-
 }
 
 
