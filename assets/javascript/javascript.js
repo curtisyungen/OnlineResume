@@ -157,7 +157,7 @@ function toggleInfoBox() {
         $(this).attr("data-status", "open");
 
         // Flip arrow
-        $(".arrow")
+        $(this).children(".arrow")
             .removeClass("fa-arrow-circle-left")
             .addClass("fa-arrow-circle-right");
 
@@ -177,36 +177,39 @@ function toggleInfoBox() {
         // Expand info box
         $(this).animate({
             opacity: 1,
-            width: width -360
+            width: width - 360
         }, 750);
 
         // Show info box text
-        $(`#${boxId}`).animate({
-            opacity: 1
-        }, 750);
+        setTimeout(function () {
+            $(`#${boxId}`).animate({
+                opacity: 1
+            }, 250);
+        }, 650);
+
     }
+
     else if (status == "open") {
 
         // Update status
         $(this).attr("data-status", "closed");
 
-        // Flip arrow
-        $(".arrow")
-            .removeClass("fa-arrow-circle-right")
-            .addClass("fa-arrow-circle-left");
-
         // Hide info box text
         $(`#${boxId}`).animate({
             opacity: 0
-        }, 500);
+        }, 100);
 
         // Shrink info box
         $(this).animate({
-            opacity: 0.25,
+            opacity: 0.125,
             width: 80
         }, 750);
-    }
 
+        // Flip arrow
+        $(this).children(".arrow")
+            .removeClass("fa-arrow-circle-right")
+            .addClass("fa-arrow-circle-left");
+    }
 
 }
 
