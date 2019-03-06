@@ -2,7 +2,7 @@
 
 html {
     -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
+    overflow-x: -moz-scrollbars-none;
     padding: 0;
 }
 
