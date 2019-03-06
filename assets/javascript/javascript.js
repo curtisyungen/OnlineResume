@@ -158,18 +158,30 @@ function toggleInfoBox() {
 
     // Close open box
     if (openBox != "" && openBox != $this) {
+
+        // Will use for targeting the text of the open box
+        var openBoxId = openBox.attr("data-id");
         
+        // Shrink open box
         $(openBox).animate({
             opacity: 0.125,
             width: 80
         }, 750);
 
+        // Fade out open box text
+        $(`#${openBoxId}`).animate({
+            opacity: 0
+        }, 100);
+
+        // Reset the arrow icon of the open box
         $(openBox).children(".arrow")
             .removeClass("fa-arrow-circle-right")
             .addClass("fa-arrow-circle-left");
         
+        // Update the status of open box
         $(openBox).attr("data-status", "closed");
 
+        // Clear the open box variable
         openBox = "";
     }    
 
