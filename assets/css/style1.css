@@ -125,6 +125,13 @@ p {
     opacity: 0.9;
 }
 
+#mernImg {
+    height: 50px;
+    margin: -15px auto 15px auto;
+    opacity: 0.85;
+    /* position: absolute; */
+}
+
 #moreAboutMe {
     padding-bottom: 10px;
 }
