@@ -436,6 +436,47 @@ p {
     margin-left: 140px;
 }
 
+/* PORTFOLIO: INFO BOXES */
+
+.arrow {
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.projInfo {
+    background: rgb(70, 70, 70);
+    color: white;
+    display: inline-block;
+    height: 100%;
+    opacity: 0.125;
+    padding-left: 0px;
+    position: absolute;
+    right: 0;
+    width: 80px;
+}
+
+.projInfo:hover {
+    background: darkgray;
+    cursor: pointer;
+}
+
+.projInfoText {
+    font-size: 14px;
+    padding: 20px;
+    position: absolute;
+}
+
+.projInfoText ul {
+    margin-left: 10px;
+}
+
+#mammothInfo {
+    opacity: 0;
+    z-index: 99;
+}
+
 /* TOASTMASTERS: DEFINE 'OFFICIAL CLUB' */
 
 #definition {

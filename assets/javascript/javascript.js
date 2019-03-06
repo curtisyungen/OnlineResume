@@ -138,6 +138,78 @@ function flyJets() {
 }
 
 
+// PORTFOLIO SECTION: INFO BOXES
+// =============================================
+
+$(".projInfo").on("click", toggleInfoBox);
+
+function toggleInfoBox() {
+
+    // Identify box that was clicked
+    var boxId = $(this).attr("data-id");
+
+    // Determine whether to open or close info box
+    var status = $(this).attr("data-status");
+
+    if (status == "closed") {
+
+        // Update status
+        $(this).attr("data-status", "open");
+
+        // Flip arrow
+        $(".arrow")
+            .removeClass("fa-arrow-circle-left")
+            .addClass("fa-arrow-circle-right");
+
+        // Get width to use
+        var body = document.body,
+            html = document.documentElement;
+
+        var width = Math.min(
+            window.screen.width,
+            body.scrollWidth,
+            body.offsetWidth,
+            html.clientWidth,
+            html.scrollWidth,
+            html.offsetWidth
+        );
+
+        // Expand info box
+        $(this).animate({
+            opacity: 1,
+            width: width -360
+        }, 750);
+
+        // Show info box text
+        $(`#${boxId}`).animate({
+            opacity: 1
+        }, 750);
+    }
+    else if (status == "open") {
+
+        // Update status
+        $(this).attr("data-status", "closed");
+
+        // Flip arrow
+        $(".arrow")
+            .removeClass("fa-arrow-circle-right")
+            .addClass("fa-arrow-circle-left");
+
+        // Hide info box text
+        $(`#${boxId}`).animate({
+            opacity: 0
+        }, 500);
+
+        // Shrink info box
+        $(this).animate({
+            opacity: 0.25,
+            width: 80
+        }, 750);
+    }
+
+
+}
+
 
 // ROCKET LAUNCH
 // =============================================
@@ -297,7 +369,7 @@ function launchRocket() {
 
         }, starDisplayTime);
 
-    }, 500);   
+    }, 500);
 }
 
 // TOASTMASTERS: DEFINE 'OFFICIAL CLUB'
