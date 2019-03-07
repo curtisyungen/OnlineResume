@@ -219,7 +219,7 @@ function toggleInfoBox() {
         // Set width of info text based on info box width
         // 50 is the width of the arrow icon
         var textWidth = width - adjust - 50;
-        
+
         $this.children(".projInfoText").css("width", textWidth);
 
         // Expand info box
@@ -269,6 +269,41 @@ function toggleInfoBox() {
             .addClass("fa-arrow-circle-left");
     }
 }
+
+
+// Hide all info boxes on window resize
+// This is to prevent box from being too large or too small after window adjustment
+$(window).on("resize", function() {
+
+    // Close open box
+    if (openBox != "") {
+
+        // Will use for targeting the text of the open box
+        var openBoxId = openBox.attr("data-id");
+        
+        // Shrink open box
+        $(openBox).animate({
+            opacity: 0.125,
+            width: 80
+        }, 750);
+
+        // Fade out open box text
+        $(`#${openBoxId}`).animate({
+            opacity: 0
+        }, 100);
+
+        // Reset the arrow icon of the open box
+        $(openBox).children(".arrow")
+            .removeClass("fa-arrow-circle-right")
+            .addClass("fa-arrow-circle-left");
+        
+        // Update the status of open box
+        $(openBox).attr("data-status", "closed");
+
+        // Clear the open box variable
+        openBox = "";
+    }    
+});
 
 
 // ROCKET LAUNCH
