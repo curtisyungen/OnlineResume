@@ -232,7 +232,7 @@ p {
 
 #toastmasters, #kellerwilliams {
     padding-bottom: 8px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #workExperience {
@@ -362,11 +362,15 @@ p {
     padding: 12px 25px 0px 25px;
 }
 
-.projImg {
-    float: left;
-    height: 125px;
-    width: 125px;
+.pastSection {
+    height: 130px;
 }
+
+/* .projImg {
+    float: left;
+    height: 100px;
+    width: 100px;
+} */
 
 .project {
     display: inline-block;
@@ -436,7 +440,7 @@ p {
     margin-left: 140px;
 }
 
-/* PORTFOLIO: INFO BOXES */
+/* SLIDE-IN INFO BOXES */
 
 .arrow {
     height: 100%;
@@ -458,6 +462,7 @@ p {
 }
 
 .projInfo:hover {
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -471,15 +476,17 @@ p {
     margin-left: 10px;
 }
 
-#mammothInfo {
+#mammothInfo,
+#groceryInfo,
+#toastmastersInfo,
+#kwInfo {
     opacity: 0;
-    z-index: 99;
 }
 
 /* TOASTMASTERS: DEFINE 'OFFICIAL CLUB' */
 
 #definition {
-    color: blue;
+    color: orange;
 }
 
 #officialClub {
@@ -487,10 +494,11 @@ p {
     border: 2px solid black;
     color: black;
     font-size: 12px;
+    margin-top: -30px;
     opacity: 0;
     padding: 5px;
     position: absolute;
-    width: 200px;
+    width: 210px;
 }
 
 /* ROCKET LAUNCH */
