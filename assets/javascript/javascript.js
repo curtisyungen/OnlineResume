@@ -164,7 +164,7 @@ function toggleInfoBox() {
 
         // Will use for targeting the text of the open box
         var openBoxId = openBox.attr("data-id");
-        
+
         // Shrink open box
         $(openBox).animate({
             opacity: 0.125,
@@ -180,13 +180,13 @@ function toggleInfoBox() {
         $(openBox).children(".arrow")
             .removeClass("fa-arrow-circle-right")
             .addClass("fa-arrow-circle-left");
-        
+
         // Update the status of open box
         $(openBox).attr("data-status", "closed");
 
         // Clear the open box variable
         openBox = "";
-    }    
+    }
 
     if (status == "closed") {
 
@@ -210,7 +210,7 @@ function toggleInfoBox() {
 
         // Adjust width to be responsive to window size
         // 180 padding left and right
-        var adjust = 180+180;
+        var adjust = 180 + 180;
 
         if (width < 960) {
             adjust = 10; // 5 padding both left and right
@@ -282,7 +282,7 @@ function hideOpenBox() {
 
         // Will use for targeting the text of the open box
         var openBoxId = openBox.attr("data-id");
-        
+
         // Shrink open box
         $(openBox).animate({
             opacity: 0.125,
@@ -298,13 +298,13 @@ function hideOpenBox() {
         $(openBox).children(".arrow")
             .removeClass("fa-arrow-circle-right")
             .addClass("fa-arrow-circle-left");
-        
+
         // Update the status of open box
         $(openBox).attr("data-status", "closed");
 
         // Clear the open box variable
         openBox = "";
-    }    
+    }
 }
 
 
@@ -480,3 +480,5 @@ $("#definition").hover(function () {
         opacity: 0
     }, 500)
 });
+
+
