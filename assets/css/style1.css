@@ -429,6 +429,7 @@ p {
     margin-top: 3px;
     padding: 2px 5px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .technology:hover {
@@ -439,6 +440,7 @@ p {
 .techList {
     bottom: 0;
     line-height: 32px;
+    white-space: nowrap;
 }
 
 /* SLIDE-IN INFO BOXES */
