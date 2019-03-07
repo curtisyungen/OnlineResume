@@ -273,7 +273,9 @@ function toggleInfoBox() {
 
 // Hide all info boxes on window resize
 // This is to prevent box from being too large or too small after window adjustment
-$(window).on("resize", function() {
+$(window).on("resize", hideOpenBox);
+
+function hideOpenBox() {
 
     // Close open box
     if (openBox != "") {
@@ -303,7 +305,7 @@ $(window).on("resize", function() {
         // Clear the open box variable
         openBox = "";
     }    
-});
+}
 
 
 // ROCKET LAUNCH

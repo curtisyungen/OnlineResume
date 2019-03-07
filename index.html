@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="content-script-type" content="text/javascript">
     <meta http-equiv="content-style-type" content="text/css">
-    <!--     <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="author" content="Curtis Yungen">
     <meta name="description" content="My name is Curtis Yungen. I'm an engineer turned web developer.">
     <meta name="keywords"
@@ -19,6 +19,9 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -285,7 +288,7 @@
                     <h4>UW Coding Boot Camp</h4>
                     <p class="educationInfo">Sept 2018 - Apr 2019, Bellevue, WA</p>
                     <p class="description">A six-month intensive certificate program focused on full-stack Web
-                            Development.</p>
+                        Development.</p>
                 </div>
             </div>
 
@@ -297,7 +300,7 @@
                     <p class="educationInfo">Graduated June 2013, Corvallis, OR</p>
                     <p class="description">A four-year program covering concepts in structural, geotechnical,
                         hydrological,
-                        mechanical, environmental, and transportation engineering.</p>               
+                        mechanical, environmental, and transportation engineering.</p>
                 </div>
             </div>
         </div>
@@ -524,7 +527,8 @@
                                     and Geocoder APIs.
                                 </li>
                                 <li>
-                                    2. <strong>MySQL Database:</strong> saving, loading, deleting routes and runs in database
+                                    2. <strong>MySQL Database:</strong> saving, loading, deleting routes and runs in
+                                    database
                                     using Sequelize.
                                 </li>
                                 <li>
@@ -598,67 +602,19 @@
                 <!-- Project Info Box -->
                 <div class="projInfo" data-status="closed" data-id="sudokuInfo">
                     <div class="fas fa-arrow-circle-left fa-3x icon arrow"></div>
-                    <span class="projInfoText" id="sudokuInfo">
-                        <p>
-                            DESCRIPTION<br>
-                            This is a personal project that I started in March 2019.
-                            It's not finished yet, so here's how I'm approaching it.
-                        </p><br>
-
-                        <p>
-                            RULES<br>
-                            Fill out 9x9 grid such that each row, column, and 3x3 section has a unique set of numbers 1-9. 
-                        </p><br>
-
-                        <p>
-                            GENERATE NEW 9X9 SUDOKU PUZZLE
-                            <ul>
-                                <li>Each cell maintains its own array of "allowed numbers", initially 1-9.</li>
-                                <li>Loop through grid cell by cell.</li>
-                                <li>For each cell choose a random number from cell's Allowed Numbers array.</li>
-                                <li>Validate that this number meets game's rules -- no duplicates in cell's row, column, or section.</li>
-                                <li>If valid, insert chosen number into cell.</li>
-                                <li>If not valid, delete number from cell's Allowed Numbers array and choose another random number from this array.</li>
-                                <li>If cells Allowed Numbers array becomes depleted, replenish its Allowed Numbers array and then backtrack to previous cell.
-                                    In previous cell, remove current value from Allowed Numbers array and choose a new random number.
-                                </li>
-                                <li>Backtracking will be done as many times as needed until 9x9 grid is completely filled out to meet game rules.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            DISPLAY BOARD ON SCREEN
-                            <ul>
-                                <li>Use generated puzzle to populate board on screen.</li>
-                                <li>Populate cells at random.</li>
-                                <li>Leave a set amount of cells blank depending on chosen difficulty.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            USER SOLVES PUZZLE
-                            <ul>
-                                <li>With each keystroke compare user's input against puzzle solution.</li>
-                                <li>If user's input doesn't match solution, provide feedback, i.e. change cell color.</li>
-                                <li>If user submits solved puzzle, compare against solution. If valid, save total time to solve.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            POTENTIAL CHALLENGES
-                            <ul>
-                                <li>Could there be more than one solution to a generated puzzle?</li>
-                            </ul>
-                        </p>
-                    </span>
+                    <span class="projInfoText" id="sudokuInfo">Coming soon...</span>
                 </div>
 
                 <img class="projImg" src="./assets/images/construction.png">
                 <h4>Sudoku</h4>
-                <p class="description" style="color: red">This project is currently in development. Click the arrow to the right to read about my approach.</p>
+                <p class="description" style="color: red">This project is currently in development.</p>
                 <p class="description">
                     This is a website that generates random Sudoku puzzles of varying difficulty for users to solve.
                 </p>
+                <button type="button" style="margin-top: 5px;" class="btn btn-outline-dark btn-sm" data-toggle="modal"
+                    data-target="#sudokuModal">
+                    See My Approach
+                </button>
                 <!-- <a href="" target="_blank">Project</a>
                 <a class="codeLink" href="" target="_blank">Code</a> -->
                 <!-- <p class="techList">
@@ -674,99 +630,22 @@
                 <!-- Project Info Box -->
                 <div class="projInfo" data-status="closed" data-id="chessInfo">
                     <div class="fas fa-arrow-circle-left fa-3x icon arrow"></div>
-                    <span class="projInfoText" id="chessInfo">
-                        <p>
-                            DESCRIPTION<br>
-                            This is a personal project I started in March 2019.
-                            It's not finished yet, but here's how I'm approaching it.
-                        </p><br>
-
-                        <p>
-                            GENERATE CHESS BOARD
-                            <ul>
-                                <li>Create an 8x8 empty board.</li>
-                                <li>Assign a coordinate to each square based on its row x col position.</li>
-                                <li>Assign a value to each cell based on what piece it holds.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            GENERATE CHESS PIECE ARRAY
-                            <ul>
-                                <li>Generate white and black pieces.</li>
-                                <li>Assign value to each piece and store in piece array.</li>
-                                <li>For example: white pawn = 1, white rook = 2, white knight = 3, black pawn = 7, black rook = 8, black knight = 9</li>
-                                <li>Empty square is assigned value of 0.</li>
-                                <li>Display pieces in starting position on board.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            HANDLE PIECE MOVEMENT
-                            <ul>
-                                <li>For each piece, keep track of legal moves it can make from its current square.</li>
-                                <li>Store these legal moves in a Legal Moves array.</li>
-                                <li>When user moves piece, check that this square is in this Legal Moves array.</li>
-                                <li>If valid, move piece.</li>
-                                <li>If invalid, reset piece to current position.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            KEEP TRACK OF IN-GAME POSITION
-                            <ul>
-                                <li>Get values from each square indicating which piece they hold.</li>
-                                <li>Store these numerical values in an array.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            HANDLE PIECE CAPTURE
-                            <ul>
-                                <li>After each move, check value in destination square.</li>
-                                <li>If square's value is greater than 0, this is a piece capture.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            TRACK WHEN KING IS IN CHECK / CHECKMATE
-                            <ul>
-                                <li>If Legal Moves array of piece includes square of opposing side's king, king is in check.</li>
-                                <li>If the king has no legal moves, and none of his comrades have legal moves that can block the check, this is checkmate.</li>
-                            </ul>
-                        </p><br>
-
-                        <p>
-                            GENERATE CHESS TACTICS PUZZLES
-                            <ul>
-                                <li>Each tactics puzzle will be generated as a mid-game position on the board.</li>
-                                <li>Each puzzle is stored as a numerical array in the database.</li>
-                                <li>In each puzzle, the goal is to either force checkmate or take advantage of opponent's blunder.</li>
-                                <li>The moves are pre-defined and there is only one correct set of moves to make for each puzzle.</li>
-                                <li>Check user's chosen move against correct move in puzzle. Give feedback if incorrect.</li>
-                                <li>Complete puzzle if user executes correct move sequence on first try.</li>
-                                <li>Display answer if incorrect.</li>
-                                <li>Track user's progress -- number correct, number incorrect, consecutive puzzles solved correctly, etc.</li>
-                            </ul>
-                        </p>
-
-                        <p>
-                            POTENTIAL CHALLENGES
-                            <ul>
-                                <li>This is going to be a lot of juggling arrays which might be confusing at times.</li>
-                            </ul>
-                        </p>
-
-                    </span>
+                    <span class="projInfoText" id="chessInfo">Coming soon...</span>
                 </div>
 
                 <img class="projImg" src="./assets/images/construction.png">
                 <h4>Chess Nut</h4>
-                <p class="description" style="color: red">This project is currently in development. Click the arrow to the right to read about my approach.</p>
+                <p class="description" style="color: red">This project is currently in development.</p>
                 <p class="description">
                     Chess Nut is a website that allows two users to play a live game of chess against one another.
                     It also features chess tactics puzzles that users can solve individually.
                 </p>
+
+                <button type="button" style="margin-top: 5px;" class="btn btn-outline-dark btn-sm" data-toggle="modal"
+                    data-target="#chessModal">
+                    See My Approach
+                </button>
+
                 <!-- <a href="" target="_blank">Project</a>
                 <a class="codeLink" href="" target="_blank">Code</a> -->
                 <!-- <p class="techList">
@@ -774,6 +653,220 @@
                     <span class="technology">Technology</span>
                     <span class="technology">Technology</span>
                 </p> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Sudoku Modal -->
+    <div id="sudokuModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="font-size: 12px;">
+
+                <div class="modal-header">
+                    <h4>My Approach to the Sudoku Project</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        DESCRIPTION<br>
+                        This is a personal project that I started in March 2019.
+                        It's not finished yet, so here's how I'm approaching it.
+                    </p><br>
+
+                    <p>
+                        RULES<br>
+                        Fill out 9x9 grid such that each row, column, and 3x3 section has a unique set of numbers
+                        1-9.
+                    </p><br>
+
+                    <p>
+                        GENERATE NEW 9X9 SUDOKU PUZZLE
+                        <ul>
+                            <li>Each cell maintains its own array of "allowed numbers", initially 1-9.</li>
+                            <li>Loop through grid cell by cell.</li>
+                            <li>For each cell choose a random number from cell's Allowed Numbers array.</li>
+                            <li>Validate that this number meets game's rules -- no duplicates in cell's row, column,
+                                or section.</li>
+                            <li>If valid, insert chosen number into cell.</li>
+                            <li>If not valid, delete number from cell's Allowed Numbers array and choose another
+                                random number from this array.</li>
+                            <li>If cells Allowed Numbers array becomes depleted, replenish its Allowed Numbers array
+                                and then backtrack to previous cell.
+                                In previous cell, remove current value from Allowed Numbers array and choose a new
+                                random number.
+                            </li>
+                            <li>Backtracking will be done as many times as needed until 9x9 grid is completely
+                                filled out to meet game rules.</li>
+                        </ul>
+                    </p><br>
+
+                    <p>
+                        DISPLAY BOARD ON SCREEN
+                        <ul>
+                            <li>Use generated puzzle to populate board on screen.</li>
+                            <li>Populate cells at random.</li>
+                            <li>Leave a set amount of cells blank depending on chosen difficulty.</li>
+                        </ul>
+                    </p><br>
+
+                    <p>
+                        USER SOLVES PUZZLE
+                        <ul>
+                            <li>With each keystroke compare user's input against puzzle solution.</li>
+                            <li>If user's input doesn't match solution, provide feedback, i.e. change cell color.
+                            </li>
+                            <li>If user submits solved puzzle, compare against solution. If valid, save total time
+                                to solve.</li>
+                        </ul>
+                    </p><br>
+
+                    <p>
+                        POTENTIAL CHALLENGES
+                        <ul>
+                            <li>Could there be more than one solution to a generated puzzle?</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chess Modal -->
+    <div id="chessModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="font-size: 12px;">
+
+                <div class="modal-header">
+                    <h4>My Approach to the Chess Project</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        DESCRIPTION<br>
+                        This is a personal project I started in March 2019.
+                        It's not finished yet, but here's how I'm approaching it.
+                    </p>
+
+                    <p>
+                        GENERATE CHESS BOARD
+                        <ul>
+                            <li>Create an 8x8 empty board.</li>
+                            <li>Assign a coordinate to each square based on its row x col position.
+                            </li>
+                            <li>Assign a value to each cell based on what piece it holds.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        GENERATE CHESS PIECE ARRAY
+                        <ul>
+                            <li>Generate white and black pieces.</li>
+                            <li>Assign value to each piece and store in piece array.</li>
+                            <li>For example: white pawn = 1, white rook = 2, white knight = 3, black
+                                pawn = 7, black rook = 8, black knight = 9</li>
+                            <li>Empty square is assigned value of 0.</li>
+                            <li>Display pieces in starting position on board.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        HANDLE PIECE MOVEMENT
+                        <ul>
+                            <li>For each piece, keep track of legal moves it can make from its
+                                current square.</li>
+                            <li>Store these legal moves in a Legal Moves array.</li>
+                            <li>When user moves piece, check that this square is in this Legal Moves
+                                array.</li>
+                            <li>If valid, move piece.</li>
+                            <li>If invalid, reset piece to current position.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        HANDLE PAWN PROMOTION
+                        <ul>
+                            <li>If pawn reaches farthest rank of opposing side, allow user to
+                                promote.</li>
+                            <li>Update square value depending on piece selected by user.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        KEEP TRACK OF IN-GAME POSITION
+                        <ul>
+                            <li>Get values from each square indicating which piece they hold.</li>
+                            <li>Store these numerical values in an array.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        HANDLE PIECE CAPTURE
+                        <ul>
+                            <li>After each move, check value in destination square.</li>
+                            <li>If square's value is greater than 0, this is a piece capture.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        TRACK WHEN KING IS IN CHECK / CHECKMATE
+                        <ul>
+                            <li>If Legal Moves array of piece includes square of opposing side's
+                                king, king is in check.</li>
+                            <li>If the king has no legal moves, and none of his comrades have legal
+                                moves that can block the check, this is checkmate.</li>
+                            <li>Check if opposing player's attacking piece can be captured to remove
+                                threat.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        DETERMINE IF DRAW GAME / STALEMATE
+                        <ul>
+                            <li>Check combination of pieces remaining on board to see if it meets
+                                stalemate criteria.</li>
+                            <li>For example: two kings remaining, one king and one bishop remaining,
+                                one king and one knight, etc.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        GENERATE CHESS TACTICS PUZZLES
+                        <ul>
+                            <li>Each tactics puzzle will be generated as a mid-game position on the
+                                board.</li>
+                            <li>Each puzzle is stored as a numerical array in the database.</li>
+                            <li>In each puzzle, the goal is to either force checkmate or take
+                                advantage of opponent's blunder.</li>
+                            <li>The moves are pre-defined and there is only one correct set of moves
+                                to make for each puzzle.</li>
+                            <li>Check user's chosen move against correct move in puzzle. Give
+                                feedback if incorrect.</li>
+                            <li>Complete puzzle if user executes correct move sequence on first try.
+                            </li>
+                            <li>Display answer if incorrect.</li>
+                            <li>Track user's progress -- number correct, number incorrect,
+                                consecutive puzzles solved correctly, etc.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        POTENTIAL CHALLENGES
+                        <ul>
+                            <li>This is going to be a lot of juggling arrays which might be
+                                confusing at times.</li>
+                            <li>All in all this will be a substantial undertaking.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
@@ -888,6 +981,8 @@
         </div>
     </div>
 
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>
 </body>
 
