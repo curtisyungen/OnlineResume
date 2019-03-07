@@ -292,9 +292,7 @@ p {
 .educationInfo {
     bottom: 0;
     font-size: 12px;
-    margin-bottom: 0px;
-    margin-left: 115px;
-    position: absolute;
+    margin-bottom: 10px;
 }
 
 .fa-plane {
@@ -343,9 +341,9 @@ p {
 .logo, .projImg {
     border: 1px solid gray;
     float: left;
-    height: 100px;
+    height: 130px;
     margin: 0px 15px 0px 0px;
-    width: 100px;
+    width: 130px;
 }
 
 .margin-top-10 {
