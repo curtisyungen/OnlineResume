@@ -209,10 +209,12 @@ function toggleInfoBox() {
         );
 
         // Adjust width to be responsive to window size
-        var adjust = 360;
+        // 180 padding left and right
+        // 130 image size
+        var adjust = 180+180+130;
 
         if (width < 960) {
-            adjust = 0;
+            adjust = 140; // 130 image size + 5 padding both left and right
         }
 
         // Expand info box
