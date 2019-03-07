@@ -1,0 +1,177 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1050px) {
+    .project p {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .educationInfo {
+        position: relative;
+    }
+
+    .row {
+        padding: 5px 5px;
+    }
+
+    .showMore {
+        position: relative;
+    }
+
+    .techList {
+        display: none;
+    }
+
+    #abilitiesColLeft {
+        padding-right: 0px;
+    }
+    
+    #abilitiesColRight {
+        margin-left: -10px;
+    }
+
+    #abilitiesColRight .abilityScore {
+        margin-right: -10px;
+    }
+
+    #spaceneedle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .educationInfo {
+        position: relative;
+    }
+
+    .project p {
+        max-width: 650px;
+    }
+
+    .row {
+        padding: 5px 5px;
+    }
+
+    .showMore {
+        position: relative;
+    }
+
+    .techList {
+        display: none;
+    }
+
+    #abilitiesColLeft {
+        padding-right: 0px;
+    }
+    
+    #abilitiesColRight {
+        padding-left: -10px;
+    }
+
+    #abilitiesColRight .abilityScore {
+        margin-right: -10px;
+    }
+
+    #spaceneedle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .educationInfo {
+        position: relative;
+    }
+
+    .projImg {
+        display: none;
+    }
+
+    .project {
+        background: rgb(248, 248, 248);
+        z-index: 1;
+    }
+
+    .project h4 {
+        font-size: 15px;
+    }
+
+    .project p {
+        font-size: 12px !important;
+        max-height: 100px;
+        max-width: 550px;
+        overflow-y: scroll;
+    }
+
+    .row {
+        padding: 5px 5px;
+    }
+
+    .showMore {
+        position: relative;
+    }
+
+    .techList {
+        display: none;
+    }
+
+    #abilitiesColLeft {
+        padding-right: 0px;
+    }
+    
+    #abilitiesColRight {
+        padding-left: -10px;
+    }
+
+    #abilitiesColRight .abilityScore {
+        margin-right: -10px;
+    }
+
+    #spaceneedle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .pastSection h5 {
+        max-width: 300px;
+    }
+    
+    .pastSection .logo {
+        display: none;
+    }
+    
+    .project p {
+        max-width: 275px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .pastSection h5 {
+        max-width: 260px;
+    }
+
+    .project p {
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .pastSection h5 {
+        max-width: 200px;
+    }
+    
+    .pastSection .logo {
+        display: none;
+    }
+
+    .project p {
+        max-width: 200px;
+    }
+}
