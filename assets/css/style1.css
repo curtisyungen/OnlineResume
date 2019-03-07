@@ -184,11 +184,6 @@ p {
     z-index: 100;
 }
 
-#prompt {
-    text-align: center;
-    width: 100%;
-}
-
 #quote {
     color: white;
     font-family: 'Charm', cursive;

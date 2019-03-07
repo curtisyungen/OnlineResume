@@ -18,17 +18,21 @@ function showClickMe() {
 }
 
 function showPrompt() {
-    $("#promptJets").show();
+    $("#clickMe").animate({
+        opacity: 0.65
+    }, 200);
 
     setTimeout(function() {
-        $("#promptJets").hide();
-    }, 500);
+        $("#clickMe").animate({
+            opacity: 0
+        }, 200)
+    }, 400);
 }
 
 showClickMe();
 
 // Secondary Click Handler
-$("#promptJets").on("click", flyJets);
+$("#clickMe").on("click", flyJets);
 
 // Event Handler profile image click
 $("#profileImg").on("click", flyJets);
