@@ -210,12 +210,17 @@ function toggleInfoBox() {
 
         // Adjust width to be responsive to window size
         // 180 padding left and right
-        // 130 image size
-        var adjust = 180+180+130;
+        var adjust = 180+180;
 
         if (width < 960) {
-            adjust = 140; // 130 image size + 5 padding both left and right
+            adjust = 10; // 5 padding both left and right
         }
+
+        // Set width of info text based on info box width
+        // 50 is the width of the arrow icon
+        var textWidth = width - adjust - 50;
+        
+        $this.children(".projInfoText").css("width", textWidth);
 
         // Expand info box
         $this.animate({
