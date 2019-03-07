@@ -467,7 +467,9 @@ p {
 }
 
 .projInfoText {
+    display: none;
     font-size: 14px;
+    opacity: 0;
     padding: 20px;
     position: absolute;
 }

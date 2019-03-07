@@ -153,6 +153,9 @@ function toggleInfoBox() {
     // Identify ID data attribute of box that was clicked
     var boxId = $this.attr("data-id");
 
+    // Create reference for text to be displayed
+    var infoText = $(`#${boxId}`);
+
     // Determine whether to open or close clicked info box
     var status = $this.attr("data-status");
 
@@ -219,8 +222,11 @@ function toggleInfoBox() {
         }, 750);
 
         // Show info box text
+        infoText.show();
+
+        // Fade in info box text
         setTimeout(function () {
-            $(`#${boxId}`).animate({
+            infoText.animate({
                 opacity: 1
             }, 250);
         }, 650);
@@ -237,10 +243,12 @@ function toggleInfoBox() {
         // Update status
         $this.attr("data-status", "closed");
 
-        // Hide info box text
+        // Fade out info box text
         $(`#${boxId}`).animate({
             opacity: 0
         }, 100);
+
+        infoText.hide();
 
         // Shrink info box
         $this.animate({
