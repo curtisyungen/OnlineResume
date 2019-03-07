@@ -205,10 +205,17 @@ function toggleInfoBox() {
             html.offsetWidth
         );
 
+        // Adjust width to be responsive to window size
+        var adjust = 360;
+
+        if (width < 960) {
+            adjust = 0;
+        }
+
         // Expand info box
         $this.animate({
             opacity: 1,
-            width: width - 360
+            width: width - adjust
         }, 750);
 
         // Show info box text
