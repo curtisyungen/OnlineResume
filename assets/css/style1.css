@@ -374,6 +374,7 @@ p {
 
 .project {
     display: inline-block;
+    height: 130px;
     margin: 25px 0px 0px 0px;
     width: 100%;
 }
