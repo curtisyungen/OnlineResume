@@ -102,6 +102,7 @@ p {
 
 #footerContainer {
     margin-bottom: 0px;
+    margin-top: 40px;
     padding-bottom: 0px;
 }
 
@@ -130,7 +131,7 @@ p {
 
 #mernImg {
     height: 50px;
-    margin: -15px auto 15px auto;
+    margin: 15px auto 15px auto;
     opacity: 0.85;
     /* position: absolute; */
 }
@@ -183,6 +184,7 @@ p {
 #programmingProblems {
     background: rgba(142, 142, 255, 0.178);
     margin-top: -50px;
+    margin-left: -8px;
     min-height: 0px;
     text-align: center;
     z-index: 100;
