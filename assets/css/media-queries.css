@@ -86,6 +86,10 @@
         position: relative;
     }
 
+    .pastSection .logo {
+        display: none;
+    }
+
     .projImg {
         display: none;
     }
@@ -130,6 +134,22 @@
         margin-right: -10px;
     }
 
+    #chess {
+        background: rgb(255, 204, 184);
+    }
+
+    #groceryList {
+        background: rgb(255, 255, 196);
+    }
+
+    #mammoth {
+        background: rgba(161, 0, 161, 0.329);
+    }
+
+    #sudoku {
+        background: rgba(153, 224, 153, 0.486);
+    }
+
     #spaceneedle {
         display: none;
     }
@@ -139,10 +159,6 @@
 
     .pastSection h5 {
         max-width: 300px;
-    }
-    
-    .pastSection .logo {
-        display: none;
     }
     
     .project p {
