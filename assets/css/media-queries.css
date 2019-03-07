@@ -134,7 +134,14 @@
         margin-right: -10px;
     }
 
-    #chess {
+    #chess, 
+    #groceryList,
+    #mammoth,
+    #sudoku {
+        background: rgb(233, 233, 233);
+    }
+
+    /* #chess {
         background: rgb(255, 204, 184);
     }
 
@@ -148,7 +155,7 @@
 
     #sudoku {
         background: rgba(153, 224, 153, 0.486);
-    }
+    } */
 
     #spaceneedle {
         display: none;
