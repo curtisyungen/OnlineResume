@@ -50,26 +50,36 @@ function showMore() {
 // BLUE ANGELS
 // =============================================
 
-// Event handler profile image hover
+// Display "Click Me" message at set interval
+var shown = 0;
+var click = false;
 
-$("#profileImg").on("mouseenter", promptJets);
-$("#profileImg").on("mouseout", hidePromptJets);
+function showClickMe() {
 
-function promptJets() {
+    setInterval(function() {
+        if (shown < 10 && click == false) {
+            showPrompt();
+        }
+        
+        shown += 1;
+    }, 3000);
+
+}
+
+function showPrompt() {
     $("#promptJets").show();
+
+    setTimeout(function() {
+        $("#promptJets").hide();
+    }, 500);
 }
 
-function hidePromptJets() {
-    $("#promptJets").hide();
-}
+showClickMe();
 
-// Secondary handlers
-
-$("#promptJets").on("mouseenter", promptJets);
+// Secondary Click Handler
 $("#promptJets").on("click", flyJets);
 
 // Event Handler profile image click
-
 $("#profileImg").on("click", flyJets);
 
 // Fly Jets Function
@@ -77,6 +87,8 @@ $("#profileImg").on("click", flyJets);
 // Creates blue angel icons and moves them across screen
 
 function flyJets() {
+
+    click = true;
 
     // Create div that will house blue angel icons
     var blueAngels = $("<div>").attr("id", "blueAngels");
@@ -480,5 +492,7 @@ $("#definition").hover(function () {
         opacity: 0
     }, 500)
 });
+
+
 
 
