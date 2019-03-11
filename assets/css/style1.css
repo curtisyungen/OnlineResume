@@ -209,7 +209,7 @@ p {
 }
 
 #satellite {
-    background-image: url("../images/satellite.png");
+    background-image: url("../images/plane.png");
     background-repeat: no-repeat;
     /* cursor: pointer; */
     height: 275px;
