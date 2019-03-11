@@ -175,6 +175,10 @@
 
 @media screen and (max-width: 375px) {
 
+    #tagline {
+        font-size: 1.15rem;
+    }
+
     .pastSection h5 {
         max-width: 260px;
     }
