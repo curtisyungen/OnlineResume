@@ -80,8 +80,13 @@ p {
     text-align: justify;
 }
 
-#aboutMeContainer {
+/* For use with Satellite */
+/* #aboutMeContainer {
     margin-top: -130px;
+} */
+
+#aboutMeContainer {
+    margin-top: -80px;
 }
 
 #contactInfo {
@@ -170,13 +175,26 @@ p {
     padding-bottom: 15px;
 }
 
-#profileImg {
+/* For use with Satellite */
+/* #profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
     height: 255px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -316px;
+    padding: 0px;
+    width: 250px;
+    z-index: 99;
+} */
+
+#profileImg {
+    border: 1px solid darkgray;
+    border-radius: 250px;
+    height: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
     padding: 0px;
     width: 250px;
     z-index: 99;
@@ -222,15 +240,15 @@ p {
 
     -webkit-animation-name: Rotate;
     -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: 3;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: Rotate;
     -moz-animation-duration: 10s;
-    -moz-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: 3;
     -moz-animation-timing-function: linear;
     -ms-animation-name: Rotate;
     -ms-animation-duration: 10s;
-    -ms-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: 3;
     -ms-animation-timing-function: linear;
 }
 
