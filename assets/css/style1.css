@@ -176,9 +176,10 @@ p {
     height: 255px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -80px;
+    margin-top: -314px;
     padding: 0px;
     width: 250px;
+    z-index: 99;
 }
 
 #profileImg:hover {
@@ -205,6 +206,32 @@ p {
     position: relative;
     text-align: center;
     z-index: 99;
+}
+
+#satellite {
+    background-image: url("../images/satellite.png");
+    background-repeat: no-repeat;
+    /* cursor: pointer; */
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    opacity: 0.55;
+    position: relative;
+    width: 275px;
+
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: Rotate;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: Rotate;
+    -ms-animation-duration: 10s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
 }
 
 #spaceneedle {
