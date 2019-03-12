@@ -6,7 +6,7 @@ var flown = 0;
 
 $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 500;             
+    var scroll_pos_test = 450;             
 
     if(y_scroll_pos > scroll_pos_test && flown == 0) {
         flown += 1;
@@ -28,7 +28,7 @@ function flyJets() {
     // Create div that will house blue angel icons
     var blueAngels = $("<div>").attr("id", "blueAngels");
 
-    blueAngels.css("left", "-15%");
+    blueAngels.css("left", "-10%");
 
     // Generate random number of jets between 2 and 5
     var numJets = Math.floor((Math.random() * 2) + 1 + Math.floor(Math.random() * 3) + 1);
