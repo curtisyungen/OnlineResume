@@ -37,6 +37,19 @@ $("#clickMe").on("click", flyJets);
 // Event Handler profile image click
 $("#profileImg").on("click", flyJets);
 
+// Fly jets first time user scrolls past profile image
+var flown = 0;
+
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 500;             
+
+    if(y_scroll_pos > scroll_pos_test && flown == 0) {
+        flown += 1;
+        flyJets();
+    }
+});
+
 // Fly Jets Function
 // Called when profile image is clicked
 // Creates blue angel icons and moves them across screen

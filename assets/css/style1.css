@@ -81,13 +81,13 @@ p {
 }
 
 /* For use with Satellite */
-#aboutMeContainer {
-    margin-top: -150px;
-}
-
 /* #aboutMeContainer {
-    margin-top: -80px;
+    margin-top: -150px;
 } */
+
+#aboutMeContainer {
+    margin-top: -80px;
+}
 
 #boeing {
     background: rgb(248, 248, 248);
@@ -180,7 +180,7 @@ p {
 }
 
 /* For use with Satellite */
-#profileImg {
+/* #profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
     cursor: pointer;
@@ -191,11 +191,12 @@ p {
     padding: 0px;
     width: 250px;
     z-index: 99;
-}
+} */
 
-/* #profileImg {
+#profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
+    cursor: pointer;
     height: 255px;
     margin-left: auto;
     margin-right: auto;
@@ -203,7 +204,7 @@ p {
     padding: 0px;
     width: 250px;
     z-index: 99;
-} */
+}
 
 #programmingProblems {
     background: rgba(142, 142, 255, 0.178);
@@ -226,11 +227,9 @@ p {
     z-index: 99;
 }
 
-#satellite {
+/* #satellite {
     background-image: url("../images/satellite.png");
     background-repeat: no-repeat;
-    /* border: 1px solid black; */
-    /* cursor: pointer; */
     height: 275px;
     margin-left: auto;
     margin-right: auto;
@@ -252,7 +251,7 @@ p {
     -ms-animation-duration: 10s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-}
+} */
 
 #spaceneedle {
     height: 240px;

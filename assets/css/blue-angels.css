@@ -1,15 +1,15 @@
-/* #blueAngels {
+#blueAngels {
     margin-top: -50px;
     position: absolute;
     z-index: 99;
-} */
+}
 
 /* For Use with Satellite */
-#blueAngels {
+/* #blueAngels {
     margin-top: -180px;
     position: absolute;
     z-index: 99;
-}
+} */
 
 #clickMe {
     color: darkgray;
