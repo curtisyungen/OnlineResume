@@ -126,6 +126,7 @@ function launchRocket() {
 
             // Change profile picture back to portrait
             $("#profileImg")
+                .addClass("profileImgHover")
                 .attr("src", "./assets/images/curtis.png")
                 .css("border", "1px solid darkgray");
 

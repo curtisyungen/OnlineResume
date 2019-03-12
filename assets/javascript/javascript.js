@@ -57,6 +57,18 @@ $("#definition").hover(function () {
     }, 500)
 });
 
+// PROFILE IMAGE HOVER EFFECT
+
+$("#profileImg").on({
+    mouseenter: function() {
+        $(this).css("border", "4px solid rgb(0, 57, 166)");
+    },
+
+    mouseout: function() {
+        $(this).css("border", "1px solid darkgray");
+    }
+})
+
 
 
 

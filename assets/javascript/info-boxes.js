@@ -1,6 +1,19 @@
 // PORTFOLIO SECTION: INFO BOXES
 // =============================================
 
+$(".projInfo").on({
+        mouseenter: function() {
+            if ($(this).attr("data-status") == "closed") {
+                $(this).css("opacity", "1");
+            }
+        },
+        mouseleave: function() {
+            if ($(this).attr("data-status") == "closed") {
+                $(this).css("opacity", ".125");
+            }
+        }
+    });
+
 var openBox = "";
 
 $(".projInfo").on("click", toggleInfoBox);
