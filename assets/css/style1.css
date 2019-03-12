@@ -138,6 +138,10 @@ p {
     margin-top: 10px;
 }
 
+#mainHeader {
+    margin-top: 30vh;
+}
+
 #mainName {
     font-weight: 300;
     opacity: 0.9;
@@ -162,7 +166,7 @@ p {
 #overlay {
     background-color: rgb(0, 57, 166);
     bottom: 0;
-    height: 800px;
+    height: 100vh;
     left: 0;
     opacity: 0.80;
     position: absolute;
@@ -346,7 +350,7 @@ p {
 
 .jumbotron {
     background: fixed url("../images/blueprint.jpg");
-    height: 800px;
+    height: 100vh;
     margin-bottom: 0px;
     margin-top: 0px;
     overflow: hidden;

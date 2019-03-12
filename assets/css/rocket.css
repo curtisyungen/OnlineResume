@@ -88,6 +88,7 @@
 #stars {
   background-image: url("../images/space4.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 800px;
   opacity: 0;
   position: absolute;
