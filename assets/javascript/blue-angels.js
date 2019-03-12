@@ -1,39 +1,6 @@
 // BLUE ANGELS
 // =============================================
 
-// Display "Click Me" message at set interval
-var shown = 0;
-var click = false;
-
-function showClickMe() {
-
-    setInterval(function() {
-        if (shown < 20 && click == false) {
-            showPrompt();
-        }
-        
-        shown += 1;
-    }, 3000);
-
-}
-
-function showPrompt() {
-    $("#clickMe").animate({
-        opacity: 0.65
-    }, 200);
-
-    setTimeout(function() {
-        $("#clickMe").animate({
-            opacity: 0
-        }, 200)
-    }, 400);
-}
-
-showClickMe();
-
-// Secondary Click Handler
-$("#clickMe").on("click", flyJets);
-
 // Event Handler profile image click
 $("#profileImg").on("click", flyJets);
 
@@ -105,7 +72,7 @@ function flyJets() {
     // Animate the div
     blueAngels.animate({
         marginLeft: `+=${width * 1.25}`,
-    }, width * 1.25)
+    }, width * 1.75)
 
     // Delete jet div after animation
     setTimeout(function () {
@@ -114,5 +81,5 @@ function flyJets() {
         }, 500);
 
         blueAngels.remove();
-    }, width * 1.25);
+    }, width * 1.75);
 }
