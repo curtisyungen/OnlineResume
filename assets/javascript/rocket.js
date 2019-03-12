@@ -101,9 +101,9 @@ function launchRocket() {
         }, showGradientTime);
 
         // Change profile picture to moon
-        $("#profileImg")
-            .attr("src", "./assets/images/moon.jpg")
-            .css("border", "1px solid black");
+        // $("#profileImg")
+        //     .attr("src", "./assets/images/moon.jpg")
+        //     .css("border", "1px solid black");
 
         // Show stars
         $("#stars").animate({
@@ -125,10 +125,10 @@ function launchRocket() {
             $("#rocket").hide();
 
             // Change profile picture back to portrait
-            $("#profileImg")
-                .addClass("profileImgHover")
-                .attr("src", "./assets/images/curtis.png")
-                .css("border", "1px solid darkgray");
+            // $("#profileImg")
+            //     .addClass("profileImgHover")
+            //     .attr("src", "./assets/images/curtis.png")
+            //     .css("border", "1px solid darkgray");
 
             // Fade out stars
             $("#stars").animate({
