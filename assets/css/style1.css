@@ -81,13 +81,13 @@ p {
 }
 
 /* For use with Satellite */
-/* #aboutMeContainer {
-    margin-top: -130px;
-} */
-
 #aboutMeContainer {
-    margin-top: -80px;
+    margin-top: -150px;
 }
+
+/* #aboutMeContainer {
+    margin-top: -80px;
+} */
 
 #contactInfo {
     background: rgba(0, 0, 255, 0.178);
@@ -176,19 +176,19 @@ p {
 }
 
 /* For use with Satellite */
-/* #profileImg {
+#profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
     height: 255px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -316px;
+    margin-top: -315px;
     padding: 0px;
     width: 250px;
     z-index: 99;
-} */
+}
 
-#profileImg {
+/* #profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
     height: 255px;
@@ -198,7 +198,7 @@ p {
     padding: 0px;
     width: 250px;
     z-index: 99;
-}
+} */
 
 #profileImg:hover {
     border: 4px solid rgb(0, 57, 166);
@@ -227,16 +227,18 @@ p {
 }
 
 #satellite {
-    background-image: url("../images/plane.png");
+    background-image: url("../images/satellite.png");
     background-repeat: no-repeat;
+    /* border: 1px solid black; */
     /* cursor: pointer; */
     height: 275px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -30px;
+    margin-top: -70px;
     opacity: 0.55;
     position: relative;
     width: 275px;
+    z-index: 1;
 
     -webkit-animation-name: Rotate;
     -webkit-animation-duration: 10s;
