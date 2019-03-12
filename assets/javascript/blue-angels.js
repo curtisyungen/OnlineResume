@@ -8,7 +8,7 @@ var click = false;
 function showClickMe() {
 
     setInterval(function() {
-        if (shown < 10 && click == false) {
+        if (shown < 20 && click == false) {
             showPrompt();
         }
         
