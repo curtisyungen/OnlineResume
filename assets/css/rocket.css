@@ -71,25 +71,25 @@
 }
 
 #rocket {
-    margin-left: 12px;
-    opacity: 0;
-    padding: 0;
-    transform: rotate(315deg);
-    z-index: 99;
+  margin-left: 12px;
+  opacity: 0;
+  padding: 0;
+  transform: rotate(315deg);
+  z-index: 99;
 }
 
 #rocketLaunch {
-    display: block;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
 }
 
 #stars {
   background-image: url("../images/space4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   opacity: 0;
   position: absolute;
   top: 0;
