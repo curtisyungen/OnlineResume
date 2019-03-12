@@ -93,7 +93,7 @@ function launchRocket() {
         }, rocketTime);
 
         // Make window scroll to top    
-        // $("html, body").animate({ scrollTop: 0 }, scrollTime);
+        $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
         // Show background gradient
         $("#gradient").animate({
