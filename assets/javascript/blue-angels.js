@@ -73,8 +73,8 @@ function flyJets() {
 
     // Animate the div
     blueAngels.animate({
-        marginLeft: `+=${width * 3.0}`,
-    }, width * 1.45)
+        marginLeft: `+=${width * 1.25}`,
+    }, width * 1.40)
 
     // Delete jet div after animation
     setTimeout(function () {
@@ -83,5 +83,5 @@ function flyJets() {
         }, 500);
 
         blueAngels.remove();
-    }, width * 1.65);
+    }, width * 1.50);
 }
