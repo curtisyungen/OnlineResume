@@ -89,6 +89,10 @@ p {
     margin-top: -80px;
 } */
 
+#boeing {
+    background: rgb(248, 248, 248);
+}
+
 #contactInfo {
     background: rgba(0, 0, 255, 0.178);
     min-height: 0px;
