@@ -1,9 +1,6 @@
 // BLUE ANGELS
 // =============================================
 
-// Event Handler profile image click
-$("#profileImg").on("click", flyJets);
-
 // Fly jets first time user scrolls past profile image
 var flown = 0;
 
@@ -17,6 +14,9 @@ $(window).on('scroll', function() {
     }
 });
 
+// Event Handler profile image click
+$("#profileImg").on("click", flyJets);
+
 // Fly Jets Function
 // Called when profile image is clicked
 // Creates blue angel icons and moves them across screen
@@ -28,7 +28,7 @@ function flyJets() {
     // Create div that will house blue angel icons
     var blueAngels = $("<div>").attr("id", "blueAngels");
 
-    blueAngels.css("left", "-5%");
+    blueAngels.css("left", "-10%");
 
     // Generate random number of jets between 2 and 5
     var numJets = Math.floor((Math.random() * 2) + 1 + Math.floor(Math.random() * 3) + 1);
