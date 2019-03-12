@@ -93,12 +93,17 @@ function launchRocket() {
         }, rocketTime);
 
         // Make window scroll to top    
-        $("html, body").animate({ scrollTop: 0 }, scrollTime);
+        // $("html, body").animate({ scrollTop: 0 }, scrollTime);
 
         // Show background gradient
         $("#gradient").animate({
             opacity: 0.8
         }, showGradientTime);
+
+        // Change profile picture to moon
+        $("#profileImg")
+            .attr("src", "./assets/images/moon.jpg")
+            .css("border", "1px solid black");
 
         // Show stars
         $("#stars").animate({
@@ -118,6 +123,11 @@ function launchRocket() {
 
             // Hide rocket
             $("#rocket").hide();
+
+            // Change profile picture back to portrait
+            $("#profileImg")
+                .attr("src", "./assets/images/curtis.png")
+                .css("border", "1px solid darkgray");
 
             // Fade out stars
             $("#stars").animate({
