@@ -93,6 +93,10 @@ p {
     background: rgb(248, 248, 248);
 }
 
+#chess {
+    display: none;  
+}
+
 #contactInfo {
     background: rgba(0, 0, 255, 0.178);
     min-height: 0px;
