@@ -32,8 +32,8 @@ function flyJets() {
 
     blueAngels.css("left", "-5%");
 
-    // Generate random number of jets between 2 and 5
-    var numJets = Math.floor((Math.random() * 2) + 1 + Math.floor(Math.random() * 3) + 1);
+    // Generate random number of jets between 3 and 5
+    var numJets = Math.floor((Math.random() * 2) + 2 + Math.floor(Math.random() * 3) + 1);
 
     // Generate formation ID
     var formation = Math.floor((Math.random() * 4) + 1);
