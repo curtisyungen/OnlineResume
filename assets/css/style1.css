@@ -200,6 +200,10 @@ p {
     width: 100%;
 }
 
+.tech {
+    float: left;
+}
+
 .tech li {
     margin-left: -5px;
     padding: 5px;
@@ -210,22 +214,6 @@ p {
 .tech li:hover {
     color: rgb(0, 57, 166);
     font-weight: 700;
-}
-
-#techLeft {
-    float: left;
-    padding-right: 10px;
-}
-
-#techCenter {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#techRight {
-    float: left;
-    padding-left: 10px;
 }
 
 #toastmasters, #kellerwilliams {
