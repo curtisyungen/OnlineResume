@@ -217,8 +217,14 @@ p {
     padding-right: 10px;
 }
 
+#techCenter {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #techRight {
-    float: right;
+    float: left;
     padding-left: 10px;
 }
 
