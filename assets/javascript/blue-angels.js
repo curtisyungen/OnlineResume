@@ -7,7 +7,7 @@ var flown = 0;
 $(window).on('scroll', function() {
     
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 400;             
+    var scroll_pos_test = 1200;             
 
     if(y_scroll_pos > scroll_pos_test && flown == 0) {
         
