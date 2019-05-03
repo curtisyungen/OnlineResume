@@ -164,6 +164,7 @@ function launchRocket() {
 
             // Replace launch button w/ Contact label in footer
             $("#contact").text("Contact").css("margin-bottom", "-50px").css("margin-top", "-15px");
+            $(".resumeBtn").css("margin-top", "-110px");
 
         }, starDisplayTime);
 
