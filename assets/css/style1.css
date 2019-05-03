@@ -365,6 +365,17 @@ p {
     margin-top: 0px;
 }
 
+.resumeBtn {
+    margin-top: -120px;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+}
+
+.resumeBtnTitle {
+    margin: 10px auto;
+}
+
 .row {
     margin: 0px;
     min-height: 100px;
