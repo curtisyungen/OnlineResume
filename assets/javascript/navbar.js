@@ -27,6 +27,7 @@ $(".navbar-item").on("click", function() {
     console.log(title);
 
     switch (title) {
+        case "arrow": scroll = 800; break;
         case "about": scroll = 1100; break;
         case "skills": scroll = 1400; break;
         case "projects": scroll = 1700; break;
