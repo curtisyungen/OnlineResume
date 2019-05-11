@@ -101,7 +101,7 @@ p {
 }
 
 #mainHeader {
-    margin-top: 12vh;
+    margin-top: 35vh;
 }
 
 #mainName {
@@ -124,10 +124,44 @@ p {
     width: 100%;    
 }
 
+#navbar {
+    background: rgb(0, 7, 112);
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    right: 50px;
+    width: 100px;
+    z-index: 100;
+}
+
+#navbar-arrow {
+    background: rgb(0, 7, 112);
+    color: white;
+    font-size: 14px;
+    margin-top: -60px;
+    position: absolute;
+    right: 50px;
+    width: 100px;
+    z-index: 100;
+}
+
+.navbar-item {
+    color: white;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    padding-top: 17px;
+    text-align: center;
+}
+
+.navbar-item:hover {
+    background: slategray;
+}
+
 #overlay {
     background-color: rgb(0, 57, 166);
     bottom: 0;
-    height: 50vh;
+    height: 100vh;
     left: 0;
     opacity: 0.80;
     position: absolute;
@@ -302,7 +336,7 @@ p {
 
 .jumbotron {
     background: fixed url("../images/blueprint.jpg");
-    height: 50vh;
+    height: 100vh;
     margin-bottom: 0px;
     margin-top: 0px;
     overflow: hidden;
