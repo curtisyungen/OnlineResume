@@ -8,6 +8,7 @@ $(window).on('scroll', function() {
     
     var $navbar = $("#navbar");
 
+    // Navbar Movement
     if (y_scroll_pos > scroll_pos_test) {
         $navbar
             .css("top", "50px")
