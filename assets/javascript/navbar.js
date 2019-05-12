@@ -28,17 +28,17 @@ $(".navbar-item").on("click", function() {
     console.log(title);
 
     switch (title) {
-        case "arrow": scroll = 800; break;
-        case "about": scroll = 1100; break;
-        case "skills": scroll = 1400; break;
-        case "projects": scroll = 1700; break;
-        case "experience": scroll = 2300; break;
-        case "education": scroll = 2650; break;
-        case "affiliations": scroll = 2850; break;
-        case "contact": scroll = 3200; break;
+        case "arrow": scroll = $("#navbar-arrow").offset().top + 60; break;
+        case "about": scroll = $("#aboutMeContainer").offset().top; break;
+        case "skills": scroll = $("#techContainer").offset().top; break;
+        case "projects": scroll = $("#portfolioContainer").offset().top; break;
+        case "experience": scroll = $("#workExpContainer").offset().top; break;
+        case "education": scroll = $("education").offset().top; break;
+        case "affiliations": scroll = $("#pastContainer").offset().top; break;
+        case "contact": scroll = $("#footerContainer").offset().top; break;
         default: "";
     }
 
-    $("html, body").animate({ scrollTop: scroll }, 500);
+    $("html, body").animate({ scrollTop: scroll }, 400);
 })
 
