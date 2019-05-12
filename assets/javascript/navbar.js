@@ -11,7 +11,7 @@ $(window).on('load, scroll', function() {
     // Navbar Movement
     if (y_scroll_pos > scroll_pos_test) {
         $navbar
-            .css("top", "50px")
+            .css("top", "58px")
             .css("position", "fixed");        
     }
     else {
@@ -33,7 +33,7 @@ $(".navbar-item").on("click", function() {
         case "skills": scroll = $("#techContainer").offset().top; break;
         case "projects": scroll = $("#portfolioContainer").offset().top; break;
         case "experience": scroll = $("#workExpContainer").offset().top; break;
-        case "education": scroll = $("education").offset().top; break;
+        case "education": scroll = $(".educationTitle").offset().top; break;
         case "affiliations": scroll = $("#pastContainer").offset().top; break;
         case "contact": scroll = $("#footerContainer").offset().top; break;
         default: "";

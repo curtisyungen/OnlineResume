@@ -301,7 +301,7 @@ p {
 
 .description {
     font-size: 14px;
-    width: 85%;
+    width: 100%;
 }
 
 .educationInfo {
@@ -377,6 +377,11 @@ p {
 
 .pastSection {
     height: 130px;
+}
+
+.projDescription {
+    font-size: 14px;
+    width: 85%;
 }
 
 /* .projImg {
@@ -462,6 +467,7 @@ p {
 
 .techList {
     bottom: 0;
+    /* display: inline; */
     line-height: 32px;
     white-space: nowrap;
 }
