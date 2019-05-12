@@ -16,7 +16,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 57, 166);
+    background: lightgray;
     border-radius: 0;
 }
 

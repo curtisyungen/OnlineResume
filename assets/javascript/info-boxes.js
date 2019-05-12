@@ -98,7 +98,7 @@ function toggleInfoBox() {
         // Expand info box
         $this.animate({
             opacity: 1,
-            width: width - adjust
+            width: width - adjust + 6
         }, 400);
 
         // Show info box text
