@@ -42,7 +42,7 @@ function toggleInfoBox() {
         $(openBox).animate({
             opacity: 0.125,
             width: 80
-        }, 750);
+        }, 400);
 
         // Fade out open box text
         $(`#${openBoxId}`).animate({
@@ -99,7 +99,7 @@ function toggleInfoBox() {
         $this.animate({
             opacity: 1,
             width: width - adjust
-        }, 750);
+        }, 400);
 
         // Show info box text
         infoText.show();
@@ -109,7 +109,7 @@ function toggleInfoBox() {
             infoText.animate({
                 opacity: 1
             }, 250);
-        }, 650);
+        }, 300);
 
         // Flip arrow
         $this.children(".arrow")
@@ -134,7 +134,7 @@ function toggleInfoBox() {
         $this.animate({
             opacity: 0.125,
             width: 80
-        }, 750);
+        }, 400);
 
         // Flip arrow
         $this.children(".arrow")
@@ -160,7 +160,7 @@ function hideOpenBox() {
         $(openBox).animate({
             opacity: 0.125,
             width: 80
-        }, 750);
+        }, 400);
 
         // Fade out open box text
         $(`#${openBoxId}`).animate({

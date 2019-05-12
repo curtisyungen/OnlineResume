@@ -1,7 +1,7 @@
 // NAVBAR 
 // =============================================
 
-$(window).on('scroll', function() {
+$(window).on('load, scroll', function() {
     
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = 750;  
