@@ -52,14 +52,14 @@ function floatArrow() {
     setInterval(function() {
 
         $(".fa-chevron-down").animate({
-            marginTop: `-=15`,
-        }, 500);
+            marginTop: `-=25`,
+        }, 1000);
 
         $(".fa-chevron-down").animate({
-            marginTop: `+=15`,
-        }, 500);
+            marginTop: `+=25`,
+        }, 1000);
 
-    }, 1000);
+    }, 2000);
 }
 
 floatArrow();
