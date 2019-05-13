@@ -14,7 +14,7 @@ $(window).on('load, scroll', function() {
             .css("position", "fixed");        
 
         $navbar.animate({
-            top: "58px",
+            top: "+=58px",
         }, 300);
     }
     else {
