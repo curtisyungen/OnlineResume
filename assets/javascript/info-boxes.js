@@ -16,7 +16,7 @@ $(".projInfo").on({
 
 var openBox = "";
 
-$(".projInfo").on("click", toggleInfoBox);
+$(".projInfo").on("mouseover", toggleInfoBox);
 
 function toggleInfoBox() {
 
