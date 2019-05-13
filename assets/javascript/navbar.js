@@ -40,5 +40,17 @@ $(".navbar-item").on("click", function() {
     }
 
     $("html, body").animate({ scrollTop: scroll }, 400);
-})
+});
 
+function floatArrow() {
+    setInterval(function() {
+        $(".fa-chevron-down").animate({
+            marginTop: `-=5`,
+        }, 250);
+        $(".fa-chevron-down").animate({
+            marginTop: `+=5`,
+        }, 250);
+    }, 500);
+}
+
+floatArrow();
