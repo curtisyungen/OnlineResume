@@ -45,11 +45,11 @@ $(".navbar-item").on("click", function() {
 function floatArrow() {
     setInterval(function() {
         $(".fa-chevron-down").animate({
-            marginTop: `-=5`,
-        }, 250);
+            marginTop: `-=10`,
+        }, 350);
         $(".fa-chevron-down").animate({
-            marginTop: `+=5`,
-        }, 250);
+            marginTop: `+=10`,
+        }, 350);
     }, 500);
 }
 
