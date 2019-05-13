@@ -4,26 +4,20 @@
 $(window).on('load, scroll', function() {
     
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = $("#navbar-arrow").offset().top + 60;  
+    var scroll_pos_test = $("#navbar-arrow").offset().top + 2;  
     
     var $navbar = $("#navbar");
 
     // Navbar Movement
     if (y_scroll_pos >= scroll_pos_test) {
         $navbar
+            .css("top", "58px")
             .css("position", "fixed");        
-
-        $navbar.animate({
-            top: "+=58px",
-        }, 300);
     }
     else {
         $navbar
+            .css("top", "auto")
             .css("position", "absolute");
-
-        $navbar.animate({
-            top: "auto",
-        }, 300);
     }
 });
 
@@ -52,11 +46,11 @@ function floatArrow() {
     setInterval(function() {
 
         $(".fa-chevron-down").animate({
-            marginTop: `-=25`,
+            marginTop: `-=20`,
         }, 1000);
 
         $(".fa-chevron-down").animate({
-            marginTop: `+=25`,
+            marginTop: `+=20`,
         }, 1000);
 
     }, 2000);
