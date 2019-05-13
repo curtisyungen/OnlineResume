@@ -4,7 +4,7 @@
 $(window).on('load, scroll', function() {
     
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 750;  
+    var scroll_pos_test = 800;  
     
     var $navbar = $("#navbar");
 
