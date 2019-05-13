@@ -32,7 +32,7 @@ function countDown() {
                 default: $("#launchText").text(count);
             }
 
-        }, 900);
+        }, 400);
     }
 }
 
