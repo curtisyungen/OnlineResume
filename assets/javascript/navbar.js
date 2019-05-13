@@ -47,11 +47,11 @@ function floatArrow() {
 
         $(".fa-chevron-down").animate({
             marginTop: `-=20`,
-        }, 700);
+        }, 1000);
 
         $(".fa-chevron-down").animate({
             marginTop: `+=20`,
-        }, 700);
+        }, 1000);
 
     }, 1000);
 }
