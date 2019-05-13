@@ -11,13 +11,19 @@ $(window).on('load, scroll', function() {
     // Navbar Movement
     if (y_scroll_pos >= scroll_pos_test) {
         $navbar
-            .css("top", "58px")
             .css("position", "fixed");        
+
+        $navbar.animate({
+            top: "58px",
+        }, 300);
     }
     else {
         $navbar
-            .css("top", "auto")
             .css("position", "absolute");
+
+        $navbar.animate({
+            top: "auto",
+        }, 300);
     }
 });
 
