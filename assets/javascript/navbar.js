@@ -44,7 +44,7 @@ $(window).on('load, scroll', function() {
     else if (y_scroll_pos >= $("#pastContainer").offset().top && y_scroll_pos < $("#footerContainer").offset().top) {
         $("#nav-affiliations").css("background", "lightblue");
     }
-    else if (y_scroll_pos >= $(".footerContainer").offset().top) {
+    else if (y_scroll_pos >= $("#footerContainer").offset().top) {
         $("#nav-contact").css("background", "lightblue");
     }
 });
