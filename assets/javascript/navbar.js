@@ -25,27 +25,26 @@ $(window).on('load, scroll', function() {
     }
 
     // Control highlighting of Navbar Items
-
-    if (y_scroll_pos >= $("#aboutMeContainer").offset().top && y_scroll_pos < $("#techContainer").offset().top) {
-        $("#nav-about").css("background", "lightblue");
+    if (y_scroll_pos >= $("#footerContainer").offset().top) {
+        $("#nav-contact").css("background", "lightblue");
     }
-    else if (y_scroll_pos >= $("#techContainer").offset().top && y_scroll_pos < $("#portfolioContainer").offset().top) {
-        $("#nav-skills").css("background", "lightblue");
-    }
-    else if (y_scroll_pos >= $("#portfolioContainer").offset().top && y_scroll_pos < $("#workExpContainer").offset().top) {
-        $("#nav-projects").css("background", "lightblue");
-    }
-    else if (y_scroll_pos >= $("#workExpContainer").offset().top && y_scroll_pos < $(".educationTitle").offset().top) {
-        $("#nav-experience").css("background", "lightblue");
-    }
-    else if (y_scroll_pos >= $(".educationTitle").offset().top && y_scroll_pos < $("#pastContainer").offset().top) {
-        $("#nav-education").css("background", "lightblue");
-    }
-    else if (y_scroll_pos >= $("#pastContainer").offset().top && y_scroll_pos < $("#footerContainer").offset().top) {
+    else if (y_scroll_pos >= $("#pastContainer").offset().top) {
         $("#nav-affiliations").css("background", "lightblue");
     }
-    else if (y_scroll_pos >= $("#footerContainer").offset().top) {
-        $("#nav-contact").css("background", "lightblue");
+    else if (y_scroll_pos >= $(".educationTitle").offset().top) {
+        $("#nav-education").css("background", "lightblue");
+    }
+    else if (y_scroll_pos >= $("#workExpContainer").offset().top) {
+        $("#nav-experience").css("background", "lightblue");
+    }
+    else if (y_scroll_pos >= $("#portfolioContainer").offset().top) {
+        $("#nav-projects").css("background", "lightblue");
+    }
+    else if (y_scroll_pos >= $("#techContainer").offset().top) {
+        $("#nav-skills").css("background", "lightblue");
+    }
+    else if (y_scroll_pos >= $("#aboutMeContainer").offset().top) {
+        $("#nav-about").css("background", "lightblue");
     }
 });
 
