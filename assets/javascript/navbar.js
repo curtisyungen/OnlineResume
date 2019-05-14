@@ -26,10 +26,6 @@ $(window).on('load, scroll', function() {
 
     // Control highlighting of Navbar Items
 
-    for (var item in $("#navbar").children()) {
-        $("#navbar").children()[item].css("background", "blue");
-    }
-
     if (y_scroll_pos >= $("#aboutMeContainer").offset().top && y_scroll_pos < $("#techContainer").offset().top) {
         $("navbar-about").css("background", "lightblue");
     }
