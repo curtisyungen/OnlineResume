@@ -51,7 +51,7 @@ $(window).on('load, scroll', function() {
     else if (y_scroll_pos >= $("#techContainer").offset().top) {
         $("#nav-skills").css("background", "rgb(0, 57, 166)");
     }
-    else if (y_scroll_pos >= $("#aboutMeContainer").offset().top) {
+    else if (y_scroll_pos >= $("#navbar-arrow").offset().top + 60) {
         $("#nav-about").css("background", "rgb(0, 57, 166)");
     }
 });
@@ -63,7 +63,7 @@ $(".navbar-item").on("click", function() {
 
     switch (title) {
         case "arrow": scroll = $("#navbar-arrow").offset().top + 60; break;
-        case "about": scroll = $("#aboutMeContainer").offset().top; break;
+        case "about": scroll = $("#contactInfo").offset().top; break;
         case "skills": scroll = $("#techContainer").offset().top; break;
         case "projects": scroll = $("#portfolioContainer").offset().top; break;
         case "experience": scroll = $("#workExpContainer").offset().top; break;
