@@ -7,10 +7,10 @@ var flown = 0;
 $(window).on('scroll', function() {
     
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 1800;             
+    var sec_start = $("#workExpContainer").offset().top;  
+    var sec_end = $(".educationTitle").offset().top;           
 
-    if(y_scroll_pos > scroll_pos_test && flown == 0) {
-        
+    if(y_scroll_pos >= sec_start && y_scroll_pos < sec_end && flown == 0) {
         flyJets();
         flown += 1;
     }

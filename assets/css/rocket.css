@@ -21,10 +21,9 @@
 }
 
 #launchButton {
-    background-image: url("../images/border.png");
-    background-repeat: no-repeat;
+    /* background-image: url("../images/border.png");
+    background-repeat: no-repeat; */
     /* background: rgb(206, 0, 0); */
-    /* border: 3px dotted black; */
     border-radius: 70px;
     height: 70px;
     position: relative;
@@ -32,7 +31,7 @@
     width: 70px;
     z-index: 1;
 
-    -webkit-animation-name: Rotate;
+    /* -webkit-animation-name: Rotate;
     -webkit-animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -43,23 +42,23 @@
     -ms-animation-name: Rotate;
     -ms-animation-duration: 15s;
     -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
+    -ms-animation-timing-function: linear; */
 }
 
 #launchPad {
     border-radius: 70px;
     cursor: pointer;
-    height: 70px;
+    /* height: 70px; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 0;
     width: 70px;
     z-index: 100;
 }
 
 #launchText {
-    color: white;
+    color: darkgray;
     font-size: 13px;
     margin-left: 0px;
     margin-top: -50px;
@@ -80,7 +79,6 @@
 
 #rocketLaunch {
   display: block;
-  position: absolute;
   width: 100%;
   z-index: 99;
 }
@@ -96,7 +94,7 @@
   width: 100%;
 }
 
-@-webkit-keyframes Rotate {
+/* @-webkit-keyframes Rotate {
     from {
       -webkit-transform: rotate(0deg);
     }
@@ -119,4 +117,4 @@
     to {
       -ms-transform: rotate(360deg);
     }
-  }
+  } */

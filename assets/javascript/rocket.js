@@ -23,16 +23,18 @@ function countDown() {
         $("#launchText")
             .text(count);
 
-        setInterval(function () {
+        var interval = setInterval(function () {
             count -= 1;
 
             switch (count) {
                 case 0: $("#launchText").text("Blast off!"); break;
-                case -1: launchRocket(); break;
+                case -1: launchRocket(); clearInterval(interval); break;
                 default: $("#launchText").text(count);
             }
 
         }, 400);
+
+        
     }
 }
 
@@ -162,9 +164,7 @@ function launchRocket() {
                 opacity: 1,
             }, showOverlayTime);
 
-            // Replace launch button w/ Contact label in footer
-            $("#contact").text("Contact").css("margin-bottom", "-50px").css("margin-top", "-15px");
-            $(".resumeBtn").css("margin-top", "-110px");
+            $("#rocketLaunch").hide();
 
         }, starDisplayTime);
 
