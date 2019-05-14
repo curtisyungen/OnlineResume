@@ -58,6 +58,14 @@ function floatArrow() {
             marginTop: `-=10`,
         }, 500);
 
+        $(".fa-chevron-down").animate({
+            marginTop: `+=10`,
+        }, 500);
+
+        $(".fa-chevron-down").animate({
+            marginTop: `-=10`,
+        }, 500);
+
     }, 500);
 }
 
