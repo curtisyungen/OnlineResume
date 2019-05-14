@@ -1,7 +1,7 @@
 // NAVBAR 
 // =============================================
 
-$(window).on('load, scroll', function() {
+$(window).on('load, scroll, unload', function() {
     
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = $("#navbar-arrow").offset().top + 2;  
@@ -24,8 +24,6 @@ $(window).on('load, scroll', function() {
 $(".navbar-item").on("click", function() {
     var title = $(this).attr("data-title");
     var scroll = 0;
-
-    console.log(title);
 
     switch (title) {
         case "arrow": scroll = $("#navbar-arrow").offset().top + 60; break;
