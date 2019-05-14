@@ -25,9 +25,9 @@ $(window).on('load, scroll', function() {
     }
 
     // Control highlighting of Navbar Items
-    $(".nav-item").css("background", "blue");
-    
-    if (y_scroll_pos >= $("#footerContainer").offset().top) {
+    $(".navbar-item").css("background", "blue");
+
+    if (y_scroll_pos >= $("#footerContainer").offset().top - 1000) {
         $("#nav-contact").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $("#pastContainer").offset().top) {
