@@ -27,25 +27,25 @@ $(window).on('load, scroll', function() {
     // Control highlighting of Navbar Items
 
     if (y_scroll_pos >= $("#aboutMeContainer").offset().top && y_scroll_pos < $("#techContainer").offset().top) {
-        $("navbar-about").css("background", "lightblue");
+        $("#navbar-about").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $("#techContainer").offset().top && y_scroll_pos < $("#portfolioContainer").offset().top) {
-        $("navbar-skills").css("background", "lightblue");
+        $("#navbar-skills").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $("#portfolioContainer").offset().top && y_scroll_pos < $("#workExpContainer").offset().top) {
-        $("navbar-projects").css("background", "lightblue");
+        $("#navbar-projects").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $("#workExpContainer").offset().top && y_scroll_pos < $(".educationTitle").offset().top) {
-        $("navbar-experience").css("background", "lightblue");
+        $("#navbar-experience").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $(".educationTitle").offset().top && y_scroll_pos < $("#pastContainer").offset().top) {
-        $("navbar-education").css("background", "lightblue");
+        $("#navbar-education").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $("#pastContainer").offset().top && y_scroll_pos < $("#footerContainer").offset().top) {
-        $("navbar-affiliations").css("background", "lightblue");
+        $("#navbar-affiliations").css("background", "lightblue");
     }
     else if (y_scroll_pos >= $(".footerContainer").offset().top) {
-        $("navbar-contact").css("background", "lightblue");
+        $("#navbar-contact").css("background", "lightblue");
     }
 });
 
