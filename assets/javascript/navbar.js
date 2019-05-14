@@ -43,14 +43,19 @@ $(".navbar-item").on("click", function() {
 });
 
 function floatArrow() {
+
+    $(".fa-chevron-down").animate({
+        marginTop: `-=10`,
+    }, 500);
+
     setInterval(function() {
         
         $(".fa-chevron-down").animate({
-            marginTop: `-=10`,
+            marginTop: `+=10`,
         }, 500);
 
         $(".fa-chevron-down").animate({
-            marginTop: `+=10`,
+            marginTop: `-=10`,
         }, 500);
 
     }, 500);
