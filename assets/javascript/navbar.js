@@ -25,7 +25,12 @@ $(window).on('load, scroll', function() {
     }
 
     // Control highlighting of Navbar Items
-    $(".navbar-item").css("background", "blue");
+    $("#nav-about").css("background", "rgb(0, 57, 166)");
+    $("#nav-skills").css("background", "rgb(0, 57, 166)");
+    $("#nav-projects").css("background", "rgb(0, 57, 166)");
+    $("#nav-experience").css("background", "rgb(0, 57, 166)");
+    $("#nav-affiliations").css("background", "rgb(0, 57, 166)");
+    $("#nav-contact").css("background", "rgb(0, 57, 166)");
 
     if (y_scroll_pos >= $("#footerContainer").offset().top - 1000) {
         $("#nav-contact").css("background", "lightblue");
