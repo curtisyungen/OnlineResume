@@ -1,19 +1,23 @@
 // NAVBAR 
 // =============================================
 
+// Displays navbar and controls navbar scrolling
 $(window).on('load, scroll', function() {
     
+    // Get window vertical scroll distance
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = $("#navbar-arrow").offset().top + 2;  
     
     var $navbar = $("#navbar");
 
-    // Navbar Movement
+    // Navbar scroll with window
     if (y_scroll_pos >= scroll_pos_test) {
         $navbar
             .css("top", "58px")
             .css("position", "fixed");        
     }
+
+    // Keep navbar in starting place
     else {
         $navbar
             .css("top", "auto")
@@ -21,6 +25,7 @@ $(window).on('load, scroll', function() {
     }
 });
 
+// Scroll to section on page when navbar clicked
 $(".navbar-item").on("click", function() {
     var title = $(this).attr("data-title");
     var scroll = 0;
@@ -40,6 +45,7 @@ $(".navbar-item").on("click", function() {
     $("html, body").animate({ scrollTop: scroll }, 400);
 });
 
+// Animates navbar arrow to move up and down
 function floatArrow() {
 
     $(".fa-chevron-down").animate({
@@ -64,7 +70,7 @@ function floatArrow() {
             marginTop: `-=10`,
         }, 500);
 
-    }, 500);
+    }, 1000);
 }
 
 floatArrow();
