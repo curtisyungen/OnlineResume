@@ -24,7 +24,7 @@ $(window).on('load, scroll', function() {
             .css("position", "absolute");
     }
 
-    // Control highlighting of Navbar Items
+    // Unhighlight all navbar items
     $("#nav-about").css("background", "none");
     $("#nav-skills").css("background", "none");
     $("#nav-projects").css("background", "none");
@@ -33,6 +33,7 @@ $(window).on('load, scroll', function() {
     $("#nav-affiliations").css("background", "none");
     $("#nav-contact").css("background", "none");
 
+    // Control highlighting of navbar items
     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
         $("#nav-contact").css("background", "rgb(0, 57, 166)");
     }
