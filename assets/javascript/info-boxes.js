@@ -49,6 +49,8 @@ function toggleInfoBox() {
             opacity: 0
         }, 100);
 
+        $(`#${openBoxId}`).hide();
+
         // Reset the arrow icon of the open box
         $(openBox).children(".arrow")
             .removeClass("fa-arrow-circle-right")
