@@ -166,6 +166,7 @@ function launchRocket() {
 
             $("#backToTop")
                 .css("display", "block")
+                .css("height", "50px")
                 .text("Back to Top");
 
         }, starDisplayTime);

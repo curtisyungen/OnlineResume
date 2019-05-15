@@ -4,7 +4,10 @@
   cursor: pointer;
   display: none;
   font-size: 13px;
-  margin-top: 125px;
+  height: 0px;
+  margin-bottom: -5px;
+  margin-top: 200px;
+  min-height: 0px !important;
   padding: 0;
   width: 100%;
   z-index: 99;
