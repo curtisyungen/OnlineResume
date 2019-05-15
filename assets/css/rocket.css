@@ -1,4 +1,15 @@
 
+#backToTop {
+  color: darkgray;
+  cursor: pointer;
+  display: none;
+  font-size: 13px;
+  margin-top: 125px;
+  padding: 0;
+  width: 100%;
+  z-index: 99;
+}
+
 /* ROCKET LAUNCH */
 
 #gradient {

@@ -33,8 +33,6 @@ function countDown() {
             }
 
         }, 400);
-
-        
     }
 }
 
@@ -46,7 +44,7 @@ function launchRocket() {
     var showStarsTime = 500;            // Time to fade in stars
     var hideStarsTime = 2000;           // Time to fade out stars
     var showOverlayTime = 2000;         // Time to fade in overlay
-    var starDisplayTime = 5200;         // Time to keep stars displayed
+    var starDisplayTime = 4500;         // Time to keep stars displayed
     var showQuoteTime = 2500;           // Time to fade in quote
     var hideQuoteTime = 500;            // Time to fade out quote
     var showGradientTime = 500;         // Time to fade in background gradient
@@ -166,7 +164,15 @@ function launchRocket() {
 
             $("#rocketLaunch").hide();
 
+            $("#backToTop")
+                .css("display", "block")
+                .text("Back to Top");
+
         }, starDisplayTime);
 
     }, 500);
 }
+
+$("#backToTop").on("click", function() {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+});
