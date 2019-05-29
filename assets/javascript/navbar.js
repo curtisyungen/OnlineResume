@@ -37,7 +37,7 @@ $(window).on('load, scroll', function() {
     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
         $("#nav-contact").css("background", "rgb(0, 57, 166)");
     }
-    else if (y_scroll_pos >= $("#pastContainer").offset().top - 200) {
+    else if (y_scroll_pos >= $("#pastContainer").offset().top - 250) {
         $("#nav-affiliations").css("background", "rgb(0, 57, 166)");
     }
     else if (y_scroll_pos >= $(".educationTitle").offset().top) {
