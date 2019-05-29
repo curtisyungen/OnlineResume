@@ -242,8 +242,14 @@ p {
     width: 100%;
 }
 
+.skillsList {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tech {
-    float: left;
+    display: inline-block;
+    width: auto;
 }
 
 .tech li {

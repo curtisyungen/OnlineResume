@@ -12,12 +12,21 @@
         position: relative;
     }
 
+
     .row {
         padding: 5px 5px;
     }
 
     .showMore {
         position: relative;
+    }
+
+    .skillsList {
+
+    }
+
+    .tech {
+        width: auto;
     }
 
     .techList {
