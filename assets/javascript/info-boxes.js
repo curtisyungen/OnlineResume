@@ -40,7 +40,7 @@ function toggleInfoBox() {
 
         // Shrink open box
         $(openBox).animate({
-            opacity: 0.125,
+//             opacity: 0.125,
             width: 80
         }, 400);
 
