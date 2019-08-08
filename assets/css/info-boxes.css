@@ -10,11 +10,12 @@
 
 .projInfo {
     background: rgb(70, 70, 70);
+    border: 1px solid black;
     color: white;
     cursor: pointer;
     display: inline-block;
     height: 100%;
-    opacity: 0.125;
+/*     opacity: 0.125; */
     padding-left: 0px;
     padding-right: 0px;
     position: absolute;
