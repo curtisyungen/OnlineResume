@@ -8,9 +8,9 @@ $(".projInfo").on({
             }
         },
         mouseleave: function() {
-            if ($(this).attr("data-status") == "closed") {
-                $(this).css("opacity", ".125");
-            }
+//             if ($(this).attr("data-status") == "closed") {
+//                 $(this).css("opacity", ".125");
+//             }
         }
     });
 
