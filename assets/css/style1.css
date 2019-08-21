@@ -314,7 +314,7 @@ p {
 }
 
 .conwayLink {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .description {
