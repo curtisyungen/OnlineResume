@@ -17,7 +17,14 @@ $(window).on('scroll', function() {
 });
 
 // Event Handler profile image click
-$("#profileImg").on("click", flyJets);
+// Scroll to Experience, fly jets
+$("#profileImg").on("click", function() {
+    var scroll = $("#workExpContainer").offset().top;
+    flown += 1;
+
+    $("html, body").animate({ scrollTop: scroll }, 100);
+    flyJets();
+});
 
 // Fly Jets Function
 // Called when profile image is clicked
