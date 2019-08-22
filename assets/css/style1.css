@@ -189,7 +189,7 @@ p {
 #profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
-    /* cursor: pointer; */
+    cursor: pointer;
     height: 255px;
     margin-left: auto;
     margin-right: auto;
