@@ -436,6 +436,10 @@ p {
     z-index: 99;
 }
 
+.resumeBtn:hover {
+    text-decoration: none;
+}
+
 .resumeBtnTitle {
     margin: 10px auto;
 }
