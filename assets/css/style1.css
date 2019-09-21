@@ -481,7 +481,6 @@ p {
 .technology {
     border: 1px solid darkgray;
     border-radius: 5px;
-    font-size: 10px;
     margin-top: 3px;
     padding: 2px 5px;
     text-align: center;
@@ -495,7 +494,8 @@ p {
 
 .techList {
     bottom: 0;
-    /* display: inline; */
+    display: block;
+    font-size: 12px;
     line-height: 32px;
     white-space: nowrap;
 }
