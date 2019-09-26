@@ -336,9 +336,46 @@ p {
     transform: rotate(270deg);
 }
 
+.fact {
+    margin-bottom: 2px;
+    margin-right: 2px;
+    padding: 10px;
+    text-align: center;
+    width: 33.1%;
+}
+
+.fact:hover {
+    background: rgb(177, 121, 177);
+    transition: 0.5s;
+}
+
+.factIcon {
+    margin-bottom: 8px;
+}
+
+.fact i {
+    height: 35px;
+    margin: 0px auto;
+    max-height: 35px;
+}
+
+.fact p {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.funFacts {
+    display: flex;
+    flex-direction: row;
+}
+
 .icon {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.inline {
+    display: inline-block !important;
 }
 
 .item {
