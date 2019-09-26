@@ -50,6 +50,13 @@
     }
 }
 
+@media screen and (max-width: 880px) {
+    .fact {
+        border: 1px solid gray;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .educationInfo {

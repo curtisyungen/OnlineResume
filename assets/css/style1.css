@@ -330,13 +330,14 @@ p {
 }
 
 .fa-plane {
-    color: rgb(0, 57, 166);;
+    color: rgb(0, 57, 166);
     display: inline-block;
     margin-right: 7px;
     transform: rotate(270deg);
 }
 
 .fact {
+    border-radius: 4px;
     margin-bottom: 2px;
     margin-right: 2px;
     padding: 10px;
@@ -345,8 +346,8 @@ p {
 }
 
 .fact:hover {
-    background: rgb(177, 121, 177);
-    transition: 0.5s;
+    background: rgb(200, 219, 255);
+    transition: 1s;
 }
 
 .factIcon {
@@ -389,6 +390,15 @@ p {
     font-size: 12px;
     margin-top: -5px;
     text-align: right;
+}
+
+.jugglingVid {
+    color: blue;
+    text-decoration: none;
+}
+
+.jugglingVid:hover {
+    text-decoration: none;
 }
 
 .jumbotron {
