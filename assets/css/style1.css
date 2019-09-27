@@ -260,7 +260,6 @@ p {
 
 .tech li:hover {
     color: rgb(0, 57, 166);
-    font-weight: 700;
 }
 
 #toastmasters, #kellerwilliams {
@@ -346,8 +345,9 @@ p {
 }
 
 .fact:hover {
-    background: rgb(200, 219, 255);
-    transition: 1s;
+    background: rgb(214, 229, 255);
+    color: rgb(0, 57, 166);
+    transition: 0.5s;
 }
 
 .factIcon {
@@ -361,6 +361,7 @@ p {
 }
 
 .fact p {
+    color: black;
     display: inline-block;
     font-weight: 400;
 }
@@ -535,7 +536,7 @@ p {
 }
 
 .technology:hover {
-    background: rgb(0, 57, 166);;
+    background: rgb(0, 57, 166);
     color: white;
 }
 
