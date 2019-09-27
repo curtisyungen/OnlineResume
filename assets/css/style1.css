@@ -393,12 +393,13 @@ p {
     text-align: right;
 }
 
-.jugglingVid {
+.jugglingVidBtn {
     color: blue;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.jugglingVid:hover {
+.jugglingVidBtn:hover {
     text-decoration: none;
 }
 
@@ -431,6 +432,14 @@ p {
 
 .margin-top-10 {
     margin-top: 10px;
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+.modal-dialog {
+    width: fit-content;
 }
 
 .moreInfo {
