@@ -64,7 +64,8 @@
             <div class="container" id="mainHeader">
                 <h1 class="display-3" id="mainName"><strong>Curtis Yungen</strong></h1>
                 <p class="lead" id="tagline">Full-Stack Web Developer</p>
-                <a href="https://github.com/curtisyungen/Portfolio/blob/master/Curtis-Yungen-Resume.pdf" target="_blank">
+                <a href="https://github.com/curtisyungen/Portfolio/blob/master/Curtis-Yungen-Resume.pdf"
+                    target="_blank">
                     <button class="btn btn-outline-light btn-sm resumeBtnTitle">View Resume</button>
                 </a>
             </div>
@@ -115,9 +116,6 @@
                     class="fas fa-envelope fa-3x icon"></i></a>
             <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
                     class="fab fa-instagram fa-3x icon"></i></a>
-            <!-- <a href="https://github.com/curtisyungen/Portfolio/blob/master/Curtis-Yungen-Resume.pdf" target="_blank">
-                <button class="btn btn-primary btn-sm resumeBtn">View Resume</button>
-            </a> -->
         </div>
     </div>
 
@@ -129,7 +127,7 @@
     <!-- Profile Image -->
     <div class="container" id="profileContainer">
         <div class="row">
-            <img id="profileImg" src="./assets/images/curtis.png">           
+            <img id="profileImg" src="./assets/images/curtis.png">
         </div>
     </div>
 
@@ -166,8 +164,10 @@
             <!-- Running -->
             <div class="fact">
                 <div class="factIcon"><i class="fa fa-2x fa-running"></i></div>
-                <p class="description">In 2019, I ran a 50 mile ultra-marathon with no training. Then three weeks later I ran another one.</p>
+                <p class="description">In 2019, I ran a 50 mile ultra-marathon with no training. Then three weeks later
+                    I ran another one.</p>
             </div>
+
             <!-- Juggling -->
             <div class="fact">
                 <div class="factIcon">
@@ -177,31 +177,47 @@
                     <i class="fa fa-1x fa-circle"></i>
                     <i class="fa fa-1x fa-circle"></i>
                 </div>
-                <p class="description">I taught myself how to juggle. Check out this 
-                    <a class="jugglingVid" href="https://vimeo.com/362673095" target="_blank">15-second video</a>
+                
+                <!-- Open Juggling Modal, Button -->
+                <p class="description">I taught myself how to juggle. Check out this
+                        <span class="jugglingVidBtn" data-toggle="modal" data-target="#myModal">
+                            15-second video
+                        </span>
                     of me juggling 3, 5, 7, and 0 balls.
                 </p>
             </div>
+
+            <!-- Juggling Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+                            <iframe 
+                                src="https://player.vimeo.com/video/362673095" 
+                                width="480" 
+                                height="480" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen" 
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Music -->
             <div class="fact">
                 <div class="factIcon"><i class="fa fa-2x fa-guitar"></i></div>
                 <p class="description">I play classical piano, acoustic guitar, and bass guitar...separately.</p>
             </div>
-            <!-- Wholesaling -->
-            <!-- <div class="fact">
-                <div class="factIcon"><i class="fa fa-2x fa-home"></i></div>
-                <p class="description">Learned how to wholesale commercial properties and wholesaled an 8-unit apartment building in North Everett.</p>
-            </div> -->
-            <!-- Books -->
-            <!-- <div class="fact">
-                <div class="factIcon"><i class="fa fa-2x fa-book"></i></div>
-                <p class="description">Amassed a book collection of 460+ books. Created a website to sell them.</p>
-            </div> -->
-            <!-- Painting -->
-            <!-- <div class="fact">
-                <div class="factIcon"><i class="fa fa-2x fa-palette"></i></div>
-                <p class="description">Love to paint cityscapes.</p>
-            </div> -->
         </div>
     </div>
 
@@ -216,7 +232,7 @@
             <ul class="col tech" id="techRow1">
                 <li>HTML5</li>
                 <li>CSS</li>
-                <li>Javascript</li>    
+                <li>Javascript</li>
                 <li>Jquery</li>
             </ul>
 
@@ -244,7 +260,7 @@
         </div>
 
         <div class="row" id="portfolio">
-            
+
             <!-- Congo -->
             <div class="col-lg-12 project" id="groceryList" style="height: 130px; margin-top: 10px;">
 
@@ -252,18 +268,20 @@
                 <div class="projInfo" data-status="closed" data-id="congoInfo">
                     <div class="fas fa-arrow-circle-left fa-3x icon arrow"></div>
                     <span class="projInfoText" id="congoInfo">
-                        Congo is a website for selling my collection of over 460 books. 
-                        Users may create a secure account, explore and sort through books, view book details and availability, 
-                        and add books to their cart for purchase. Users may also view previous orders. Transactions are handled by 
-                        PayPal using the PayPal API. All passwords are encrypted in the database. 
-                        
-                        This was a personal project created entirely by yours truly. 
+                        Congo is a website for selling my collection of over 460 books.
+                        Users may create a secure account, explore and sort through books, view book details and
+                        availability,
+                        and add books to their cart for purchase. Users may also view previous orders. Transactions are
+                        handled by
+                        PayPal using the PayPal API. All passwords are encrypted in the database.
+
+                        This was a personal project created entirely by yours truly.
                     </span>
                 </div>
 
                 <img class="projImg" src="./assets/images/congo-logo.png">
                 <h4 class="projTitle">Congo Book Sales</h4>
-                <span class="techList"> 
+                <span class="techList">
                     <span class="technology">MySQL</span>
                     <span class="technology">Express.js</span>
                     <span class="technology">ReactJS</span>
@@ -275,9 +293,9 @@
                 <p class="projDescription">A website for selling my collection of over 460 books.</p>
                 <a href="https://congobooksales.herokuapp.com/" target="_blank">Project</a>
                 <a class="codeLink" href="https://github.com/curtisyungen/congo" target="_blank">Code</a>
-                
+
             </div>
-            
+
             <!-- Outwork -->
             <div class="col-lg-12 project" id="groceryList" style="height: 130px; margin-top: 10px;">
 
@@ -285,15 +303,17 @@
                 <div class="projInfo" data-status="closed" data-id="outworkInfo">
                     <div class="fas fa-arrow-circle-left fa-3x icon arrow"></div>
                     <span class="projInfoText" id="outworkInfo">
-                        Outwork is a website on which users can log running, biking, swimming, or lifting workouts, track metrics,
-                        and compete for titles. Currently, only three users are allowed to exist: my friend, my brother, and myself. 
+                        Outwork is a website on which users can log running, biking, swimming, or lifting workouts,
+                        track metrics,
+                        and compete for titles. Currently, only three users are allowed to exist: my friend, my brother,
+                        and myself.
                         However, one is free to navigate the site as a guest.
                     </span>
                 </div>
 
                 <img class="projImg" src="./assets/images/outwork-logo.png">
                 <h4 class="projTitle">Outwork Fitness Tracker</h4>
-                <span class="techList"> 
+                <span class="techList">
                     <span class="technology">MySQL</span>
                     <span class="technology">Express.js</span>
                     <span class="technology">ReactJS</span>
@@ -305,9 +325,9 @@
                 <p class="projDescription">A website on which users can log workouts and compete for titles.</p>
                 <a href="https://outwork-cjy.herokuapp.com/" target="_blank">Project</a>
                 <a class="codeLink" href="https://github.com/curtisyungen/outwork" target="_blank">Code</a>
-                
+
             </div>
-            
+
             <!-- Conway -->
             <div class="col-lg-12 project" id="groceryList" style="height: 130px; margin-top: 10px;">
 
@@ -315,18 +335,23 @@
                 <div class="projInfo" data-status="closed" data-id="conwayInfo">
                     <div class="fas fa-arrow-circle-left fa-3x icon arrow"></div>
                     <span class="projInfoText" id="conwayInfo">
-                        Conway's Game of Life is a simulation based on an initial state and four simple rules governing how this state evolves.
-                        Read the rules here: <a class="conwayLink" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Link to Wikipedia</a>.
-                        <br/><br/>
-                        In this project, a user can draw a particular pattern on a 25 x 25 grid and click Start to commence the simulation. 
-                        The pattern then mutates based on the four aforementioned rules, forming new patterns and continuing until
-                        the simulation reaches a static or oscillating state. 
+                        Conway's Game of Life is a simulation based on an initial state and four simple rules governing
+                        how this state evolves.
+                        Read the rules here: <a class="conwayLink"
+                            href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Link to
+                            Wikipedia</a>.
+                        <br /><br />
+                        In this project, a user can draw a particular pattern on a 25 x 25 grid and click Start to
+                        commence the simulation.
+                        The pattern then mutates based on the four aforementioned rules, forming new patterns and
+                        continuing until
+                        the simulation reaches a static or oscillating state.
                     </span>
                 </div>
 
                 <img class="projImg" src="./assets/images/conway.png">
                 <h4 class="projTitle">Conway's Game of Life</h4>
-                <span class="techList"> 
+                <span class="techList">
                     <span class="technology">Express.js</span>
                     <span class="technology">ReactJS</span>
                     <span class="technology">Node.js</span>
@@ -336,9 +361,9 @@
                 </p>
                 <a href="https://conway-cjy.herokuapp.com/" target="_blank">Project</a>
                 <a class="codeLink" href="https://github.com/curtisyungen/conway" target="_blank">Code</a>
-                
+
             </div>
-            
+
             <!-- Tower of Hanoi -->
             <div class="col-lg-12 project" id="hanoi" style="height: 130px; margin-top: 10px;">
 
@@ -346,20 +371,24 @@
                 <div class="projInfo" data-status="closed" data-id="hanoiInfo">
                     <div class="fas fa-arrow-circle-left fa-3x icon arrow"></div>
                     <span class="projInfoText" id="hanoiInfo">
-                        The Tower of Hanoi is a mathematical puzzle consisting of three rods and five disks of different sizes. The puzzle begins with all five disks stacked on the leftmost rod. The objective of the game is to move the entire stack to the rightmost rod while abiding by three simple rules.
-                        Read about the rules and more here: <a class="conwayLink" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Link to Wikipedia</a>.                     
+                        The Tower of Hanoi is a mathematical puzzle consisting of three rods and five disks of different
+                        sizes. The puzzle begins with all five disks stacked on the leftmost rod. The objective of the
+                        game is to move the entire stack to the rightmost rod while abiding by three simple rules.
+                        Read about the rules and more here: <a class="conwayLink"
+                            href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Link to Wikipedia</a>.
                     </span>
                 </div>
 
                 <img class="projImg" src="./assets/images/hanoi.png">
                 <h4 class="projTitle">Tower of Hanoi (React-Redux)</h4>
-                <span class="techList"> 
+                <span class="techList">
                     <span class="technology">Express.js</span>
                     <span class="technology">ReactJS</span>
                     <span class="technology">Node.js</span>
                     <span class="technology">Redux</span>
                 </span>
-                <p class="projDescription">A web application where users can solve a mathematical puzzle called the Tower of Hanoi.</p>
+                <p class="projDescription">A web application where users can solve a mathematical puzzle called the
+                    Tower of Hanoi.</p>
                 <a href="https://tower-of-hanoi-cjy.herokuapp.com/" target="_blank">Project</a>
                 <a class="codeLink" href="https://github.com/curtisyungen/tower-of-hanoi" target="_blank">Code</a>
             </div>
@@ -382,7 +411,6 @@
                     <h5>Structural Design Engineer (7 years)</h5>
                     <p class="description">Worked to design, maintain, and improve the structural components of Boeing
                         777, 777-X, and Air Force One aircraft.</p>
-                    <!-- <i class="fas fa-plane" id="boeingIcon"></i> -->
                     <a class="showMore" data-status="more" data-label="boeing">Show more</a>
                 </div>
 
@@ -496,36 +524,36 @@
         </div>
 
         <!-- Education -->
-            <div class="row sectionTitle educationTitle">
-                <h4>Education</h4>
-            </div>
+        <div class="row sectionTitle educationTitle">
+            <h4>Education</h4>
+        </div>
 
-            <div class="row" id="education">
+        <div class="row" id="education">
 
-                <!-- University of Washington -->
-                <div class="col-lg-12">
-                    <div class="item" id="uw">
-                        <img class="logo" id="uwLogo" src="./assets/images/uw.png">
-                        <h4>UW Coding Boot Camp</h4>
-                        <p class="educationInfo">Sept 2018 - Apr 2019, Bellevue, WA</p>
-                        <p class="description">A six-month intensive certificate program focused on full-stack Web
-                            Development.</p>
-                    </div>
-                </div>
-
-                <!-- Oregon State University -->
-                <div class="col-lg-12">
-                    <div class="item" id="osu">
-                        <img class="logo" id="osuLogo" src="./assets/images/osu.png">
-                        <h4>BS Civil Engineering</h4>
-                        <p class="educationInfo">Graduated June 2013, Corvallis, OR</p>
-                        <p class="description">A four-year program covering the fundamental principles of structural,
-                            geotechnical,
-                            hydrological,
-                            mechanical, environmental, and transportation engineering.</p>
-                    </div>
+            <!-- University of Washington -->
+            <div class="col-lg-12">
+                <div class="item" id="uw">
+                    <img class="logo" id="uwLogo" src="./assets/images/uw.png">
+                    <h4>UW Coding Boot Camp</h4>
+                    <p class="educationInfo">Sept 2018 - Apr 2019, Bellevue, WA</p>
+                    <p class="description">A six-month intensive certificate program focused on full-stack Web
+                        Development.</p>
                 </div>
             </div>
+
+            <!-- Oregon State University -->
+            <div class="col-lg-12">
+                <div class="item" id="osu">
+                    <img class="logo" id="osuLogo" src="./assets/images/osu.png">
+                    <h4>BS Civil Engineering</h4>
+                    <p class="educationInfo">Graduated June 2013, Corvallis, OR</p>
+                    <p class="description">A four-year program covering the fundamental principles of structural,
+                        geotechnical,
+                        hydrological,
+                        mechanical, environmental, and transportation engineering.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Past Affiliations -->
@@ -619,7 +647,7 @@
     <div class="container" id="footerContainer">
         <div class="row" id="footer">
             <div id="footerText">
-                <h1 id="contact">Contact</h1> 
+                <h1 id="contact">Contact</h1>
                 <p class="lead">curtisyungen@gmail.com</p>
             </div>
 
@@ -632,11 +660,12 @@
                         class="fas fa-envelope fa-3x icon"></i></a>
                 <a href="https://www.instagram.com/curtisyungen/" target="_blank"><i
                         class="fab fa-instagram fa-3x icon"></i></a>
-                <a href="https://github.com/curtisyungen/Portfolio/blob/master/Curtis-Yungen-Resume.pdf" target="_blank">
+                <a href="https://github.com/curtisyungen/Portfolio/blob/master/Curtis-Yungen-Resume.pdf"
+                    target="_blank">
                     <button class="btn btn-outline-light btn-sm resumeBtn">View Resume</button>
                 </a>
-            </div>            
-            
+            </div>
+
             <!-- Rocket Launch -->
             <div class="row" id="rocketLaunch">
                 <div id="launchPad">
