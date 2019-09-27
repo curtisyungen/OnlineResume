@@ -52,8 +52,10 @@
 
     <!-- jQuery -->
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
-
+    <script
+    src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+    integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -162,20 +164,20 @@
         <!-- Fun Facts -->
         <div class="row funFacts">
             <!-- Running -->
-            <div class="fact">
+            <div class="fact factRunning">
                 <div class="factIcon"><i class="fa fa-2x fa-running"></i></div>
                 <p class="description">In 2019, I ran a 50 mile ultra-marathon with no training. Then three weeks later
                     I ran another one.</p>
             </div>
 
             <!-- Juggling -->
-            <div class="fact">
+            <div class="fact factJuggling">
                 <div class="factIcon">
-                    <i class="fa fa-1x fa-circle"></i>
-                    <i class="fa fa-1x fa-circle"></i>
-                    <i class="fa fa-1x fa-circle"></i>
-                    <i class="fa fa-1x fa-circle"></i>
-                    <i class="fa fa-1x fa-circle"></i>
+                    <i class="fa fa-1x fa-circle" id="ball1"></i>
+                    <i class="fa fa-1x fa-circle" id="ball2"></i>
+                    <i class="fa fa-1x fa-circle" id="ball3"></i>
+                    <i class="fa fa-1x fa-circle" id="ball4"></i>
+                    <i class="fa fa-1x fa-circle" id="ball5"></i>
                 </div>
                 
                 <!-- Open Juggling Modal, Button -->
@@ -214,7 +216,7 @@
             </div>
 
             <!-- Music -->
-            <div class="fact">
+            <div class="fact factMusic">
                 <div class="factIcon"><i class="fa fa-2x fa-guitar"></i></div>
                 <p class="description">I play classical piano, acoustic guitar, and bass guitar...separately.</p>
             </div>
@@ -684,6 +686,7 @@
     <script type="text/javascript" src="assets/javascript/navbar.js"></script>
     <script type="text/javascript" src="assets/javascript/blue-angels.js"></script>
     <script type="text/javascript" src="assets/javascript/rocket.js"></script>
+    <script type="text/javascript" src="assets/javascript/funFacts.js"></script>
     <script type="text/javascript" src="assets/javascript/info-boxes.js"></script>
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>
 </body>
