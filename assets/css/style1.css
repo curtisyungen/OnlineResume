@@ -352,6 +352,12 @@ p {
 
 .factIcon {
     margin-bottom: 8px;
+    position: relative;
+}
+
+.factIcon div {
+    display: inline-block;
+    position: absolute;
 }
 
 .fact i {
@@ -391,6 +397,10 @@ p {
     font-size: 12px;
     margin-top: -5px;
     text-align: right;
+}
+
+.juggleDesc {
+    margin-top: 35px;
 }
 
 .jugglingVidBtn {
