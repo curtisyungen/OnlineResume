@@ -285,6 +285,7 @@ p {
 
 #workExpContainer {
     background: rgb(245, 245, 245);
+    padding-top: 50px;
     width: 100%;
 }
 
