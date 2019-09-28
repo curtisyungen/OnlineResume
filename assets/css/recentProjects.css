@@ -12,8 +12,21 @@
     width: 100%;
 }
 
+.projFeatures {
+    display: flex;
+}
+
+.projFeatures ul {
+    width: 250px;
+}
+
+.projFeatures ul li {
+    display: list-item !important;
+}
+
 .projHeader {
     background: #e0e0e0;
+    border-bottom: 1px solid rgb(204, 204, 204);
     display: block;
     height: 130px;
 }
@@ -24,6 +37,11 @@
     height: 130px;
     margin: 0px 15px 0px 0px;
     width: 130px;
+}
+
+.projSubTitle {
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 .project {
@@ -51,7 +69,7 @@
 .technology {
     background: #fff;
     border: 1px solid darkgray;
-    border-radius: 5px;
+    border-radius: 0px;
     margin-top: 3px;
     padding: 2px 5px;
     text-align: center;
@@ -66,7 +84,7 @@
 .techList {
     bottom: 0;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 32px;
     white-space: nowrap;
 }
