@@ -17,10 +17,10 @@ $(".factRunning").hover(
 // ============================================
 $(".factJuggling").hover(
     function() {
-        for (var i=2; i<4; i++) {
+        for (var i=2; i<=4; i++) {
             $(`#ball${i}`)
                 .css("transition", "0.75s")
-                .css("margin-left", `${i * -20}px`);
+                .css("margin-left", `${(i-1) * -20}px`);
         }
         for (var i=5; i<8; i++) {
             $(`#ball${i}`)
@@ -29,11 +29,13 @@ $(".factJuggling").hover(
         }
     },
     function() {
-        $("#ball1").css("margin-left", "-20px");
+        $("#ball4").css("margin-left", "-20px");
         $("#ball7").css("margin-left", "20px");
 
-        for (var i=2; i<7; i++) {
-            $(`#ball${i}`).css("margin-left", `0px`);
+        for (var i=1; i<7; i++) {
+            if (i !== 4) {
+                $(`#ball${i}`).css("margin-left", `0px`);
+            }
         }
     }
 );
