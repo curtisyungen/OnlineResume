@@ -1,0 +1,40 @@
+
+.projDescription {
+    font-size: 14px;
+    width: 85%;
+}
+
+.projDetails {
+    background: #efefef;
+    display: block;
+    font-size: 13px;
+    min-height: 150px;
+    padding: 10px;
+    width: 100%;
+}
+
+.projHeader {
+    background: #e0e0e0;
+    display: block;
+    height: 130px;
+}
+
+.project {
+    border: 1px solid darkgray;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    padding: 5px !important;
+    width: 100%;
+}
+
+.project a {
+    font-size: 12px;
+}
+
+.project:first-child {
+    margin-top: 0px;
+}
+
+.projTitle {
+    display: inline;
+}

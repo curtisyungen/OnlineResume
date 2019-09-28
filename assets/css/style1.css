@@ -482,36 +482,6 @@ p {
     height: 130px;
 }
 
-.projDescription {
-    font-size: 14px;
-    width: 85%;
-}
-
-/* .projImg {
-    float: left;
-    height: 100px;
-    width: 100px;
-} */
-
-.project {
-    display: inline-block;
-    height: 130px;
-    margin: 10px 0px 0px 0px;
-    width: 100%;
-}
-
-.project a {
-    font-size: 12px;
-}
-
-.project:first-child {
-    margin-top: 0px;
-}
-
-.projTitle {
-    display: inline;
-}
-
 .resumeBtn {
     display: block;
     margin: 30px auto;
