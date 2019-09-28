@@ -17,11 +17,13 @@
 }
 
 .projFeatures ul {
+    margin-bottom: 0px;
     width: 250px;
 }
 
 .projFeatures ul li {
-    display: list-item !important;
+    margin-left: 17px;
+    list-style-type: circle;
 }
 
 .projHeader {
@@ -63,14 +65,12 @@
 
 .projTitle {
     display: inline;
-    line-height: 34px;
 }
 
 .technology {
     background: #fff;
     border: 1px solid darkgray;
     border-radius: 0px;
-    margin-top: 3px;
     padding: 2px 5px;
     text-align: center;
     white-space: nowrap;
@@ -82,9 +82,7 @@
 }
 
 .techList {
-    bottom: 0;
     display: block;
     font-size: 14px;
-    line-height: 32px;
-    white-space: nowrap;
+    line-height: 26px;
 }
