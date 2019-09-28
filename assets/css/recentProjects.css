@@ -11,7 +11,12 @@
     font-size: 13px;
     min-height: 150px;
     padding: 10px;
+    padding-left: 35px;
     width: 100%;
+}
+
+.projDetails span {
+    margin: 0px auto;
 }
 
 .projFeatures {
