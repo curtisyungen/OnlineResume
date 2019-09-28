@@ -4,6 +4,10 @@
     .project p {
         max-width: 550px;
     }
+
+    .projInfo {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -114,10 +118,6 @@
 
     .projImg {
         margin-right: 10px;
-    }
-
-    .projInfo {
-        display: none;
     }
 
     .project {
