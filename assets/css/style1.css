@@ -367,8 +367,11 @@ p {
 
 .factIcon {
     margin-bottom: 8px;
-    margin-left: -20px;
     position: relative;
+}
+
+.factIconJuggling {
+    margin-left: -20px;
 }
 
 .factIcon div {
