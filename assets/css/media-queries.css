@@ -102,11 +102,21 @@
         position: relative;
     }
 
-    .pastSection .logo {
-        display: none;
+    .pastSection h5 {
+        margin-left: 140px;
+    }
+
+    .projDescription {
+        margin-left: 140px;
+        max-width: 150px !important;
+        white-space: normal;
     }
 
     .projImg {
+        margin-right: 10px;
+    }
+
+    .projInfo {
         display: none;
     }
 
@@ -199,10 +209,6 @@
 
     .pastSection h5 {
         max-width: 200px;
-    }
-    
-    .pastSection .logo {
-        display: none;
     }
 
     .project p {
