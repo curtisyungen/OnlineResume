@@ -54,6 +54,14 @@ p {
     margin-top: -80px;
 }
 
+#ball1 {
+    margin-left: -20px;
+}
+
+#ball7 {
+    margin-left: 20px;
+}
+
 #boeing {
     background: rgb(248, 248, 248);
 }
@@ -352,6 +360,7 @@ p {
 
 .factIcon {
     margin-bottom: 8px;
+    margin-left: -20px;
     position: relative;
 }
 

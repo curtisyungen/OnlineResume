@@ -17,19 +17,22 @@ $(".factRunning").hover(
 // ============================================
 $(".factJuggling").hover(
     function() {
-        for (var i=1; i<4; i++) {
+        for (var i=2; i<4; i++) {
             $(`#ball${i}`)
                 .css("transition", "0.75s")
                 .css("margin-left", `${i * -20}px`);
         }
-        for (var i=4; i<8; i++) {
+        for (var i=5; i<8; i++) {
             $(`#ball${i}`)
                 .css("transition", "1s")
                 .css("margin-left", `${(i-4) * 20}px`);
         }
     },
     function() {
-        for (var i=1; i<8; i++) {
+        $("#ball1").css("margin-left", "-20px");
+        $("#ball7").css("margin-left", "20px");
+
+        for (var i=2; i<7; i++) {
             $(`#ball${i}`).css("margin-left", `0px`);
         }
     }
