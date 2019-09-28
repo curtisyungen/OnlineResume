@@ -79,11 +79,6 @@ $(".navbar-item").on("click", function() {
 
 // Animates navbar arrow to move up and down
 function floatArrow() {
-
-    $(".fa-chevron-down").animate({
-        marginTop: `-=10`,
-    }, 500);
-
     setInterval(function() {
         
         $(".fa-chevron-down").animate({
