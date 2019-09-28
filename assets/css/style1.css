@@ -448,7 +448,7 @@ p {
     z-index: 4;
 }
 
-.logo, .projImg {
+.logo {
     border: 1px solid gray;
     float: left;
     height: 130px;
@@ -529,28 +529,6 @@ p {
     cursor: pointer;
     font-size: 14px;
     /* position: absolute; */
-}
-
-.technology {
-    border: 1px solid darkgray;
-    border-radius: 5px;
-    margin-top: 3px;
-    padding: 2px 5px;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.technology:hover {
-    background: rgb(0, 57, 166);
-    color: white;
-}
-
-.techList {
-    bottom: 0;
-    display: block;
-    font-size: 12px;
-    line-height: 32px;
-    white-space: nowrap;
 }
 
 /* TOASTMASTERS: DEFINE 'OFFICIAL CLUB' */

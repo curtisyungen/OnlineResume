@@ -1,4 +1,3 @@
-
 .projDescription {
     font-size: 14px;
     width: 85%;
@@ -19,8 +18,17 @@
     height: 130px;
 }
 
+.projImg {
+    border: 1px solid gray;
+    float: left;
+    height: 130px;
+    margin: 0px 15px 0px 0px;
+    width: 130px;
+}
+
 .project {
     border: 1px solid darkgray;
+    border-radius: 4px;
     display: inline-block;
     margin: 10px 0px 0px 0px;
     padding: 5px !important;
@@ -28,7 +36,7 @@
 }
 
 .project a {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .project:first-child {
@@ -37,4 +45,28 @@
 
 .projTitle {
     display: inline;
+    line-height: 34px;
+}
+
+.technology {
+    background: #fff;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 2px 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.technology:hover {
+    background: rgb(0, 57, 166);
+    color: white;
+}
+
+.techList {
+    bottom: 0;
+    display: block;
+    font-size: 12px;
+    line-height: 32px;
+    white-space: nowrap;
 }
