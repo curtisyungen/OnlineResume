@@ -164,6 +164,11 @@
 
 @media screen and (max-width: 420px) {
 
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+
     .pastSection h5 {
         max-width: 300px;
     }
