@@ -22,11 +22,8 @@ function showMore() {
     if (status == "more") {
 
         // Show more
-        $(`#${label}`).slideDown("slow");
-
-        // Rotate plane icon
-        // $(`#${label}Icon`).css("transform", "rotate(90deg)");
-
+        $(`#${label}`).slideDown("fast");
+        
         $(this)
             .attr("data-status", "less")
             .text("Show less");
@@ -34,10 +31,7 @@ function showMore() {
     else {
 
         // Show less
-        $(`#${label}`).slideUp("slow");
-
-        // Rotate plane icon
-        // $(`#${label}Icon`).css("transform", "rotate(270deg)");
+        $(`#${label}`).slideUp("fast");
 
         $(this)
             .attr("data-status", "more")
