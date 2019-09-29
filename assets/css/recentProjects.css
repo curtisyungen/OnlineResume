@@ -11,7 +11,7 @@
     font-size: 13px;
     margin-bottom: 0px !important;
     margin-top: 0px !important;
-    padding: 10px 25px;
+    padding: 10px 25px !important;
     width: 100%;
 }
 
@@ -50,6 +50,7 @@
 
 .projShowMore {
     position: absolute;
+    right: 10px;
 }
 
 .projSubTitle {
@@ -82,7 +83,7 @@
 
 .screenshot {
     border: 1px solid darkgray;
-    height: 200px;
+    height: 150px;
 }
 
 .technology {
