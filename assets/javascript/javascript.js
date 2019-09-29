@@ -4,6 +4,7 @@
 // Event Handler
 
 $(".showMore").on("click", showMore);
+$(".projShowMore").on("click", showMore);
 
 // Show More Function
 // Called when "show more" or "show less" is clicked
@@ -23,7 +24,7 @@ function showMore() {
 
         // Show more
         $(`#${label}`).slideDown("fast");
-        
+
         $(this)
             .attr("data-status", "less")
             .text("Show less");
