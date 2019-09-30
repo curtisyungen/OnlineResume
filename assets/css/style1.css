@@ -71,10 +71,6 @@ p {
     background: rgb(248, 248, 248);
 }
 
-#chess {
-    display: none;  
-}
-
 #contactInfo {
     background: rgba(0, 0, 255, 0.178);
     min-height: 0px;
@@ -473,12 +469,9 @@ p {
 
 .moreInfo {
     background: rgb(245, 245, 245);
-    border: 1px dashed darkgray;
     display: none;
     font-size: 14px;
     margin-bottom: 5px;
-    margin-top: 15px;
-    padding: 12px 25px 0px 25px;
 }
 
 .pastSection {

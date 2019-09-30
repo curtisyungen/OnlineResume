@@ -4,15 +4,22 @@
 }
 
 .projDetails {
-    background: #efefef;
+
     border: none !important;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 13px;
     margin-bottom: 0px !important;
     margin-top: 0px !important;
     padding: 10px 25px !important;
     width: 100%;
+}
+
+.projDetailsSection {
+    margin-right: 10px;
+    width: 30%;
 }
 
 .projFeatures {
@@ -44,6 +51,12 @@
     width: 130px;
 }
 
+.projScreenshots {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .projShowMore {
     bottom: 10px;
     position: absolute;
@@ -53,6 +66,11 @@
 .projSubTitle {
     font-size: 14px;
     margin-top: 8px;
+}
+
+.projTitle {
+    margin-bottom: 0px;
+    padding-top: 8px;
 }
 
 .project {
@@ -73,21 +91,11 @@
     margin-top: 0px;
 }
 
-.projScreenshots {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.projTitle {
-    margin-bottom: 0px;
-    padding-top: 8px;
-}
-
 .screenshot {
     border: 1px solid darkgray;
     height: 150px;
-    margin: 0px 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
     width: 260px;
 }
 
@@ -103,6 +111,12 @@
 .techList {
     display: block;
     line-height: 26px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .projDetailsSection {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 520px) {
