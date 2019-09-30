@@ -86,9 +86,9 @@
 
 .screenshot {
     border: 1px solid darkgray;
-    height: 140px;
+    height: 150px;
     margin: 0px 3px;
-    max-width: 30%;
+    width: 260px;
 }
 
 .technology {
