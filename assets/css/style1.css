@@ -79,7 +79,7 @@ p {
 }
 
 #education {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 #footer {
@@ -195,6 +195,10 @@ p {
     padding-bottom: 15px;
 }
 
+#profileContainer {
+    margin-top: 50px;
+}
+
 #profileImg {
     border: 1px solid darkgray;
     border-radius: 250px;
@@ -248,7 +252,7 @@ p {
 
 #techContainer {
     background: rgb(250, 251, 255);
-    padding: 50px 0px;
+    padding: 15px 0px;
     width: 100%;
 }
 
@@ -272,17 +276,14 @@ p {
     color: rgb(0, 57, 166);
 }
 
-#toastmasters, #kellerwilliams {
+#toastmasters, #kellerwilliams,
+#scca {
     padding-bottom: 8px;
-}
-
-#workExperience {
-    margin-bottom: 50px;
 }
 
 #workExpContainer {
     background: rgb(245, 245, 245);
-    padding-top: 50px;
+    padding-top: 15px;
     width: 100%;
 }
 
@@ -317,7 +318,7 @@ p {
 }
 
 .container {
-    margin: 50px 0px 50px 0px;
+    margin: 15px 0px;
     padding: 10px 0px 10px 0px;
     max-width: 100%;
     width: 100%;
