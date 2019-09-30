@@ -68,7 +68,7 @@ p {
 }
 
 #boeing {
-    background: rgb(248, 248, 248);
+    margin-top: 15px;
 }
 
 #contactInfo {
@@ -527,20 +527,8 @@ p {
     /* position: absolute; */
 }
 
-/* TOASTMASTERS: DEFINE 'OFFICIAL CLUB' */
-
-#definition {
-    color: orange;
-}
-
-#officialClub {
-    background: white;
-    border: 2px solid black;
-    color: black;
-    font-size: 12px;
-    margin-top: -30px;
-    opacity: 0;
-    padding: 5px;
-    position: absolute;
-    width: 210px;
+.workHeader {
+    display: block;
+    height: 130px;
+    position: relative;
 }
