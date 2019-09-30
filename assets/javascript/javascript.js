@@ -3,7 +3,6 @@
 
 // Event Handler
 
-$(".showMore").on("click", showMore);
 $(".projShowMore").on("click", showMore);
 
 // Show More Function
