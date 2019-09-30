@@ -76,6 +76,7 @@
 .projScreenshots {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .projTitle {
@@ -85,8 +86,7 @@
 
 .screenshot {
     border: 1px solid darkgray;
-    height: auto;
-    min-height: 100px;
+    margin: 3px;
     max-width: 100%;
 }
 
