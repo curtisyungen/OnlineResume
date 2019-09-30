@@ -73,6 +73,11 @@
     margin-top: 0px;
 }
 
+.projScreenshots {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .projTitle {
     margin-bottom: 0px;
     padding-top: 8px;
@@ -80,7 +85,9 @@
 
 .screenshot {
     border: 1px solid darkgray;
-    width: 100%;
+    height: auto;
+    min-height: 100px;
+    max-width: 100%;
 }
 
 .technology {
