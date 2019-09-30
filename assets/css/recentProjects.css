@@ -86,8 +86,8 @@
 
 .screenshot {
     border: 1px solid darkgray;
-    margin: 3px;
-    max-width: 100%;
+    margin: 0px 3px;
+    max-width: 30%;
 }
 
 .technology {
@@ -102,4 +102,11 @@
 .techList {
     display: block;
     line-height: 26px;
+}
+
+@media only screen and (max-width: 520px) {
+    .screenshot {
+        margin: 3px 0px 0px;
+        max-width: 100%;
+    }
 }
