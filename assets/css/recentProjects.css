@@ -18,7 +18,8 @@
 
 .projDetailsSection {
     margin-right: 10px;
-    width: 30%;
+    max-width: 30%;
+    width: auto;
 }
 
 .projFeatures {
@@ -114,7 +115,7 @@
 
 @media only screen and (max-width: 1200px) {
     .projDetailsSection {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
